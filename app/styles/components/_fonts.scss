@@ -1,0 +1,14 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* html */.js.opacity.csstransitions {
+  opacity: 0;
+}
+
+/* html */.js.opacity.csstransitions.wf-active,
+/* html */.js.opacity.csstransitions.wf-inactive {
+  @include transition-duration(.5s);
+  @include transition-property(opacity);
+  opacity: 1;
+}
