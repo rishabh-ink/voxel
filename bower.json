@@ -1,17 +1,17 @@
 {
   "name": "voxel",
-  "description": "MyApp.",
-  "url": "",
+  "description": "A minimal Hologram theme.",
+  "url": "https://github.com/rishabhsrao/voxel",
   "license": "./license.md",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:rishabhsrao/voxel.git"
   },
   "private": true,
   "author": {
-    "name": "You",
-    "email": "you@email.com",
-    "url": "http://you.com"
+    "name": "Rishabh Rao",
+    "email": "rishabhsrao@gmail.com",
+    "url": "http://rishabhsrao.github.io"
   },
   "dependencies": {
     "jquery": "https://github.com/jquery/jquery.git#1.10.2"

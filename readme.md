@@ -1,8 +1,14 @@
-# Voxel [:star:](http://example.com)
+# Voxel [:star:](https://github.com/rishabhsrao/voxel)
 
-> MyApp.
+> A minimal Hologram theme.
 
----
+[![Travis](https://img.shields.io/travis/rishabhsrao/voxel.svg?style=flat-square "Build status")](https://travis-ci.org/rishabhsrao/voxel)
+[![David](https://img.shields.io/david/rishabhsrao/voxel.svg?style=flat-square "Dependency status (Node modules)")](https://david-dm.org/rishabhsrao/voxel)
+[![Gemnasium](https://img.shields.io/gemnasium/rishabhsrao/voxel.svg?style=flat-square "Dependency status (Ruby gems)")](https://gemnasium.com/rishabhsrao/voxel)
+[![Code Climate](https://img.shields.io/codeclimate/github/rishabhsrao/voxel.svg?style=flat-square "Code Climate status")](https://codeclimate.com/github/rishabhsrao/voxel)
+[![Coveralls](https://img.shields.io/coveralls/rishabhsrao/voxel.svg?style=flat-square "Test coverage status")](https://coveralls.io/r/rishabhsrao/voxel)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](license.md)
+
 
 ## :rowboat: Get started
 
@@ -15,8 +21,8 @@ This project depends on the following tools:
 :tophat: **Tip** Use [nvm](https://github.com/creationix/nvm) and [rvm](http://rvm.io) for easy management of NodeJS and Ruby installations.
 
 ```
-git clone <MyApp Git URL> MyApp
-cd MyApp
+git clone git@github.com:rishabhsrao/voxel.git voxel
+cd voxel
 npm install
 bundle install
 ./node_modules/.bin/bower install
