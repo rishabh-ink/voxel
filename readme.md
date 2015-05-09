@@ -41,22 +41,24 @@ git config url.https://.insteadOf git://
 
 ## :nut_and_bolt: Build
 
-This project is built using [Gulp](http://gulpjs.com). The following build tasks are available:
+This project is built using [Gulp](http://gulpjs.com).
 
-* **style:lint** Lints the Sass files using [SCSS-Lint](https://github.com/causes/scss-lint).
-* **style:compile** Compiles the Sass files using [Compass](http://compass-style.org).
-* **script:lint** Lints the JavaScript files using [JSHint](https://github.com/jshint/jshint).
-* **script:test** Runs the JavaScript unit tests and generates a code coverage report using [Karma](http://karma-runner.github.io) and [Jasmine](http://jasmine.github.io).
-* **script:minify** Minifies the JavaScript files using [UglifyJS](http://github.com/mishoo/UglifyJS).
-* **image:minify** Compresses the image files using [gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin).
-* **markup:build** Optimizes JavaScript and CSS references in the HTML using [Useref](www.npmjs.org/package/useref-file).
-* **markup:minify** Optimizes HTML imports and minifies the HTML using [Vulcanize](https://github.com/polymer/vulcanize).
-* **serve** Starts a web server with live-reload support using [BrowserSync](http://www.browsersync.io).
+You can run a task using `./node_modules/.bin/gulp {{task-name}}`. The following build tasks are available:
+
 * **build** Creates a build artifact, ready for deployment.
-* **source** Includes the source files in the build artifact.
-* **clean** Cleans the build artifact and any other generated artifacts.
-
-You can run a task using `./node_modules/.bin/gulp {{task-name}}`.
+* **clean:deploy** Cleans all generated artifacts, except the distribution artifact.
+* **clean** Cleans the distribution artifact and any other generated artifacts.
+* **image:minify** Compresses the image files using [gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin).
+* **script:lint** Lints the JavaScript files using [JSHint](https://github.com/jshint/jshint).
+* **script:minify:json** Minifies the JSON files using [JSON Minify](https://www.npmjs.org/package/gulp-jsonminify).
+* **script:minify** Minifies the JavaScript files using [UglifyJS](http://github.com/mishoo/UglifyJS).
+* **script:test:report** Uploads the code coverage report to [Coveralls](https://coveralls.io).
+* **script:test:unit** Runs the JavaScript unit tests using [Karma](http://karma-runner.github.io) and [Jasmine](http://jasmine.github.io).
+* **script:test** Runs all the JavaScript tests.
+* **serve** Starts a web server with live-reload support using [BrowserSync](http://www.browsersync.io).
+* **source** Copies the source files in the distribution artifact.
+* **style:compile** Compiles the Sass files using [Compass](http://compass-style.org).
+* **style:lint** Lints the Sass files using [SCSS-Lint](https://github.com/causes/scss-lint).
 
 :tophat: **Tip** It's a good idea to occasionally run:
 
@@ -73,5 +75,3 @@ bundle clean --force && bundle install
 ## :scroll: License
 
 See [license.md](license.md).
-
----
