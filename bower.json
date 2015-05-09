@@ -17,9 +17,9 @@
     "jquery": "https://github.com/jquery/jquery.git#1.10.2"
   },
   "devDependencies": {
-    "jasmine-ajax": "https://github.com/jasmine/jasmine-ajax.git#2.99.0",
-    "jasmine-jquery": "https://github.com/velesin/jasmine-jquery.git#2.0.4",
-    "normalize-css": "https://github.com/necolas/normalize.css.git#3.0.1"
+    "jasmine-ajax": "https://github.com/jasmine/jasmine-ajax.git#3.1.1",
+    "jasmine-jquery": "https://github.com/velesin/jasmine-jquery.git#2.1.0",
+    "normalize-css": "https://github.com/necolas/normalize.css.git#3.0.3"
   },
   "resolutions": {
     "jquery": "1.10.2"
