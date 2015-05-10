@@ -10,7 +10,8 @@ function($) {
       },
 
       classnames: {
-        drawerActive: "voxel-drawer--active"
+        drawerActive: "voxel-drawer--active",
+        drawerToggleActive: "voxel-drawer__toggle--active"
       }
     },
 
@@ -34,6 +35,7 @@ function($) {
 
     toggleDrawer: function() {
       this.elements.drawer.toggleClass(this.options.classnames.drawerActive);
+      this.elements.drawerToggle.toggleClass(this.options.classnames.drawerToggleActive);
 
       return this;
     },

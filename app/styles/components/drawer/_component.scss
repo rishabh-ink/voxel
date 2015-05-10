@@ -2,6 +2,7 @@
 @import "documentation";
 
 #voxel .voxel-drawer {
+  @include box-shadow(0 0 $drawer__box-shadow--radius 0 $drawer__box-shadow--color);
   @include transition-duration(.3s);
   @include transition-property(left);
   background-color: $drawer__background-color;
@@ -18,15 +19,48 @@
 
 #voxel .voxel-drawer__toggle {
   color: inherit;
-  left: .5rem;
-  padding: 1rem;
+  font-size: $drawer__toggle__font-size;
+  left: 0;
+  padding-bottom: $drawer__toggle__padding--bottom;
+  padding-left: $drawer__toggle__padding--left;
+  padding-right: $drawer__toggle__padding--right;
+  padding-top: $drawer__toggle__padding--top;
   position: fixed;
   text-decoration: none;
-  top: .5rem;
+  top: 0;
 }
 
 #voxel .voxel-drawer__title {
-  color: inherit;
+  color: $drawer__title__color;
   font-size: $drawer__title__font-size;
   text-decoration: none;
+}
+
+#voxel .voxel-drawer__header {
+  background-color: $drawer__header__background-color;
+  margin-bottom: $drawer__header__margin--bottom;
+  min-height: $drawer__header__height--min;
+  padding-bottom: $drawer__header__padding--bottom;
+  padding-left: $drawer__header__padding--left;
+  padding-top: $drawer__header__padding--top;
+  position: relative;
+
+  &:before {
+    @include box-shadow(
+      $drawer__header__box-shadow--color
+      0
+      0
+      $drawer__header__box-shadow--radius
+      0
+    );
+    border-radius: 50%;
+    bottom: 0;
+    content: "";
+    height: $drawer__header__box-shadow--height;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: $drawer__header__box-shadow--width;
+    z-index: -1;
+  }
 }
