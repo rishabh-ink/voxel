@@ -1,0 +1,19 @@
+@import "settings";
+@import "documentation";
+
+// scss-lint:disable QualifyingElement
+html.js.opacity {
+  opacity: 0;
+}
+
+html.csstransitions.wf-inactive,
+html.csstransitions.wf-active {
+  @include transition-duration(.5s);
+  @include transition-property(opacity);
+}
+
+html.js.opacity.wf-inactive,
+html.js.opacity.wf-active {
+  opacity: 1;
+}
+// scss-lint:enable QualifyingElement

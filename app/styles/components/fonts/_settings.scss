@@ -1,0 +1,27 @@
+$fonts__line-height: (
+  "300": 1.2,
+  "600": 1.45,
+  "900": 1.5
+);
+
+$fonts__font-family--sans-serif: "Open Sans", sans-serif;
+$fonts__font-family--serif: serif;
+$fonts__font-family--monospace: monospace;
+$fonts__font-family--base: $fonts__font-family--sans-serif;
+
+$fonts__font-size--heading: (
+  // Perfect Fourth scale (1.333)
+  // See type-scale.com/?size=16&scale=1.333&text=A%20Visual%20Type%20Scale&webfont=Open%2BSans&font-family=%27Open%20Sans%27%2C%20serif&font-weight=400&font-family-headers=&font-weight-headers=inherit&background-color=white&font-color=%23333
+  "h6": .75rem,
+  "h5": 1rem,
+  "h4": 1.333rem,
+  "h3": 1.777rem,
+  "h2": 2.369rem,
+  "h1": 3.157rem
+);
+
+$fonts__font-size--small: .5em; // `em` so that it scales well inside any heading tag.
+
+$fonts__paragraph__margin--bottom: map-get($scaffolding__spacing--vertical, "800");
+$fonts__heading__margin--top: map-get($scaffolding__spacing--vertical, "800");
+$fonts__heading__margin--bottom: map-get($scaffolding__spacing--vertical, "300");

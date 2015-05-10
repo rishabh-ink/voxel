@@ -1,0 +1,52 @@
+@import "settings";
+@import "documentation";
+
+body {
+  font-family: $fonts__font-family--base;
+  line-height: map-get($fonts__line-height, "600");
+}
+
+p {
+  margin-bottom: $fonts__paragraph__margin--bottom;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: inherit;
+  line-height: map-get($fonts__line-height, "300");
+  margin-bottom: $fonts__heading__margin--bottom;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: $fonts__heading__margin--top;
+}
+
+h1 {
+  font-size: map-get($fonts__font-size--heading, "h1");
+  margin-top: 0;
+}
+
+h2 {
+  font-size: map-get($fonts__font-size--heading, "h2");
+}
+
+h3 {
+  font-size: map-get($fonts__font-size--heading, "h3");
+}
+
+h4 {
+  font-size: map-get($fonts__font-size--heading, "h4");
+}
+
+h5 {
+  font-size: map-get($fonts__font-size--heading, "h5");
+}
+
+h6 {
+  font-size: map-get($fonts__font-size--heading, "h6");
+}
+
+small {
+  font-size: $fonts__font-size--small;
+}

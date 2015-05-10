@@ -1,0 +1,6 @@
+$layouts__content__max-width: 32rem;
+
+$layouts__content__padding--horizontal: map-get($scaffolding__spacing--horizontal, "600");
+$layouts__content__padding--vertical: map-get($scaffolding__spacing--vertical, "600");
+
+$layouts__image__margin--vertical: map-get($scaffolding__spacing--vertical, "100");
