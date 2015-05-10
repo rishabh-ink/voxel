@@ -3,7 +3,7 @@
 
 #voxel .voxel-drawer {
   @include box-shadow(0 0 $drawer__box-shadow--radius 0 $drawer__box-shadow--color);
-  @include transition-duration(.3s);
+  @include transition-duration($drawer__transition--duration);
   @include transition-property(left);
   background-color: $drawer__background-color;
   height: 100%;
@@ -18,7 +18,9 @@
 }
 
 #voxel .voxel-drawer__toggle {
-  color: inherit;
+  @include transition-duration($drawer__toggle__transition--duration);
+  @include transition-property(color, transform);
+  color: $drawer__toggle__color;
   font-size: $drawer__toggle__font-size;
   left: 0;
   padding-bottom: $drawer__toggle__padding--bottom;
@@ -28,6 +30,11 @@
   position: fixed;
   text-decoration: none;
   top: 0;
+}
+
+#voxel .voxel-drawer__toggle--active {
+  @include transform(rotateZ(180deg));
+  color: $drawer__toggle__color--active;
 }
 
 #voxel .voxel-drawer__title {

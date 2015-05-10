@@ -4,7 +4,11 @@ $drawer__box-shadow--radius: map-get($scaffolding__spacing--horizontal, "900");
 $drawer__box-shadow--color: map-get($colors__gray, "100");
 $drawer__title__color: map-get($colors__gray, "500");
 $drawer__title__font-size: map-get($fonts__font-size--heading, "h3");
+$drawer__transition--duration: $scaffolding__transition--duration;
 
+$drawer__toggle__color: inherit;
+$drawer__toggle__color--active: map-get($colors__gray, "500");
+$drawer__toggle__transition--duration: $scaffolding__transition--duration;
 $drawer__toggle__font-size: map-get($fonts__font-size--heading, "h3");
 $drawer__toggle__padding--top: map-get($scaffolding__spacing--vertical, "300");
 $drawer__toggle__padding--bottom: map-get($scaffolding__spacing--vertical, "300");
