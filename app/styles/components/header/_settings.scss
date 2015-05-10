@@ -1,0 +1,22 @@
+$header__background-color: #fff;
+
+$header__border--bottom--color: map-get($colors__gray, "100");
+$header__border--bottom--width: 1px;
+$header__border--bottom--style: solid;
+
+$header__height--min: map-get($scaffolding__spacing--vertical, "a400");
+$header__margin--bottom: map-get($scaffolding__spacing--vertical, "a100");
+$header__padding--bottom: map-get($scaffolding__spacing--vertical, "300");
+$header__padding--top: map-get($scaffolding__spacing--vertical, "600");
+
+$header__box-shadow--color: map-get($colors__gray, "400");
+$header__box-shadow--radius: map-get($scaffolding__spacing--vertical, "a100");
+$header__box-shadow--height: map-get($scaffolding__spacing--vertical, "a100");
+$header__box-shadow--width: 80%;
+
+$header__title__font-size: map-get($fonts__font-size--heading, "h3");
+$header__subtitle__font-size: map-get($fonts__font-size--heading, "h4");
+$header__subtitle__margin--left: map-get($scaffolding__spacing--horizontal, "600");
+$header__subtitle__margin--top: map-get($scaffolding__spacing--vertical, "50");
+$header__subtitle__margin--bottom: map-get($scaffolding__spacing--vertical, "50");
+$header__subtitle__color: map-get($colors__gray, "500");

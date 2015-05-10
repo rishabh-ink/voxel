@@ -1,0 +1,53 @@
+@import "settings";
+@import "documentation";
+
+#voxel .voxel-header {
+  background: $header__background-color;
+  border-bottom: $header__border--bottom--width $header__border--bottom--style $header__border--bottom--color;
+  margin-bottom: $header__margin--bottom;
+  min-height: $header__height--min;
+  padding-bottom: $header__padding--bottom;
+  padding-top: $header__padding--top;
+  position: relative;
+  text-align: center;
+
+  &:before {
+    @include box-shadow(
+      $header__box-shadow--color
+      0
+      0
+      $header__box-shadow--radius
+      0
+    );
+    border-radius: 50%;
+    bottom: 0;
+    content: "";
+    height: $header__box-shadow--height;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: $header__box-shadow--width;
+    z-index: -1;
+  }
+}
+
+#voxel .voxel-header__title {
+  color: inherit;
+  font-size: $header__title__font-size;
+  text-decoration: none;
+}
+
+#voxel .voxel-header__subtitle {
+  color: $header__subtitle__color;
+  display: block;
+  margin-bottom: $header__subtitle__margin--bottom;
+  margin-top: $header__subtitle__margin--top;
+
+  @media (min-width: $scaffolding__screen--m--min) {
+    display: initial;
+    font-size: $header__subtitle__font-size;
+    margin-bottom: initial;
+    margin-left: $header__subtitle__margin--left;
+    margin-top: initial;
+  }
+}

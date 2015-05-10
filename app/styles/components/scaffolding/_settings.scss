@@ -29,7 +29,8 @@ $scaffolding__spacing--vertical: (
   "800": 1.44rem,
   "900": 1.728rem,
   "a100": 2.074rem,
-  "a200": 2.4888rem
+  "a200": 2.4888rem,
+  "a400": 2.987rem
 );
 
 $scaffolding__border-radius: (
@@ -37,3 +38,12 @@ $scaffolding__border-radius: (
   "600": 4px,
   "900": 6px
 );
+
+/* Small devices (tablets, 768px and up) */
+$scaffolding__screen--s--min: 48em;
+
+/* Medium devices (desktops, 992px and up) */
+$scaffolding__screen--m--min: 62em;
+
+/* Large devices (large desktops, 1200px and up) */
+$scaffolding__screen--l--min: 75em;

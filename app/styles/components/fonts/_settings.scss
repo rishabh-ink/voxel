@@ -4,10 +4,13 @@ $fonts__line-height: (
   "900": 1.5
 );
 
-$fonts__font-family--sans-serif: "Open Sans", sans-serif;
-$fonts__font-family--serif: serif;
+$fonts__font-family--sans-serif: "PT Sans", sans-serif;
+$fonts__font-family--serif: "PT Serif", serif;
 $fonts__font-family--monospace: monospace;
-$fonts__font-family--base: $fonts__font-family--sans-serif;
+$fonts__font-family--base: $fonts__font-family--serif;
+$fonts__font-family--headings: $fonts__font-family--sans-serif;
+
+$fonts__color--headings: #333;
 
 $fonts__font-size--heading: (
   // Perfect Fourth scale (1.333)

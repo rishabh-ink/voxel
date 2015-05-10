@@ -13,8 +13,18 @@ p {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6 {
+  color: $fonts__color--headings;
+  font-family: $fonts__font-family--headings;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
 h4 {
-  font-weight: inherit;
   line-height: map-get($fonts__line-height, "300");
   margin-bottom: $fonts__heading__margin--bottom;
   margin-left: 0;
