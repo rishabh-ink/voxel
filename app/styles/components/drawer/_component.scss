@@ -6,8 +6,12 @@
   @include transition-duration($drawer__transition--duration);
   @include transition-property(left);
   background-color: $drawer__background-color;
+  border-right-color: $drawer__border--right--color;
+  border-right-style: $drawer__border--right--style;
+  border-right-width: $drawer__border--right--width;
   height: 100%;
   left: -($drawer__width);
+  overflow-y: auto;
   position: fixed;
   top: 0;
   width: $drawer__width;
@@ -70,4 +74,14 @@
     width: $drawer__header__box-shadow--width;
     z-index: -1;
   }
+}
+
+#voxel .voxel-drawer__index {
+  list-style-position: inside;
+  padding-left: 1rem;
+}
+
+#voxel .voxel-drawer__index__item {
+  padding-bottom: .25rem;
+  padding-top: .25rem;
 }

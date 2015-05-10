@@ -1,5 +1,8 @@
 $drawer__width: 16rem;
 $drawer__background-color: map-get($colors__gray, "200");
+$drawer__border--right--color: map-get($colors__gray, "300");
+$drawer__border--right--width: 1px;
+$drawer__border--right--style: solid;
 $drawer__box-shadow--radius: map-get($scaffolding__spacing--horizontal, "900");
 $drawer__box-shadow--color: map-get($colors__gray, "100");
 $drawer__title__color: map-get($colors__gray, "500");
