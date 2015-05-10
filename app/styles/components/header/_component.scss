@@ -11,6 +11,10 @@
   position: relative;
   text-align: center;
 
+  @media (min-width: $scaffolding__screen--s--min) {
+    text-align: initial;
+  }
+
   &:before {
     @include box-shadow(
       $header__box-shadow--color
