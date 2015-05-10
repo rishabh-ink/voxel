@@ -1,11 +1,12 @@
 $drawer__width: 16rem;
-$drawer__background-color: map-get($colors__gray, "200");
-$drawer__border--right--color: map-get($colors__gray, "300");
+$drawer__font-family: $fonts__font-family--headings;
+$drawer__background-color: map-get($colors__brand--primary, "50");
+$drawer__border--right--color: map-get($colors__brand--primary, "100");
 $drawer__border--right--width: 1px;
 $drawer__border--right--style: solid;
 $drawer__box-shadow--radius: map-get($scaffolding__spacing--horizontal, "900");
-$drawer__box-shadow--color: map-get($colors__gray, "100");
-$drawer__title__color: map-get($colors__gray, "500");
+$drawer__box-shadow--color: map-get($colors__brand--primary, "50");
+$drawer__title__color: map-get($colors__brand--primary, "800");
 $drawer__title__font-size: map-get($fonts__font-size--heading, "h3");
 $drawer__transition--duration: $scaffolding__transition--duration;
 
@@ -18,15 +19,19 @@ $drawer__toggle__padding--bottom: map-get($scaffolding__spacing--vertical, "300"
 $drawer__toggle__padding--left: map-get($scaffolding__spacing--horizontal, "600");
 $drawer__toggle__padding--right: map-get($scaffolding__spacing--horizontal, "600");
 
-
-$drawer__header__background-color: map-get($colors__gray, "50");
+$drawer__header__background-color: map-get($colors__brand--primary, "50");
 $drawer__header__height--min: map-get($scaffolding__spacing--vertical, "a400");
 $drawer__header__margin--bottom: map-get($scaffolding__spacing--vertical, "a100");
 $drawer__header__padding--bottom: map-get($scaffolding__spacing--vertical, "300");
 $drawer__header__padding--top: map-get($scaffolding__spacing--vertical, "300");
-$drawer__header__padding--left: map-get($scaffolding__spacing--horizontal, "a200");
+$drawer__header__text-align: center;
 
-$drawer__header__box-shadow--color: map-get($colors__gray, "400");
+$drawer__header__box-shadow--color: map-get($colors__brand--primary, "200");
 $drawer__header__box-shadow--radius: map-get($scaffolding__spacing--vertical, "a100");
 $drawer__header__box-shadow--height: map-get($scaffolding__spacing--vertical, "a100");
 $drawer__header__box-shadow--width: 80%;
+
+$drawer__index__padding--left: map-get($scaffolding__spacing--horizontal, "600");
+$drawer__index__item__padding--bottom: map-get($scaffolding__spacing--vertical, "50");
+$drawer__index__item__padding--top: map-get($scaffolding__spacing--vertical, "50");
+$drawer__index__item__counter__margin--right: map-get($scaffolding__spacing--horizontal, "400");

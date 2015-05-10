@@ -32,7 +32,8 @@
 }
 
 #voxel .voxel-header__title {
-  color: inherit;
+  color: $header__title__color;
+  font-family: $header__title__font-family;
   font-size: $header__title__font-size;
   text-decoration: none;
 }

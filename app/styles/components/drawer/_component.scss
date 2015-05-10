@@ -9,6 +9,7 @@
   border-right-color: $drawer__border--right--color;
   border-right-style: $drawer__border--right--style;
   border-right-width: $drawer__border--right--width;
+  font-family: $drawer__font-family;
   height: 100%;
   left: -($drawer__width);
   overflow-y: auto;
@@ -52,9 +53,9 @@
   margin-bottom: $drawer__header__margin--bottom;
   min-height: $drawer__header__height--min;
   padding-bottom: $drawer__header__padding--bottom;
-  padding-left: $drawer__header__padding--left;
   padding-top: $drawer__header__padding--top;
   position: relative;
+  text-align: $drawer__header__text-align;
 
   &:before {
     @include box-shadow(
@@ -77,11 +78,20 @@
 }
 
 #voxel .voxel-drawer__index {
-  list-style-position: inside;
-  padding-left: 1rem;
+  counter-reset: voxel-drawer__index__counter;
+  list-style-type: none;
+  padding-left: $drawer__index__padding--left;
 }
 
 #voxel .voxel-drawer__index__item {
-  padding-bottom: .25rem;
-  padding-top: .25rem;
+  counter-increment: voxel-drawer__index__counter;
+  padding-bottom: $drawer__index__item__padding--bottom;
+  padding-top: $drawer__index__item__padding--top;
+
+  &:before {
+    content: counters(voxel-drawer__index__counter, ".") ".";
+    display: inline-block;
+    font-weight: bold;
+    margin-right: $drawer__index__item__counter__margin--right;
+  }
 }

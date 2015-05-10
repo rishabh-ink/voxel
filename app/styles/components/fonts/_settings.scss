@@ -11,7 +11,7 @@ $fonts__font-family--base: $fonts__font-family--serif;
 $fonts__font-family--headings: $fonts__font-family--sans-serif;
 
 $fonts__color--base: map-get($colors__gray, "800");
-$fonts__color--headings: map-get($colors__gray, "600");
+$fonts__color--headings: map-get($colors__brand--primary, "800");
 
 $fonts__font-size--heading: (
   // Perfect Fourth scale (1.333)
@@ -29,3 +29,5 @@ $fonts__font-size--small: .5em; // `em` so that it scales well inside any headin
 $fonts__paragraph__margin--bottom: map-get($scaffolding__spacing--vertical, "800");
 $fonts__heading__margin--top: map-get($scaffolding__spacing--vertical, "a400");
 $fonts__heading__margin--bottom: map-get($scaffolding__spacing--vertical, "300");
+
+$fonts__link__color--normal: map-get($colors__brand--primary, "500");
