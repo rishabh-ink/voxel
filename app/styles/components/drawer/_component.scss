@@ -26,7 +26,9 @@
   @include transition-duration($drawer__toggle__transition--duration);
   @include transition-property(color, transform);
   color: $drawer__toggle__color;
+  font-family: sans-serif;
   font-size: $drawer__toggle__font-size;
+  font-weight: bold;
   left: 0;
   padding-bottom: $drawer__toggle__padding--bottom;
   padding-left: $drawer__toggle__padding--left;
