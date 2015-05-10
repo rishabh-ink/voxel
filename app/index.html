@@ -23,7 +23,31 @@
       <header class="voxel-drawer__header">
         <a href="#" class="voxel-drawer__title">Voxel</a>
       </header>
-      <p>Drawer</p>
+      <div class="voxel-content">
+        <ol class="voxel-drawer__index  voxel-drawer__index--ordered">
+          <li class="voxel-drawer__index__item">
+            One
+            <ol class="voxel-drawer__index  voxel-drawer__index--ordered">
+              <li class="voxel-drawer__index__item">One.One</li>
+              <li class="voxel-drawer__index__item">One.Two</li>
+              <li class="voxel-drawer__index__item">One.Three</li>
+            </ol>
+          </li>
+          <li class="voxel-drawer__index__item">Two</li>
+          <li class="voxel-drawer__index__item">Three</li>
+          <li class="voxel-drawer__index__item">
+            Four
+            <ol class="voxel-drawer__index  voxel-drawer__index--ordered">
+              <li class="voxel-drawer__index__item">Four.One</li>
+              <li class="voxel-drawer__index__item">Four.Two</li>
+              <li class="voxel-drawer__index__item">Four.Three</li>
+              <li class="voxel-drawer__index__item">Four.Four</li>
+            </ol>
+          </li>
+          <li class="voxel-drawer__index__item">Five</li>
+          <li class="voxel-drawer__index__item">Six</li>
+        </ol>
+      </div> <!-- /.voxel-content -->
     </aside>
     <header class="voxel-header">
       <a href="javascript:;" data-js="voxelDrawerToggle" class="voxel-drawer__toggle">&#9776;</a>
@@ -68,7 +92,6 @@
         <div class="highlight">
           <pre>
             <code class="language-js" data-lang="js">
-              // Create a function that takes two arguments and returns the sum of those arguments
               // Create a function that takes two arguments and returns the sum of those arguments
               var adder = new Function("a", "b", "return a + b");
 
