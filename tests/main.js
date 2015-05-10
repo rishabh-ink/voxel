@@ -21,6 +21,7 @@ require.config({
 
     // Application
     "app": "app/scripts/app",
+    "drawer": "app/scripts/drawer",
     // /Application
 
     // Fixtures

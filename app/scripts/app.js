@@ -1,6 +1,8 @@
-define(["jquery"],
-function($) {
+define(["jquery", "drawer"],
+function($,        Drawer) {
   "use strict";
+
+  Drawer.init();
 
   return {
     greeting: "Hello world!",

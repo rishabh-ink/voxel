@@ -1,0 +1,32 @@
+@import "settings";
+@import "documentation";
+
+#voxel .voxel-drawer {
+  @include transition-duration(.3s);
+  @include transition-property(left);
+  background-color: $drawer__background-color;
+  height: 100%;
+  left: -($drawer__width);
+  position: fixed;
+  top: 0;
+  width: $drawer__width;
+}
+
+#voxel .voxel-drawer--active {
+  left: 0;
+}
+
+#voxel .voxel-drawer__toggle {
+  color: inherit;
+  left: .5rem;
+  padding: 1rem;
+  position: fixed;
+  text-decoration: none;
+  top: .5rem;
+}
+
+#voxel .voxel-drawer__title {
+  color: inherit;
+  font-size: $drawer__title__font-size;
+  text-decoration: none;
+}
