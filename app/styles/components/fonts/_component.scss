@@ -2,6 +2,7 @@
 @import "documentation";
 
 body {
+  color: $fonts__color--base;
   font-family: $fonts__font-family--base;
   line-height: map-get($fonts__line-height, "600");
 }
