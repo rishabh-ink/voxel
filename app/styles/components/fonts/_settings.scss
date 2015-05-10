@@ -24,7 +24,7 @@ $fonts__font-size--heading: (
   "h1": 3.157rem
 );
 
-$fonts__font-size--small: .5em; // `em` so that it scales well inside any heading tag.
+$fonts__font-size--small: .75em; // `em` so that it scales well inside any heading tag.
 
 $fonts__paragraph__margin--bottom: map-get($scaffolding__spacing--vertical, "800");
 $fonts__heading__margin--top: map-get($scaffolding__spacing--vertical, "a400");

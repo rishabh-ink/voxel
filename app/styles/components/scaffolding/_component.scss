@@ -23,3 +23,9 @@ html.js.opacity.wf-active {
   opacity: 1;
 }
 // scss-lint:enable QualifyingElement
+
+hr {
+  border-color: $scaffolding__horizontal-rule__color;
+  border-style: $scaffolding__horizontal-rule__style;
+  border-width: $scaffolding__horizontal-rule__width;
+}

@@ -49,3 +49,7 @@ $scaffolding__screen--m--min: 62em;
 $scaffolding__screen--l--min: 75em;
 
 $scaffolding__transition--duration: .3s;
+
+$scaffolding__horizontal-rule__color: map-get($colors__brand--primary, "500");
+$scaffolding__horizontal-rule__style: solid;
+$scaffolding__horizontal-rule__width: 1px;
