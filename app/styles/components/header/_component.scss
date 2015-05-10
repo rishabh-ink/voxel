@@ -39,15 +39,11 @@
 
 #voxel .voxel-header__subtitle {
   color: $header__subtitle__color;
-  display: block;
-  margin-bottom: $header__subtitle__margin--bottom;
-  margin-top: $header__subtitle__margin--top;
+  display: none;
+  font-size: $header__subtitle__font-size;
+  margin-left: $header__subtitle__margin--left;
 
-  @media (min-width: $scaffolding__screen--m--min) {
+  @media (min-width: $scaffolding__screen--s--min) {
     display: initial;
-    font-size: $header__subtitle__font-size;
-    margin-bottom: initial;
-    margin-left: $header__subtitle__margin--left;
-    margin-top: initial;
   }
 }

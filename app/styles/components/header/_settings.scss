@@ -17,6 +17,4 @@ $header__box-shadow--width: 80%;
 $header__title__font-size: map-get($fonts__font-size--heading, "h3");
 $header__subtitle__font-size: map-get($fonts__font-size--heading, "h4");
 $header__subtitle__margin--left: map-get($scaffolding__spacing--horizontal, "600");
-$header__subtitle__margin--top: map-get($scaffolding__spacing--vertical, "50");
-$header__subtitle__margin--bottom: map-get($scaffolding__spacing--vertical, "50");
 $header__subtitle__color: map-get($colors__gray, "500");
