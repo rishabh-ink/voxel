@@ -1,6 +1,12 @@
 @import "settings";
 @import "documentation";
 
+*,
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
 // scss-lint:disable QualifyingElement
 html.js.opacity {
   opacity: 0;
