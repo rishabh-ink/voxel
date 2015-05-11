@@ -81,7 +81,9 @@ code {
 }
 
 pre code {
+  background-color: initial;
   border-color: none;
   border-style: none;
   border-width: 0;
+  color: inherit;
 }
