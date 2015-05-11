@@ -21,6 +21,10 @@
 
   require(["jquery", "app"],
   function( $,        App) {
-    console.log("App v%s with jQuery v%s says, '%s'", App.version, $.fn.jquery, App.greeting);
+    var app = App.create({
+      name: "voxel"
+    });
+
+    console.log("App, %s, with jQuery v%s says, '%s'", app.name, $.fn.jquery, app.greet());
   });
 })(window, document);
