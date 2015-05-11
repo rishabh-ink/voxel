@@ -85,23 +85,58 @@ function($) {
     },
 
     toggleDrawer: function() {
-      this.toggleDrawerClasses();
+      console.log(this.options.name, "toggleDrawer()", "Toggling drawer");
+
+      this.setDrawerState(this.constants.states.TOGGLE);
 
       console.log(this.options.name, "toggleDrawer()", "Attaching event with jQuery.one");
-      this.elements.page.one({
-        "click.voxel": $.proxy(this.toggleDrawerClasses, this)
+      this.elements.page.off("click.voxel").one({
+        "click.voxel": $.proxy(this.closeDrawer, this)
       });
 
       return this;
     },
 
-    toggleDrawerClasses: function() {
-      console.log(this.options.name, "toggleDrawerClasses()", "Toggling classes");
+    closeDrawer: function() {
+      console.log(this.options.name, "closeDrawer()", "Closing drawer");
 
-      this.elements.drawer.toggleClass(this.options.classnames.drawerActive);
-      this.elements.drawerToggle.toggleClass(this.options.classnames.drawerToggleActive);
+      this.setDrawerState(this.constants.states.CLOSE);
+    },
 
-      console.log(this.options.name, "toggleDrawerClasses()", "Toggled classes", {
+    openDrawer: function() {
+      console.log(this.options.name, "openDrawer()", "Closing drawer");
+
+      this.setDrawerState(this.constants.states.OPEN);
+    },
+
+    setDrawerState: function(state) {
+      var drawer = this.elements.drawer;
+      var drawerToggle = this.elements.drawerToggle;
+
+      switch(state) {
+        case this.constants.states.TOGGLE: {
+          drawer.toggleClass(this.options.classnames.drawerActive);
+          drawerToggle.toggleClass(this.options.classnames.drawerToggleActive);
+
+          break;
+        }
+
+        case this.constants.states.CLOSE: {
+          drawer.removeClass(this.options.classnames.drawerActive);
+          drawerToggle.removeClass(this.options.classnames.drawerToggleActive);
+
+          break;
+        }
+
+        case this.constants.states.OPEN: {
+          drawer.addClass(this.options.classnames.drawerActive);
+          drawerToggle.addClass(this.options.classnames.drawerToggleActive);
+
+          break;
+        }
+      }
+
+      console.log(this.options.name, "setDrawerState()", "Set drawer state", state, {
         drawer: this.elements.drawer.attr("class"),
         drawerToggle: this.elements.drawerToggle.attr("class")
       });
