@@ -7,6 +7,10 @@
   @include box-sizing(border-box);
 }
 
+body {
+  background-color: $scaffolding__body__background-color;
+}
+
 // scss-lint:disable QualifyingElement
 html.js.opacity {
   opacity: 0;

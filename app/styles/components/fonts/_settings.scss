@@ -31,3 +31,15 @@ $fonts__heading__margin--top: map-get($scaffolding__spacing--vertical, "a400");
 $fonts__heading__margin--bottom: map-get($scaffolding__spacing--vertical, "300");
 
 $fonts__link__color--normal: map-get($colors__brand--primary, "500");
+
+$fonts__code__color: map-get($colors__brand--primary, "600");
+$fonts__code__background-color: map-get($colors__brand--primary, "50");
+$fonts__code__margin--left: map-get($scaffolding__spacing--horizontal, "100");
+$fonts__code__margin--right: map-get($scaffolding__spacing--horizontal, "100");
+$fonts__code__padding--left: map-get($scaffolding__spacing--horizontal, "300");
+$fonts__code__padding--right: map-get($scaffolding__spacing--horizontal, "300");
+$fonts__code__padding--top: 0;
+$fonts__code__padding--bottom: 0;
+$fonts__code__border--color: $scaffolding__body__background-color;
+$fonts__code__border--width: 1px;
+$fonts__code__border--style: dashed;

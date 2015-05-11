@@ -65,3 +65,23 @@ small {
 a {
   color: $fonts__link__color--normal;
 }
+
+code {
+  background-color: $fonts__code__background-color;
+  border-color: $fonts__code__border--color;
+  border-style: $fonts__code__border--style;
+  border-width: $fonts__code__border--width;
+  color: $fonts__code__color;
+  margin-left: $fonts__code__margin--left;
+  margin-right: $fonts__code__margin--left;
+  padding-bottom: $fonts__code__padding--bottom;
+  padding-left: $fonts__code__padding--left;
+  padding-right: $fonts__code__padding--right;
+  padding-top: $fonts__code__padding--top;
+}
+
+pre code {
+  border-color: none;
+  border-style: none;
+  border-width: 0;
+}
