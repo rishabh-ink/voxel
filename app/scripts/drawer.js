@@ -7,9 +7,9 @@ function($) {
       name: "Drawer",
 
       elements: {
-        drawerToggle: "[data-js*='voxelDrawerToggle']",
-        drawer: "[data-js*='voxelDrawer']",
-        page: "[data-js*='voxelDrawerPage']"
+        drawerToggle: "[data-js~='voxelDrawerToggle']",
+        drawer: "[data-js~='voxelDrawer']",
+        page: "[data-js~='voxelDrawerPage']"
       },
 
       classnames: {
