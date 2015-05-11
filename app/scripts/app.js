@@ -6,9 +6,13 @@ function($,        HLJS,   Drawer) {
     defaults: {
       name: "App",
 
-      elements: {},
+      elements: {
+        highlight: "[data-js~='highlight']"
+      },
 
-      classnames: {}
+      classnames: {},
+
+      useHighlight: false
     },
 
     elements: {},
@@ -37,7 +41,7 @@ function($,        HLJS,   Drawer) {
     fetch: function() {
       console.log(this.options.name, "fetch()", "Fetching elements");
 
-      // this.elements.exampleElement = $(this.options.elements.exampleElement);
+      this.elements.highlight = $(this.options.elements.highlight);
 
       console.log(this.options.name, "fetch()", "Fetched", {
         elements: this.elements
@@ -60,7 +64,9 @@ function($,        HLJS,   Drawer) {
         closeOnPageTouch: false
       });
 
-      HLJS.initHighlightingOnLoad();
+      if(this.options.useHighlight) {
+        HLJS.initHighlightingOnLoad();
+      }
 
       console.log(this.options.name, "setup()", "Set up components", { components: this.components });
 

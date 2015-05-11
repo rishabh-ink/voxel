@@ -23,7 +23,8 @@
   require(["jquery", "app"],
   function( $,        App) {
     var app = App.create({
-      name: "voxel"
+      name: "voxel",
+      useHighlight: true
     });
 
     console.log("App, %s, with jQuery v%s says, '%s'", app.options.name, $.fn.jquery, app.greet());
