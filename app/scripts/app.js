@@ -1,5 +1,5 @@
-define(["jquery", "drawer"],
-function($,        Drawer) {
+define(["jquery", "hljs", "drawer"],
+function($,        HLJS,   Drawer) {
   "use strict";
 
   var App = {
@@ -56,8 +56,11 @@ function($,        Drawer) {
       console.log(this.options.name, "setup()", "Setting up components");
 
       this.components.drawer = Drawer.create({
-        name: "Voxel.Drawer"
+        name: "Voxel.Drawer",
+        closeOnPageTouch: false
       });
+
+      HLJS.initHighlightingOnLoad();
 
       console.log(this.options.name, "setup()", "Set up components", { components: this.components });
 

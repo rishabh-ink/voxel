@@ -15,7 +15,9 @@ function($) {
       classnames: {
         drawerActive: "voxel-drawer--active",
         drawerToggleActive: "voxel-drawer__toggle--active"
-      }
+      },
+
+      closeOnPageTouch: true
     },
 
     elements: {},
@@ -89,10 +91,12 @@ function($) {
 
       this.setDrawerState(this.constants.states.TOGGLE);
 
-      console.log(this.options.name, "toggleDrawer()", "Attaching event with jQuery.one");
-      this.elements.page.off("click.voxel").one({
-        "click.voxel": $.proxy(this.closeDrawer, this)
-      });
+      if(this.options.closeOnPageTouch) {
+        console.log(this.options.name, "toggleDrawer()", "Attaching event with jQuery.one");
+        this.elements.page.off("click.voxel").one({
+          "click.voxel": $.proxy(this.closeDrawer, this)
+        });
+      }
 
       return this;
     },
