@@ -25,6 +25,6 @@
       name: "voxel"
     });
 
-    console.log("App, %s, with jQuery v%s says, '%s'", app.name, $.fn.jquery, app.greet());
+    console.log("App, %s, with jQuery v%s says, '%s'", app.options.name, $.fn.jquery, app.greet());
   });
 })(window, document);

@@ -18,6 +18,17 @@ function($) {
       }
     },
 
+    elements: {},
+
+    components: {},
+
+    constants: {
+      states: {
+        OPEN: 1,
+        CLOSE: -1,
+        TOGGLE: 0
+      }
+    },
     create: function(options) {
       this.options = $.extend(true, {}, this.defaults, options);
 
@@ -38,11 +49,9 @@ function($) {
     fetch: function() {
       console.log(this.options.name, "fetch()", "Fetching elements");
 
-      this.elements = {
-        drawerToggle: $(this.options.elements.drawerToggle),
-        drawer: $(this.options.elements.drawer),
-        page: $(this.options.elements.page)
-      };
+      this.elements.drawerToggle = $(this.options.elements.drawerToggle);
+      this.elements.drawer = $(this.options.elements.drawer);
+      this.elements.page = $(this.options.elements.page);
 
       console.log(this.options.name, "fetch()", "Fetched", {
         elements: this.elements
@@ -64,7 +73,7 @@ function($) {
     setup: function() {
       console.log(this.options.name, "setup()", "Setting up components");
 
-      this.components = {};
+      // this.components.exampleComponent = ExampleComponent.create();
 
       console.log(this.options.name, "setup()", "Set up components", { components: this.components });
 

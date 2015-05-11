@@ -5,7 +5,17 @@ function($,        Drawer) {
   var App = {
     defaults: {
       name: "App",
+
+      elements: {},
+
+      classnames: {}
     },
+
+    elements: {},
+
+    constants: {},
+
+    components: {},
 
     create: function(options) {
       this.options = $.extend(true, {}, this.defaults, options);
@@ -27,7 +37,7 @@ function($,        Drawer) {
     fetch: function() {
       console.log(this.options.name, "fetch()", "Fetching elements");
 
-      this.elements = {};
+      // this.elements.exampleElement = $(this.options.elements.exampleElement);
 
       console.log(this.options.name, "fetch()", "Fetched", {
         elements: this.elements
@@ -45,11 +55,9 @@ function($,        Drawer) {
     setup: function() {
       console.log(this.options.name, "setup()", "Setting up components");
 
-      this.components = {
-        drawer: Drawer.create({
-          name: "Voxel.Drawer"
-        })
-      };
+      this.components.drawer = Drawer.create({
+        name: "Voxel.Drawer"
+      });
 
       console.log(this.options.name, "setup()", "Set up components", { components: this.components });
 
