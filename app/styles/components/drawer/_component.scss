@@ -2,34 +2,36 @@
 @import "mixins";
 @import "documentation";
 
-#voxel .voxel-drawer {
-  @include voxel-drawer();
-}
+@if($drawer__include-classes) {
+  #voxel .voxel-drawer {
+    @include voxel-drawer();
+  }
 
-#voxel .voxel-drawer--active {
-  @include voxel-drawer--active();
-}
+  #voxel .voxel-drawer--active {
+    @include voxel-drawer--active();
+  }
 
-#voxel .voxel-drawer__toggle {
-  @include voxel-drawer__toggle();
-}
+  #voxel .voxel-drawer__toggle {
+    @include voxel-drawer__toggle();
+  }
 
-#voxel .voxel-drawer__toggle--active {
-  @include voxel-drawer__toggle--active();
-}
+  #voxel .voxel-drawer__toggle--active {
+    @include voxel-drawer__toggle--active();
+  }
 
-#voxel .voxel-drawer__title {
-  @include voxel-drawer__title();
-}
+  #voxel .voxel-drawer__title {
+    @include voxel-drawer__title();
+  }
 
-#voxel .voxel-drawer__header {
-  @include voxel-drawer__header();
-}
+  #voxel .voxel-drawer__header {
+    @include voxel-drawer__header();
+  }
 
-#voxel .voxel-drawer__index {
-  @include voxel-drawer__index();
-}
+  #voxel .voxel-drawer__index {
+    @include voxel-drawer__index();
+  }
 
-#voxel .voxel-drawer__index__item {
-  @include voxel-drawer__index__item();
+  #voxel .voxel-drawer__index__item {
+    @include voxel-drawer__index__item();
+  }
 }

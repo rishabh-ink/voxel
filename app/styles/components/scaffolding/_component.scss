@@ -29,6 +29,8 @@ html.js.opacity.wf-active {
 }
 // scss-lint:enable QualifyingElement
 
-hr {
-  @include voxel-scaffolding__hr();
+@if($scaffolding__include-classes) {
+  hr {
+    @include voxel-scaffolding__hr();
+  }
 }

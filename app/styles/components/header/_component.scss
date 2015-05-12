@@ -2,14 +2,16 @@
 @import "mixins";
 @import "documentation";
 
-#voxel .voxel-header {
-  @include voxel-header();
-}
+@if($header__include-classes) {
+  #voxel .voxel-header {
+    @include voxel-header();
+  }
 
-#voxel .voxel-header__title {
-  @include voxel-header__title();
-}
+  #voxel .voxel-header__title {
+    @include voxel-header__title();
+  }
 
-#voxel .voxel-header__subtitle {
-  @include voxel-header__subtitle();
+  #voxel .voxel-header__subtitle {
+    @include voxel-header__subtitle();
+  }
 }

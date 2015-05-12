@@ -2,6 +2,8 @@
 @import "mixins";
 @import "documentation";
 
-#voxel .voxel-table {
-  @include voxel-table();
+@if($tables__include-classes) {
+  #voxel .voxel-table {
+    @include voxel-table();
+  }
 }

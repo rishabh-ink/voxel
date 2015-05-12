@@ -1,3 +1,5 @@
+$drawer__include-classes: $components__include-classes;
+
 $drawer__width: 16rem;
 $drawer__font-family: $fonts__font-family--headings;
 $drawer__background-color: map-get($colors__brand--primary, "50");

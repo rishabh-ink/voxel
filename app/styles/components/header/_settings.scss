@@ -1,3 +1,5 @@
+$header__include-classes: $components__include-classes;
+
 $header__background-color: #fff;
 
 $header__border--bottom--color: map-get($colors__brand--primary, "100");
