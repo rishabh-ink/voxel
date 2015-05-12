@@ -3,7 +3,7 @@
 @import "documentation";
 
 @if($tables__include-classes) {
-  #voxel .voxel-table {
+  .voxel-table {
     @include voxel-table();
   }
 }

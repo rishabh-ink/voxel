@@ -3,15 +3,15 @@
 @import "documentation";
 
 @if($header__include-classes) {
-  #voxel .voxel-header {
+  .voxel-header {
     @include voxel-header();
   }
 
-  #voxel .voxel-header__title {
+  .voxel-header__title {
     @include voxel-header__title();
   }
 
-  #voxel .voxel-header__subtitle {
+  .voxel-header__subtitle {
     @include voxel-header__subtitle();
   }
 }

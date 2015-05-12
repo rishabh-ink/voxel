@@ -4,12 +4,12 @@
 
 @if($layouts__include-classes) {
   // TODO Rename to voxel-layouts__content
-  #voxel .voxel-content {
+  .voxel-content {
     @include voxel-layouts__content();
   }
 
   // TODO Rename to voxel-layouts__image
-  #voxel .voxel-image {
+  .voxel-image {
     @include voxel-layouts__image();
   }
 }

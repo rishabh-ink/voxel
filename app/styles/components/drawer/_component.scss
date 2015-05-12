@@ -3,35 +3,35 @@
 @import "documentation";
 
 @if($drawer__include-classes) {
-  #voxel .voxel-drawer {
+  .voxel-drawer {
     @include voxel-drawer();
   }
 
-  #voxel .voxel-drawer--active {
+  .voxel-drawer--active {
     @include voxel-drawer--active();
   }
 
-  #voxel .voxel-drawer__toggle {
+  .voxel-drawer__toggle {
     @include voxel-drawer__toggle();
   }
 
-  #voxel .voxel-drawer__toggle--active {
+  .voxel-drawer__toggle--active {
     @include voxel-drawer__toggle--active();
   }
 
-  #voxel .voxel-drawer__title {
+  .voxel-drawer__title {
     @include voxel-drawer__title();
   }
 
-  #voxel .voxel-drawer__header {
+  .voxel-drawer__header {
     @include voxel-drawer__header();
   }
 
-  #voxel .voxel-drawer__index {
+  .voxel-drawer__index {
     @include voxel-drawer__index();
   }
 
-  #voxel .voxel-drawer__index__item {
+  .voxel-drawer__index__item {
     @include voxel-drawer__index__item();
   }
 }
