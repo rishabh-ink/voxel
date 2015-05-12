@@ -1,14 +1,13 @@
 @import "settings";
+@import "mixins";
 @import "documentation";
 
 body {
-  color: $fonts__color--base;
-  font-family: $fonts__font-family--base;
-  line-height: map-get($fonts__line-height, "600");
+  @include voxel-fonts__body();
 }
 
 p {
-  margin-bottom: $fonts__paragraph__margin--bottom;
+  @include voxel-fonts__paragraph();
 }
 
 h1,
@@ -17,73 +16,52 @@ h3,
 h4,
 h5,
 h6 {
-  color: $fonts__color--headings;
-  font-family: $fonts__font-family--headings;
-  font-weight: normal;
+  @include voxel-fonts__headings--h123456();
 }
 
 h1,
 h2,
 h3,
 h4 {
-  line-height: map-get($fonts__line-height, "300");
-  margin-bottom: $fonts__heading__margin--bottom;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: $fonts__heading__margin--top;
+  @include voxel-fonts__headings--h1234();
 }
 
 h1 {
-  font-size: map-get($fonts__font-size--heading, "h1");
-  margin-top: 0;
+  @include voxel-fonts__headings--h1();
 }
 
 h2 {
-  font-size: map-get($fonts__font-size--heading, "h2");
+  @include voxel__fonts__headings--h2();
 }
 
 h3 {
-  font-size: map-get($fonts__font-size--heading, "h3");
+  @include voxel__fonts__headings--h3();
 }
 
 h4 {
-  font-size: map-get($fonts__font-size--heading, "h4");
+  @include voxel__fonts__headings--h4();
 }
 
 h5 {
-  font-size: map-get($fonts__font-size--heading, "h5");
+  @include voxel__fonts__headings--h5();
 }
 
 h6 {
-  font-size: map-get($fonts__font-size--heading, "h6");
+  @include voxel__fonts__headings--h6();
 }
 
 small {
-  font-size: $fonts__font-size--small;
+  @include voxel__fonts__small();
 }
 
 a {
-  color: $fonts__link__color--normal;
+  @include voxel__fonts__a();
 }
 
 code {
-  background-color: $fonts__code__background-color;
-  border-color: $fonts__code__border--color;
-  border-style: $fonts__code__border--style;
-  border-width: $fonts__code__border--width;
-  color: $fonts__code__color;
-  margin-left: $fonts__code__margin--left;
-  margin-right: $fonts__code__margin--left;
-  padding-bottom: $fonts__code__padding--bottom;
-  padding-left: $fonts__code__padding--left;
-  padding-right: $fonts__code__padding--right;
-  padding-top: $fonts__code__padding--top;
+  @include voxel__fonts__code();
 }
 
 pre code {
-  background-color: initial;
-  border-color: none;
-  border-style: none;
-  border-width: 0;
-  color: inherit;
+  @include voxel-fonts__pre__code();
 }

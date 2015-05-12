@@ -1,0 +1,5 @@
+@mixin voxel-scaffolding__hr() {
+  border-color: $scaffolding__horizontal-rule__color;
+  border-style: $scaffolding__horizontal-rule__style;
+  border-width: $scaffolding__horizontal-rule__width;
+}

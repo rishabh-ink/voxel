@@ -1,54 +1,15 @@
 @import "settings";
+@import "mixins";
 @import "documentation";
 
 #voxel .voxel-header {
-  background: $header__background-color;
-  border-bottom: $header__border--bottom--width $header__border--bottom--style $header__border--bottom--color;
-  margin-bottom: $header__margin--bottom;
-  min-height: $header__height--min;
-  padding-bottom: $header__padding--bottom;
-  padding-top: $header__padding--top;
-  position: relative;
-  text-align: center;
-
-  @media (min-width: $scaffolding__screen--s--min) {
-    text-align: initial;
-  }
-
-  &:before {
-    @include box-shadow(
-      $header__box-shadow--color
-      0
-      0
-      $header__box-shadow--radius
-      0
-    );
-    border-radius: 50%;
-    bottom: 0;
-    content: "";
-    height: $header__box-shadow--height;
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
-    width: $header__box-shadow--width;
-    z-index: -1;
-  }
+  @include voxel-header();
 }
 
 #voxel .voxel-header__title {
-  color: $header__title__color;
-  font-family: $header__title__font-family;
-  font-size: $header__title__font-size;
-  text-decoration: none;
+  @include voxel-header__title();
 }
 
 #voxel .voxel-header__subtitle {
-  color: $header__subtitle__color;
-  display: none;
-  font-size: $header__subtitle__font-size;
-  margin-left: $header__subtitle__margin--left;
-
-  @media (min-width: $scaffolding__screen--s--min) {
-    display: initial;
-  }
+  @include voxel-header__subtitle();
 }
