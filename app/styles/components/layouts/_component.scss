@@ -3,13 +3,11 @@
 @import "documentation";
 
 @if($layouts__include-classes) {
-  // TODO Rename to voxel-layouts__content
-  .voxel-content {
+  .voxel-layouts__content {
     @include voxel-layouts__content();
   }
 
-  // TODO Rename to voxel-layouts__image
-  .voxel-image {
+  .voxel-layouts__image {
     @include voxel-layouts__image();
   }
 }
