@@ -19,3 +19,12 @@ notifications:
   email: false
 before_deploy:
   - ./node_modules/.bin/gulp clean:deploy
+deploy:
+  provider: heroku
+  app: voxel-rsr
+  skip_cleanup: true
+  on:
+    all_branches: true
+    tags: true
+  api_key:
+    secure: Xu5+IzeMg0ZVUJUcoVtwTj4vQUlDJDlg8EHavs56LyeirYPW3BUHWe/YuVsYu3R3eNzqyZTKgtwShdAsJf8KHNk4RgDoRdoLLCe2c/9cine8ZsrUVU33IRNhbafNQCl7HvL30a4UdCKcTvpc6R4nxPfNYBiZBxl04QLy11dNg0w=
