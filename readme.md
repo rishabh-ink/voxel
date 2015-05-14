@@ -88,7 +88,9 @@ heroku config:set BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-nodej
 ```
 
 :tophat: **Tip** The `heroku ps:scale web=1` will spin up a [dyno](https://devcenter.heroku.com/articles/dynos) under the [free](https://blog.heroku.com/archives/2015/5/7/heroku-free-dynos) plan.
+
 :tophat: **Tip** The `#75` above is the [release tag](https://github.com/heroku/heroku-buildpack-nodejs/releases) for the project. Use the latest tag for best results.
+
 :tophat: **Tip** The non-minified version of this project is also deployed to [Heroku at /app](http://voxel-rsr.herokuapp.com/app).
 
 
