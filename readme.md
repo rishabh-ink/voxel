@@ -83,7 +83,6 @@ This project is continuously deployed to [Heroku](http://voxel-rsr.herokuapp.com
 
 ```
 heroku create voxel-rsr
-git push heroku master
 heroku ps:scale web=1
 heroku config:set BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-nodejs#v75 --app voxel-rsr
 ```
