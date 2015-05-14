@@ -83,9 +83,17 @@ This project is continuously deployed to [Heroku](http://www.heroku.com) at [vox
 
 ```
 heroku create voxel-rsr
-heroku ps:scale web=1
+heroku ps:scale web=1 --app voxel-rsr
 heroku config:set BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-nodejs#v75 --app voxel-rsr
 ```
+
+:tophat: **Tip** You will need to authenticate Travis with Heroku by adding an API key using:
+
+```
+bundle exec travis encrypt $(heroku auth:token) --add deploy.api_key
+```
+
+... which will update `.travis.yml` with an encrypted Heroku API key.
 
 :tophat: **Tip** The `heroku ps:scale web=1` will spin up a [dyno](https://devcenter.heroku.com/articles/dynos) under the [free](https://blog.heroku.com/archives/2015/5/7/heroku-free-dynos) plan.
 
