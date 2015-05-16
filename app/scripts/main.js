@@ -2,17 +2,15 @@
   "use strict";
 
   require.config({
-    baseUrl: "..",
-
     paths: {
       // Libraries
-      "jquery": "libraries/jquery/jquery",
-      "hljs": "libraries/highlightjs/highlight.pack",
+      "jquery": "../../libraries/jquery/jquery",
+      "hljs": "../../libraries/highlightjs/highlight.pack",
       // /Libraries
 
       // Application
-      "app": "app/scripts/app",
-      "drawer": "app/scripts/drawer",
+      "app": "app",
+      "drawer": "drawer",
       // /Application
     },
 
