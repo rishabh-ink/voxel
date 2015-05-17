@@ -22,7 +22,7 @@ module.exports = {
   },
 
   appIcon: {
-    sass: __dirname + "/asset/image/sass-logo.png",
-    karma: __dirname + "/asset/image/karma-logo.png"
+    sass: __dirname + "/../assets/images/sass-logo.png",
+    karma: __dirname + "/../assets/images/karma-logo.png"
   }
 };
