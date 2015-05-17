@@ -10,7 +10,7 @@ add_import_path Sass::CssImporter::Importer.new('libraries')
 environment = :development
 encoding = 'utf-8'
 http_path = '.'
-css_dir = 'dist/style'
+css_dir = 'dist/styles'
 sass_dir = 'app/styles'
 images_dir = 'app/images'
 javascripts_dir = 'app/scripts'
