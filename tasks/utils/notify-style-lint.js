@@ -1,4 +1,5 @@
 var notify = require("./notify");
+var util   = require("util");
 
 module.exports = function notifyStyleLint (stdout) {
   var messages = stdout.split("\n");
@@ -6,7 +7,7 @@ module.exports = function notifyStyleLint (stdout) {
   messages.pop(); // Remove last empty new message.
 
   if(0 < messages.length) {
-    var message = "{{length}} lint warning(s) found.".replace(/{{length}}/g, messages.length);
+    var message = util.format("%d lint warning(s) found.", messages.length);
 
     notify.showNotification({
       subtitle: "Task style:lint",
