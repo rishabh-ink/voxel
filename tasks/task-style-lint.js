@@ -11,7 +11,8 @@ var notify = require("./utils/notify-style-lint");
  * @see rubygems.org/gems/scss-lint
  */
 gulp.task("style:lint", function (callback) {
-  var scsslintProcess = exec("bundle " + [
+  var scsslintProcess = exec([
+    "bundle",
     "exec",
     "scss-lint",
     "--config",
