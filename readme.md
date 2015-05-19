@@ -1,6 +1,6 @@
 # Voxel [:star:](https://voxel-rsr.herokuapp.com/dist)
 
-> A minimal Hologram theme.
+> A minimal theme.
 
 [![Travis](https://img.shields.io/travis/rishabhsrao/voxel.svg?style=flat-square "Build status")](https://travis-ci.org/rishabhsrao/voxel)
 [![David](https://img.shields.io/david/rishabhsrao/voxel.svg?style=flat-square "Dependency status (Node modules)")](https://david-dm.org/rishabhsrao/voxel)
