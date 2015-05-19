@@ -29,28 +29,31 @@
     "jquery": "1.10.2"
   },
   "ignore": [
+    "**/.*",
+    "*.sublime*",
     ".bundle",
     ".git",
     ".sass-cache",
-    "libraries",
-    "tasks",
-    "node_modules",
-    "reports",
-    "tests",
-    "**/.*",
-    "config.rb",
     "Gemfile",
     "Gemfile.lock",
     "gulpfile.js",
-    "karma.conf.js",
+    "libraries",
+    "node_modules",
     "package.json",
-    "*.sublime*"
+    "reports",
+    "tasks",
+    "tests"
   ],
   "main": [
-    "dist/**/*",
+    "dist",
+    "app",
     "bower.json",
     "readme.md",
     "license.md"
   ],
-  "keywords": []
+  "keywords": [
+    "theme",
+    "hologram",
+    "jekyll"
+  ]
 }
