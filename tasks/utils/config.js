@@ -18,7 +18,7 @@ module.exports = {
     util: "utils",
     git: ".git",
 
-    report: "report",
+    report: "reports",
     coverage: "coverage",
 
     exclude: {
