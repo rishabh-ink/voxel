@@ -85,7 +85,9 @@ function($) {
     },
 
     destroy: function() {
-      // TODO Destroy component gracefully.
+      this.elements.drawerToggle.off("." + this.options.name);
+
+      return this;
     },
 
     toggleDrawer: function() {
