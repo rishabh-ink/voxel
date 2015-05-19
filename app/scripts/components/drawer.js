@@ -65,9 +65,11 @@ function($) {
     attach: function() {
       console.log(this.options.name, "attach()", "Attaching events");
 
-      this.elements.drawerToggle.on({
-        "click.voxel": $.proxy(this.toggleDrawer, this)
-      });
+      var events = {};
+
+      events["click." + this.options.name] = $.proxy(this.toggleDrawer, this);
+
+      this.elements.drawerToggle.on(events);
 
       return this;
     },
