@@ -10,7 +10,6 @@
 
       // Application
       "app": "app",
-      "drawer": "components/drawer",
       // /Application
     },
 

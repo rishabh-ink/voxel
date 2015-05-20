@@ -1,4 +1,4 @@
-define(["jquery", "hljs", "drawer"],
+define(["jquery", "hljs", "components/drawer"],
 function($,        HLJS,   Drawer) {
   "use strict";
 
