@@ -1,8 +1,8 @@
-$layouts__include-classes: $components__include-classes;
+$layouts__include-classes: $components__include-classes !default;
 
-$layouts__content__max-width: 48rem;
+$layouts__content__max-width: 48rem !default;
 
-$layouts__content__padding--horizontal: map-get($scaffolding__spacing--horizontal, "400");
-$layouts__content__padding--vertical: map-get($scaffolding__spacing--vertical, "400");
+$layouts__content__padding--horizontal: map-get($scaffolding__spacing--horizontal, "400") !default;
+$layouts__content__padding--vertical: map-get($scaffolding__spacing--vertical, "400") !default;
 
-$layouts__image__margin--vertical: map-get($scaffolding__spacing--vertical, "100");
+$layouts__image__margin--vertical: map-get($scaffolding__spacing--vertical, "100") !default;

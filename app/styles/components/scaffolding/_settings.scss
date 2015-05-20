@@ -1,6 +1,7 @@
-$scaffolding__include-classes: $components__include-classes;
+$scaffolding__include-classes: $components__include-classes !default;
 
-$scaffolding__spacing--horizontal: (
+$scaffolding__spacing--horizontal: () !default;
+$scaffolding__spacing--horizontal: map-merge((
   // Perfect Fourth scale (1.333)
   // See type-scale.com/?size=16&scale=1.333&text=A%20Visual%20Type%20Scale&webfont=Open%2BSans&font-family=%27Open%20Sans%27%2C%20serif&font-weight=400&font-family-headers=&font-weight-headers=inherit&background-color=white&font-color=%23333
   "50": .178rem,
@@ -15,9 +16,10 @@ $scaffolding__spacing--horizontal: (
   "900": 2.369rem,
   "a100": 3.157rem,
   "a200": 4.21rem
-);
+), $scaffolding__spacing--horizontal);
 
-$scaffolding__spacing--vertical: (
+$scaffolding__spacing--vertical: () !default;
+$scaffolding__spacing--vertical: map-merge((
   // Minor Third scale (1.200)
   // http://type-scale.com/?size=16&scale=1.200&text=A%20Visual%20Type%20Scale&webfont=Open%2BSans&font-family=%27Open%20Sans%27%2C%20serif&font-weight=400&font-family-headers=&font-weight-headers=inherit&background-color=white&font-color=%23333
   "50": .335rem,
@@ -33,27 +35,28 @@ $scaffolding__spacing--vertical: (
   "a100": 2.074rem,
   "a200": 2.4888rem,
   "a400": 2.987rem
-);
+), $scaffolding__spacing--vertical);
 
-$scaffolding__border-radius: (
+$scaffolding__border-radius: () !default;
+$scaffolding__border-radius: map-merge((
   "300": 3px,
   "600": 4px,
   "900": 6px
-);
+), $scaffolding__border-radius);
 
 /* Small devices (tablets, 768px and up) */
-$scaffolding__screen--s--min: 48em;
+$scaffolding__screen--s--min: 48em !default;
 
 /* Medium devices (desktops, 992px and up) */
-$scaffolding__screen--m--min: 62em;
+$scaffolding__screen--m--min: 62em !default;
 
 /* Large devices (large desktops, 1200px and up) */
-$scaffolding__screen--l--min: 75em;
+$scaffolding__screen--l--min: 75em !default;
 
-$scaffolding__transition--duration: .3s;
+$scaffolding__transition--duration: .3s !default;
 
-$scaffolding__body__background-color: #fff;
+$scaffolding__body__background-color: #fff !default;
 
-$scaffolding__horizontal-rule__color: map-get($colors__brand--primary, "500");
-$scaffolding__horizontal-rule__style: solid;
-$scaffolding__horizontal-rule__width: 1px;
+$scaffolding__horizontal-rule__color: map-get($colors__brand--primary, "500") !default;
+$scaffolding__horizontal-rule__style: solid !default;
+$scaffolding__horizontal-rule__width: 1px !default;

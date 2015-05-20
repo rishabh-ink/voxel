@@ -1,5 +1,5 @@
-$tables__include-classes: $components__include-classes;
+$tables__include-classes: $components__include-classes !default;
 
-$tables__border--color: map-get($colors__gray, "200");
-$tables__border--width: 1px;
-$tables__border--style: solid;
+$tables__border--color: map-get($colors__gray, "200") !default;
+$tables__border--width: 1px !default;
+$tables__border--style: solid !default;

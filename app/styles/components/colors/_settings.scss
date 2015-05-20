@@ -1,6 +1,7 @@
-$colors__include-classes: $components__include-classes;
+$colors__include-classes: $components__include-classes !default;
 
-$colors__gray: (
+$colors__gray: () !default;
+$colors__gray: map-merge((
   "50": #fafafa,
   "100": #f5f5f5,
   "200": #eee,
@@ -11,9 +12,10 @@ $colors__gray: (
   "700": #616161,
   "800": #424242,
   "900": #212121
-);
+), $colors__gray);
 
-$colors__indigo: (
+$colors__indigo: () !default;
+$colors__indigo: map-merge((
   "50": #e8eaf6,
   "100": #c5cae9,
   "200": #9fa8da,
@@ -28,9 +30,10 @@ $colors__indigo: (
   "a200": #536dfe,
   "a400": #3d5afe,
   "a700": #304ffe
-);
+), $colors__indigo);
 
-$colors__amber: (
+$colors__amber: () !default;
+$colors__amber: map-merge((
   "50": #fff8e1,
   "100": #ffecb3,
   "200": #ffe082,
@@ -45,9 +48,10 @@ $colors__amber: (
   "a200": #ffd740,
   "a400": #ffc400,
   "a700": #ffab00
-);
+), $colors__amber);
 
-$colors__orange: (
+$colors__orange: () !default;
+$colors__orange: map-merge((
   "50": #fff3e0,
   "100": #ffe0b2,
   "200": #ffcc80,
@@ -62,6 +66,6 @@ $colors__orange: (
   "a200": #ffab40,
   "a400": #ff9100,
   "a700": #ff6d00
-);
+), $colors__orange);
 
-$colors__brand--primary: $colors__orange;
+$colors__brand--primary: $colors__orange !default;
