@@ -30,19 +30,15 @@
   },
   "ignore": [
     "**/.*",
-    "*.sublime*",
-    ".bundle",
-    ".git",
-    ".sass-cache",
-    "Gemfile",
-    "Gemfile.lock",
-    "gulpfile.js",
-    "libraries",
-    "node_modules",
-    "package.json",
-    "reports",
-    "tasks",
-    "tests"
+    "/Gemfile",
+    "/Gemfile.lock",
+    "/gulpfile.js",
+    "/libraries",
+    "/node_modules",
+    "/package.json",
+    "/reports",
+    "/tasks",
+    "/tests"
   ],
   "main": [
     "dist",
