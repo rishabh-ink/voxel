@@ -1,7 +1,7 @@
-$colors__include-classes: $components__include-classes !default;
+$voxel-colors__include-classes: $voxel-components__include-classes !default;
 
-$colors__gray: () !default;
-$colors__gray: map-merge((
+$voxel-colors__gray: () !default;
+$voxel-colors__gray: map-merge((
   "50": #fafafa,
   "100": #f5f5f5,
   "200": #eee,
@@ -12,10 +12,10 @@ $colors__gray: map-merge((
   "700": #616161,
   "800": #424242,
   "900": #212121
-), $colors__gray);
+), $voxel-colors__gray);
 
-$colors__indigo: () !default;
-$colors__indigo: map-merge((
+$voxel-colors__indigo: () !default;
+$voxel-colors__indigo: map-merge((
   "50": #e8eaf6,
   "100": #c5cae9,
   "200": #9fa8da,
@@ -30,10 +30,10 @@ $colors__indigo: map-merge((
   "a200": #536dfe,
   "a400": #3d5afe,
   "a700": #304ffe
-), $colors__indigo);
+), $voxel-colors__indigo);
 
-$colors__amber: () !default;
-$colors__amber: map-merge((
+$voxel-colors__amber: () !default;
+$voxel-colors__amber: map-merge((
   "50": #fff8e1,
   "100": #ffecb3,
   "200": #ffe082,
@@ -48,10 +48,10 @@ $colors__amber: map-merge((
   "a200": #ffd740,
   "a400": #ffc400,
   "a700": #ffab00
-), $colors__amber);
+), $voxel-colors__amber);
 
-$colors__orange: () !default;
-$colors__orange: map-merge((
+$voxel-colors__orange: () !default;
+$voxel-colors__orange: map-merge((
   "50": #fff3e0,
   "100": #ffe0b2,
   "200": #ffcc80,
@@ -66,6 +66,6 @@ $colors__orange: map-merge((
   "a200": #ffab40,
   "a400": #ff9100,
   "a700": #ff6d00
-), $colors__orange);
+), $voxel-colors__orange);
 
-$colors__brand--primary: $colors__orange !default;
+$voxel-colors__brand--primary: $voxel-colors__orange !default;

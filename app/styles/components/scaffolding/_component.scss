@@ -2,7 +2,7 @@
 @import "mixins";
 @import "documentation";
 
-@if($scaffolding__include-classes) {
+@if($voxel-scaffolding__include-classes) {
   *,
   *:before,
   *:after {
@@ -10,7 +10,7 @@
   }
 
   body {
-    background-color: $scaffolding__body__background-color;
+    background-color: $voxel-scaffolding__body__background-color;
   }
 
   // scss-lint:disable QualifyingElement

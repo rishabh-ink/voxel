@@ -4,8 +4,8 @@
   width: 100%;
 
   th {
-    background-color: map-get($colors__brand--primary, "50");
-    color: map-get($colors__brand--primary, "700");
+    background-color: map-get($voxel-colors__brand--primary, "50");
+    color: map-get($voxel-colors__brand--primary, "700");
     text-align: left;
   }
 
@@ -15,9 +15,9 @@
 
   td,
   th {
-    border-color: $tables__border--color;
-    border-style: $tables__border--style;
-    border-width: $tables__border--width;
+    border-color: $voxel-tables__border--color;
+    border-style: $voxel-tables__border--style;
+    border-width: $voxel-tables__border--width;
     padding: .25rem .5rem;
   }
 }

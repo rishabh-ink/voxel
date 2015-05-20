@@ -1,18 +1,18 @@
 @mixin voxel-drawer() {
-  @include box-shadow(0 0 $drawer__box-shadow--radius 0 $drawer__box-shadow--color);
-  @include transition-duration($drawer__transition--duration);
+  @include box-shadow(0 0 $voxel-drawer__box-shadow--radius 0 $voxel-drawer__box-shadow--color);
+  @include transition-duration($voxel-drawer__transition--duration);
   @include transition-property(left);
-  background-color: $drawer__background-color;
-  border-right-color: $drawer__border--right--color;
-  border-right-style: $drawer__border--right--style;
-  border-right-width: $drawer__border--right--width;
-  font-family: $drawer__font-family;
+  background-color: $voxel-drawer__background-color;
+  border-right-color: $voxel-drawer__border--right--color;
+  border-right-style: $voxel-drawer__border--right--style;
+  border-right-width: $voxel-drawer__border--right--width;
+  font-family: $voxel-drawer__font-family;
   height: 100%;
-  left: -($drawer__width);
+  left: -($voxel-drawer__width);
   overflow-y: auto;
   position: fixed;
   top: 0;
-  width: $drawer__width;
+  width: $voxel-drawer__width;
 }
 
 @mixin voxel-drawer--active() {
@@ -20,17 +20,17 @@
 }
 
 @mixin voxel-drawer__toggle() {
-  @include transition-duration($drawer__toggle__transition--duration);
+  @include transition-duration($voxel-drawer__toggle__transition--duration);
   @include transition-property(color, transform);
-  color: $drawer__toggle__color;
+  color: $voxel-drawer__toggle__color;
   font-family: sans-serif;
-  font-size: $drawer__toggle__font-size;
+  font-size: $voxel-drawer__toggle__font-size;
   font-weight: bold;
   left: 0;
-  padding-bottom: $drawer__toggle__padding--bottom;
-  padding-left: $drawer__toggle__padding--left;
-  padding-right: $drawer__toggle__padding--right;
-  padding-top: $drawer__toggle__padding--top;
+  padding-bottom: $voxel-drawer__toggle__padding--bottom;
+  padding-left: $voxel-drawer__toggle__padding--left;
+  padding-right: $voxel-drawer__toggle__padding--right;
+  padding-top: $voxel-drawer__toggle__padding--top;
   position: fixed;
   text-decoration: none;
   top: 0;
@@ -38,40 +38,40 @@
 
 @mixin voxel-drawer__toggle--active() {
   @include transform(rotateZ(180deg));
-  color: $drawer__toggle__color--active;
+  color: $voxel-drawer__toggle__color--active;
 }
 
 @mixin voxel-drawer__title() {
-  color: $drawer__title__color;
-  font-size: $drawer__title__font-size;
+  color: $voxel-drawer__title__color;
+  font-size: $voxel-drawer__title__font-size;
   text-decoration: none;
 }
 
 @mixin voxel-drawer__header() {
-  background-color: $drawer__header__background-color;
-  margin-bottom: $drawer__header__margin--bottom;
-  min-height: $drawer__header__height--min;
-  padding-bottom: $drawer__header__padding--bottom;
-  padding-top: $drawer__header__padding--top;
+  background-color: $voxel-drawer__header__background-color;
+  margin-bottom: $voxel-drawer__header__margin--bottom;
+  min-height: $voxel-drawer__header__height--min;
+  padding-bottom: $voxel-drawer__header__padding--bottom;
+  padding-top: $voxel-drawer__header__padding--top;
   position: relative;
-  text-align: $drawer__header__text-align;
+  text-align: $voxel-drawer__header__text-align;
 
   &:before {
     @include box-shadow(
-      $drawer__header__box-shadow--color
+      $voxel-drawer__header__box-shadow--color
       0
       0
-      $drawer__header__box-shadow--radius
+      $voxel-drawer__header__box-shadow--radius
       0
     );
     border-radius: 50%;
     bottom: 0;
     content: "";
-    height: $drawer__header__box-shadow--height;
+    height: $voxel-drawer__header__box-shadow--height;
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
-    width: $drawer__header__box-shadow--width;
+    width: $voxel-drawer__header__box-shadow--width;
     z-index: -1;
   }
 }
@@ -79,18 +79,18 @@
 @mixin voxel-drawer__index() {
   counter-reset: voxel-drawer__index__counter;
   list-style-type: none;
-  padding-left: $drawer__index__padding--left;
+  padding-left: $voxel-drawer__index__padding--left;
 }
 
 @mixin voxel-drawer__index__item() {
   counter-increment: voxel-drawer__index__counter;
-  padding-bottom: $drawer__index__item__padding--bottom;
-  padding-top: $drawer__index__item__padding--top;
+  padding-bottom: $voxel-drawer__index__item__padding--bottom;
+  padding-top: $voxel-drawer__index__item__padding--top;
 
   &:before {
     content: counters(voxel-drawer__index__counter, ".") ".";
     display: inline-block;
     font-weight: bold;
-    margin-right: $drawer__index__item__counter__margin--right;
+    margin-right: $voxel-drawer__index__item__counter__margin--right;
   }
 }

@@ -2,7 +2,7 @@
 @import "mixins";
 @import "documentation";
 
-@if($layouts__include-classes) {
+@if($voxel-layouts__include-classes) {
   .voxel-layouts__content {
     @include voxel-layouts__content();
   }

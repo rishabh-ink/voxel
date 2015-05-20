@@ -1,24 +1,24 @@
-$header__include-classes: $components__include-classes !default;
+$voxel-header__include-classes: $voxel-components__include-classes !default;
 
-$header__background-color: #fff !default;
+$voxel-header__background-color: #fff !default;
 
-$header__border--bottom--color: map-get($colors__brand--primary, "100") !default;
-$header__border--bottom--width: 1px !default;
-$header__border--bottom--style: solid !default;
+$voxel-header__border--bottom--color: map-get($voxel-colors__brand--primary, "100") !default;
+$voxel-header__border--bottom--width: 1px !default;
+$voxel-header__border--bottom--style: solid !default;
 
-$header__height--min: map-get($scaffolding__spacing--vertical, "a400") !default;
-$header__margin--bottom: map-get($scaffolding__spacing--vertical, "a100") !default;
-$header__padding--bottom: map-get($scaffolding__spacing--vertical, "300") !default;
-$header__padding--top: map-get($scaffolding__spacing--vertical, "300") !default;
+$voxel-header__height--min: map-get($voxel-scaffolding__spacing--vertical, "a400") !default;
+$voxel-header__margin--bottom: map-get($voxel-scaffolding__spacing--vertical, "a100") !default;
+$voxel-header__padding--bottom: map-get($voxel-scaffolding__spacing--vertical, "300") !default;
+$voxel-header__padding--top: map-get($voxel-scaffolding__spacing--vertical, "300") !default;
 
-$header__box-shadow--color: map-get($colors__brand--primary, "200") !default;
-$header__box-shadow--radius: map-get($scaffolding__spacing--vertical, "a100") !default;
-$header__box-shadow--height: map-get($scaffolding__spacing--vertical, "a100") !default;
-$header__box-shadow--width: 80% !default;
+$voxel-header__box-shadow--color: map-get($voxel-colors__brand--primary, "200") !default;
+$voxel-header__box-shadow--radius: map-get($voxel-scaffolding__spacing--vertical, "a100") !default;
+$voxel-header__box-shadow--height: map-get($voxel-scaffolding__spacing--vertical, "a100") !default;
+$voxel-header__box-shadow--width: 80% !default;
 
-$header__title__color: map-get($colors__brand--primary, "800") !default;
-$header__title__font-family: $fonts__font-family--headings !default;
-$header__title__font-size: map-get($fonts__font-size--heading, "h3") !default;
-$header__subtitle__font-size: map-get($fonts__font-size--heading, "h4") !default;
-$header__subtitle__margin--left: map-get($scaffolding__spacing--horizontal, "600") !default;
-$header__subtitle__color: map-get($colors__brand--primary, "300") !default;
+$voxel-header__title__color: map-get($voxel-colors__brand--primary, "800") !default;
+$voxel-header__title__font-family: $voxel-fonts__font-family--headings !default;
+$voxel-header__title__font-size: map-get($voxel-fonts__font-size--heading, "h3") !default;
+$voxel-header__subtitle__font-size: map-get($voxel-fonts__font-size--heading, "h4") !default;
+$voxel-header__subtitle__margin--left: map-get($voxel-scaffolding__spacing--horizontal, "600") !default;
+$voxel-header__subtitle__color: map-get($voxel-colors__brand--primary, "300") !default;

@@ -2,7 +2,7 @@
 @import "mixins";
 @import "documentation";
 
-@if($drawer__include-classes) {
+@if($voxel-drawer__include-classes) {
   .voxel-drawer {
     @include voxel-drawer();
   }

@@ -2,7 +2,7 @@
 @import "mixins";
 @import "documentation";
 
-@if($fonts__include-classes) {
+@if($voxel-fonts__include-classes) {
   body {
     @include voxel-fonts__body();
   }

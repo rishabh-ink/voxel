@@ -1,23 +1,23 @@
-$fonts__include-classes: $components__include-classes !default;
+$voxel-fonts__include-classes: $voxel-components__include-classes !default;
 
-$fonts__line-height: () !default;
-$fonts__line-height: map-merge((
+$voxel-fonts__line-height: () !default;
+$voxel-fonts__line-height: map-merge((
   "300": 1.2,
   "600": 1.45,
   "900": 1.5
-), $fonts__line-height);
+), $voxel-fonts__line-height);
 
-$fonts__font-family--sans-serif: "PT Sans", sans-serif !default;
-$fonts__font-family--serif: "PT Serif", serif !default;
-$fonts__font-family--monospace: monospace !default;
-$fonts__font-family--base: $fonts__font-family--serif !default;
-$fonts__font-family--headings: $fonts__font-family--sans-serif !default;
+$voxel-fonts__font-family--sans-serif: "PT Sans", sans-serif !default;
+$voxel-fonts__font-family--serif: "PT Serif", serif !default;
+$voxel-fonts__font-family--monospace: monospace !default;
+$voxel-fonts__font-family--base: $voxel-fonts__font-family--serif !default;
+$voxel-fonts__font-family--headings: $voxel-fonts__font-family--sans-serif !default;
 
-$fonts__color--base: map-get($colors__gray, "800") !default;
-$fonts__color--headings: map-get($colors__brand--primary, "800") !default;
+$voxel-fonts__color--base: map-get($voxel-colors__gray, "800") !default;
+$voxel-fonts__color--headings: map-get($voxel-colors__brand--primary, "800") !default;
 
-$fonts__font-size--heading: () !default;
-$fonts__font-size--heading: map-merge((
+$voxel-fonts__font-size--heading: () !default;
+$voxel-fonts__font-size--heading: map-merge((
   // Perfect Fourth scale (1.333)
   // See type-scale.com/?size=16&scale=1.333&text=A%20Visual%20Type%20Scale&webfont=Open%2BSans&font-family=%27Open%20Sans%27%2C%20serif&font-weight=400&font-family-headers=&font-weight-headers=inherit&background-color=white&font-color=%23333
   "h6": .75rem,
@@ -26,24 +26,24 @@ $fonts__font-size--heading: map-merge((
   "h3": 1.777rem,
   "h2": 2.369rem,
   "h1": 3.157rem
-), $fonts__font-size--heading);
+), $voxel-fonts__font-size--heading);
 
-$fonts__font-size--small: .75em !default; // `em` so that it scales well inside any heading tag.
+$voxel-fonts__font-size--small: .75em !default; // `em` so that it scales well inside any heading tag.
 
-$fonts__paragraph__margin--bottom: map-get($scaffolding__spacing--vertical, "800") !default;
-$fonts__heading__margin--top: map-get($scaffolding__spacing--vertical, "a400") !default;
-$fonts__heading__margin--bottom: map-get($scaffolding__spacing--vertical, "300") !default;
+$voxel-fonts__paragraph__margin--bottom: map-get($voxel-scaffolding__spacing--vertical, "800") !default;
+$voxel-fonts__heading__margin--top: map-get($voxel-scaffolding__spacing--vertical, "a400") !default;
+$voxel-fonts__heading__margin--bottom: map-get($voxel-scaffolding__spacing--vertical, "300") !default;
 
-$fonts__link__color--normal: map-get($colors__brand--primary, "500") !default;
+$voxel-fonts__link__color--normal: map-get($voxel-colors__brand--primary, "500") !default;
 
-$fonts__code__color: map-get($colors__brand--primary, "600") !default;
-$fonts__code__background-color: map-get($colors__brand--primary, "50") !default;
-$fonts__code__margin--left: map-get($scaffolding__spacing--horizontal, "100") !default;
-$fonts__code__margin--right: map-get($scaffolding__spacing--horizontal, "100") !default;
-$fonts__code__padding--left: map-get($scaffolding__spacing--horizontal, "300") !default;
-$fonts__code__padding--right: map-get($scaffolding__spacing--horizontal, "300") !default;
-$fonts__code__padding--top: 0 !default;
-$fonts__code__padding--bottom: 0 !default;
-$fonts__code__border--color: $scaffolding__body__background-color !default;
-$fonts__code__border--width: 1px !default;
-$fonts__code__border--style: dashed !default;
+$voxel-fonts__code__color: map-get($voxel-colors__brand--primary, "600") !default;
+$voxel-fonts__code__background-color: map-get($voxel-colors__brand--primary, "50") !default;
+$voxel-fonts__code__margin--left: map-get($voxel-scaffolding__spacing--horizontal, "100") !default;
+$voxel-fonts__code__margin--right: map-get($voxel-scaffolding__spacing--horizontal, "100") !default;
+$voxel-fonts__code__padding--left: map-get($voxel-scaffolding__spacing--horizontal, "300") !default;
+$voxel-fonts__code__padding--right: map-get($voxel-scaffolding__spacing--horizontal, "300") !default;
+$voxel-fonts__code__padding--top: 0 !default;
+$voxel-fonts__code__padding--bottom: 0 !default;
+$voxel-fonts__code__border--color: $voxel-scaffolding__body__background-color !default;
+$voxel-fonts__code__border--width: 1px !default;
+$voxel-fonts__code__border--style: dashed !default;

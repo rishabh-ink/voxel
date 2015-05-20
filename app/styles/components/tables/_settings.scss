@@ -1,5 +1,5 @@
-$tables__include-classes: $components__include-classes !default;
+$voxel-tables__include-classes: $voxel-components__include-classes !default;
 
-$tables__border--color: map-get($colors__gray, "200") !default;
-$tables__border--width: 1px !default;
-$tables__border--style: solid !default;
+$voxel-tables__border--color: map-get($voxel-colors__gray, "200") !default;
+$voxel-tables__border--width: 1px !default;
+$voxel-tables__border--style: solid !default;
