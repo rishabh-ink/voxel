@@ -1,0 +1,258 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Voxel</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="A minimal theme.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="../dist/styles/main.css">
+
+  <script src="scripts/libraries/modernizr.custom.js"></script>
+
+  <!--
+            ___
+           / '_)   Hand-crafted with <3 by Rishabh Rao.
+    .-^^^-/ /      See /humans.txt for more details.
+ __/       /
+<__.|_|-|_|
+  -->
+</head>
+<body>
+  <!--[if lt IE 10]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <main id="voxel">
+    <aside data-js="voxelDrawer" class="voxel-drawer">
+      <header class="voxel-drawer__header">
+        <a href="#" class="voxel-drawer__title">Voxel</a>
+      </header>
+      <div class="voxel-layouts__content">
+        <ol class="voxel-drawer__index  voxel-drawer__index--ordered">
+          <li class="voxel-drawer__index__item">
+            One
+            <ol class="voxel-drawer__index  voxel-drawer__index--ordered">
+              <li class="voxel-drawer__index__item">One.One</li>
+              <li class="voxel-drawer__index__item">One.Two</li>
+              <li class="voxel-drawer__index__item">One.Three</li>
+            </ol>
+          </li>
+          <li class="voxel-drawer__index__item">Two</li>
+          <li class="voxel-drawer__index__item">Three</li>
+          <li class="voxel-drawer__index__item">
+            Four
+            <ol class="voxel-drawer__index  voxel-drawer__index--ordered">
+              <li class="voxel-drawer__index__item">Four.One</li>
+              <li class="voxel-drawer__index__item">Four.Two</li>
+              <li class="voxel-drawer__index__item">Four.Three</li>
+              <li class="voxel-drawer__index__item">Four.Four</li>
+            </ol>
+          </li>
+          <li class="voxel-drawer__index__item">Five</li>
+          <li class="voxel-drawer__index__item">Six</li>
+        </ol>
+      </div> <!-- /.voxel-layouts__content -->
+    </aside>
+    <header class="voxel-header">
+      <a href="javascript:;" data-js="voxelDrawerToggle" class="voxel-drawer__toggle">&#8942;</a>
+      <div class="voxel-layouts__content">
+        <a href="#" class="voxel-header__title">Voxel</a> <span class="voxel-header__subtitle">A minimal theme.</span>
+      </div> <!-- /.voxel-layouts__content -->
+    </header> <!-- /.voxel-header -->
+
+    <div class="voxel-layouts__page" data-js="voxelDrawerPage">
+      <div class="voxel-layouts__content">
+        <h1>Examples</h1>
+
+        <blockquote cite="http://demo.getpoole.com/page2">
+          <p>This example page, borrowed from <a href="http://demo.getpoole.com/page2">Poole</a>, contains a demo of all the supported HTML elements.</p>
+        </blockquote>
+
+        <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+
+        <p>Etiam porta <strong>sem malesuada magna</strong> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+
+        <h2>Inline HTML elements</h2>
+
+        <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+
+        <ul>
+          <li><strong>To bold text</strong>, use <code>&lt;strong&gt;</code>.</li>
+          <li><em>To italicize text</em>, use <code>&lt;em&gt;</code>.</li>
+          <li>Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use <code>&lt;abbr&gt;</code>, with an optional <code>title</code> attribute for the full phrase.</li>
+          <li>Citations, like <cite>— Issac Newton</cite>, should use <code>&lt;cite&gt;</code>.</li>
+          <li><del>Deleted</del> text should use <code>&lt;del&gt;</code> and <ins>inserted</ins> text should use <code>&lt;ins&gt;</code>.</li>
+          <li>Superscript <sup>text</sup> uses <code>&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code>&lt;sub&gt;</code>.</li>
+        </ul>
+
+        <p>Most of these elements are styled by browsers with few modifications on our part.</p>
+
+        <h2>Heading</h2>
+
+        <p>Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+        <h3>Code</h3>
+
+        <p>Cum sociis natoque penatibus et magnis dis <code>code element</code> montes, nascetur ridiculus mus.</p>
+
+        <div class="highlight" data-js="highlight">
+          <pre>
+            <code class="language-js">// Sample JavaScript. Courtesy https://highlightjs.org
+import {x, y} as p from 'point';
+const ANSWER = 42;
+
+class Car extends Vehicle {
+  constructor(speed, cost) {
+    super(speed);
+
+    var c = Symbol('cost');
+    this[c] = cost;
+
+    this.intro = `This is a car runs at
+      ${speed}.`;
+  }
+}
+
+for (let num of [1, 2, 3]) {
+  console.log(num + 0b111110111);
+}
+
+function $initHighlight(block, flags) {
+  try {
+    if (block.className.search(/\bno\-highlight\b/) != -1)
+      return processBlock(block.function, true, 0x0F) + ' class=""';
+  } catch (e) {
+    /* handle exception */
+    var e4x =
+        &lt;div&gt;Example
+            &lt;p&gt;1234&lt;/p&gt;&lt;/div&gt;;
+  }
+  for (var i = 0 / 2; i &lt; classes.length; i++) { // "0 / 2" should not be parsed as regexp
+    if (checkCondition(classes[i]) === undefined)
+      return /\d+[\s/]/g;
+  }
+  console.log(Array.every(classes, Boolean));
+}
+
+export  $initHighlight;
+            </code>
+          </pre>
+        </div>
+
+        <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+
+        <p>Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.</p>
+
+        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper.</p>
+
+        <h3>Lists</h3>
+
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+
+        <h4>Unordered lists</h4>
+        <ul>
+          <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+          <li>Donec id elit non mi porta gravida at eget metus.</li>
+          <li>Nulla vitae elit libero, a pharetra augue.</li>
+        </ul>
+
+        <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+
+        <h4>Ordered lists</h4>
+        <ol>
+          <li>Vestibulum id ligula porta felis euismod semper.</li>
+          <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+          <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+        </ol>
+
+        <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+
+        <h4>Definition lists</h4>
+        <dl>
+          <dt>HyperText Markup Language (HTML)</dt>
+          <dd>The language used to describe and define the content of a Web page</dd>
+
+          <dt>Cascading Style Sheets (CSS)</dt>
+          <dd>Used to describe the appearance of Web content</dd>
+
+          <dt>JavaScript (JS)</dt>
+          <dd>The programming language used to build advanced Web sites and applications</dd>
+        </dl>
+
+        <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+
+        <h3>Images</h3>
+
+        <p>Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.</p>
+
+        <img src="http://placehold.it/800x400" class="voxel-layouts__image" alt="placeholder" title="Large example image">
+        <img src="http://placehold.it/400x200" class="voxel-layouts__image" alt="placeholder" title="Medium example image">
+        <img src="http://placehold.it/200x200" class="voxel-layouts__image" alt="placeholder" title="Small example image">
+
+        <h3>Tables</h3>
+
+        <p>Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <table class="voxel-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Upvotes</th>
+              <th>Downvotes</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <td>Totals</td>
+              <td>21</td>
+              <td>23</td>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>Alice</td>
+              <td>10</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>Bob</td>
+              <td>4</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Charlie</td>
+              <td>7</td>
+              <td>9</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+
+        <hr>
+
+        <footer>
+          <p><small>Voxel &mdash; A minimal theme. Made with &hearts; during the summer of 2015 in Bangalore, India.</small></p>
+        </footer>
+      </div> <!-- /.voxel-layouts__content -->
+    </div> <!-- /.voxel-layouts__page -->
+  </main> <!-- /#voxel -->
+
+  <script src="../libraries/webfontloader/webfontloader.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: [
+          "PT+Sans::latin",
+          "PT+Serif::latin"
+        ]
+      }
+    });
+  </script>
+  <script src="../libraries/requirejs/require.js" data-main="scripts/main.js"></script>
+</body>
+</html>

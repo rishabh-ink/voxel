@@ -1,0 +1,1 @@
+!function(i,e,r){"use strict";require.config({paths:{jquery:"../../libraries/jquery/jquery",hljs:"../../libraries/highlightjs/highlight.pack",app:"app"},shim:{}}),require(["jquery","app"],function(i,e){e.create({name:"voxel",useHighlight:!0})})}(window,document);

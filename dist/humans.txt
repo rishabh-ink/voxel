@@ -1,0 +1,11 @@
+# humanstxt.org
+
+              ___
+             / '_)   Hand-crafted with <3 by Rishabh Rao.
+      .-^^^-/ /      @rishabhsrao
+   __/       /       rishabhsrao.github.io
+  <__.|_|-|_|
+
+Generated using:
+generator-ironhide-webapp
+www.npmjs.com/package/generator-ironhide-webapp
