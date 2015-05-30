@@ -35,11 +35,7 @@ gulp.task("script:optimize", ["script:test", "script:minify:json"], function (ca
       "hljs",
       "jquery"
     ],
-    out: path.join(CFG.DIR.dist, CFG.DIR.script, CFG.FILE.config.scriptMain),
-    wrap: {
-      startFile: path.join(CFG.DIR.gulp, CFG.DIR.util, CFG.FILE.config.umdFragPrelude),
-      endFile: path.join(CFG.DIR.gulp, CFG.DIR.util, CFG.FILE.config.umdFragCoda)
-    }
+    out: path.join(CFG.DIR.dist, CFG.DIR.script, CFG.FILE.config.scriptMain)
   }, function(buildResponse) {
     callback();
   }, callback);
