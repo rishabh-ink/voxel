@@ -35,7 +35,10 @@ module.exports = {
       compass: ".compassrc",
       bower: "bower.json",
       testMain: "main.js",
-      karma: ".karmarc"
+      scriptMain: "main.js",
+      karma: ".karmarc",
+      umdFragPrelude: "umd-frag-prelude.js",
+      umdFragCoda: "umd-frag-coda.js"
     },
     coverageReporter: {
       lcov: "lcov.info",
