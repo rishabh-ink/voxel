@@ -29,13 +29,13 @@ gulp.task("script:optimize", ["script:test", "script:minify:json"], function (ca
     optimizeCss: "none",
     findNestedDependencies: true,
     include: [
-      "app"
+      CFG.FILE.config.appModule
     ],
     exclude: [
       "hljs",
       "jquery"
     ],
-    out: path.join(CFG.DIR.dist, CFG.DIR.script, CFG.FILE.config.scriptMain)
+    out: path.join(CFG.DIR.dist, CFG.DIR.script, CFG.FILE.config.appMain)
   }, function(buildResponse) {
     callback();
   }, callback);

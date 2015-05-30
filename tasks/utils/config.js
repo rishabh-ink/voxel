@@ -36,9 +36,9 @@ module.exports = {
       bower: "bower.json",
       testMain: "main.js",
       scriptMain: "main.js",
-      karma: ".karmarc",
-      umdFragPrelude: "umd-frag-prelude.js",
-      umdFragCoda: "umd-frag-coda.js"
+      appMain: "voxel.js",
+      appModule: "voxel",
+      karma: ".karmarc"
     },
     coverageReporter: {
       lcov: "lcov.info",
