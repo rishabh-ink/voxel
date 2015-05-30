@@ -54,6 +54,7 @@
     "karma-requirejs": "0.2.2",
     "karma-spec-reporter": "0.0.19",
     "node-notifier": "4.0.3",
+    "phantomjs": "1.9.17",
     "require-dir": "0.3.0",
     "requirejs": "2.1.17",
     "yargs": "3.8.0"
