@@ -10,15 +10,12 @@ var pkg  = require(path.join("..", CFG.FILE.config.pkg));
  * @see github.com/mishoo/UglifyJS
  * @deprecaded in favor of `script:optimize`
  */
-gulp.task("script:minify", ["script:test", "script:minify:json"], function () {
+gulp.task("script:minify", ["script:optimize", "script:minify:json", "source"], function () {
   // TODO Use gulp-header to add version info.
 
   return gulp.src([
-      path.join(CFG.DIR.src, "/**/*." + CFG.FILE.extension.script.js),
-      CFG.DIR.exclude.test
-    ], {
-      base: CFG.DIR.src
-    })
+      path.join(CFG.DIR.dist, "/**/*." + CFG.FILE.extension.script.js)
+    ])
     .pipe($.uglify({
       outSourceMap: false, // Disable sourcemaps until github.com/gulpjs/gulp/issues/356
       preserveComments: "some",
