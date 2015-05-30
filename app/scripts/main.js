@@ -10,12 +10,11 @@ require.config({
   }
 });
 
-require(["jquery", "app"],
-function( $,        App) {
-  var app = App.create({
-    name: "voxel",
+require(["jquery", "voxel"],
+function( $,        Voxel) {
+  var voxel = Voxel.create({
     useHighlight: true
   });
 
-  console.log("App, %s, with jQuery v%s says, '%s'", app.options.name, $.fn.jquery, app.greet());
+  console.log("Voxel, %s, with jQuery v%s says, '%s'", voxel.options.name, $.fn.jquery, voxel.greet());
 });

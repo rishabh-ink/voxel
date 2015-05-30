@@ -21,12 +21,12 @@ require.config({
     // /Libraries
 
     // Application
-    "app": "app/scripts/app",
+    "voxel": "app/scripts/voxel",
     "components/drawer": "app/scripts/components/drawer",
     // /Application
 
     // Fixtures
-    "app-fixture": "tests/fixtures/app-fixture"
+    "voxel-fixture": "tests/fixtures/voxel-fixture"
     // /Fixtures
   },
 

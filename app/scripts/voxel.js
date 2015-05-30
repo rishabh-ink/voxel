@@ -2,9 +2,9 @@ define(["jquery", "hljs", "components/drawer"],
 function($,        HLJS,   Drawer) {
   "use strict";
 
-  var App = {
+  var Voxel = {
     defaults: {
-      name: "App",
+      name: "Voxel",
 
       elements: {
         highlight: "[data-js~='highlight']"
@@ -82,5 +82,5 @@ function($,        HLJS,   Drawer) {
     }
   };
 
-  return Object.create(App);
+  return Object.create(Voxel);
 });
