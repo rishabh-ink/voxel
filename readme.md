@@ -76,6 +76,8 @@ bundle clean --force && bundle install
 
 ... to keep your repository lean and mean.
 
+:tophat: **Tip** The environment variable, `VOXEL_CI`, must be set in [Travis](http://docs.travis-ci.com/user/environment-variables). It is used to control how Gulp builds the project, for example, sending operating system build notifications.
+
 
 ## :rocket: Deploy
 
