@@ -14,18 +14,18 @@
   }
 
   // scss-lint:disable QualifyingElement
-  html.js.opacity {
+  html.js.voxel-opacity {
     opacity: 0;
   }
 
-  html.csstransitions.wf-inactive,
-  html.csstransitions.wf-active {
+  html.voxel-csstransitions.wf-inactive,
+  html.voxel-csstransitions.wf-active {
     @include transition-duration(.5s);
     @include transition-property(opacity);
   }
 
-  html.js.opacity.wf-inactive,
-  html.js.opacity.wf-active {
+  html.js.voxel-opacity.wf-inactive,
+  html.js.voxel-opacity.wf-active {
     opacity: 1;
   }
   // scss-lint:enable QualifyingElement
