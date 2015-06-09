@@ -6,7 +6,7 @@
   *,
   *:before,
   *:after {
-    @include box-sizing(border-box);
+    @include box-sizing($voxel-scaffolding__box-sizing);
   }
 
   body {

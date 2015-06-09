@@ -1,5 +1,7 @@
 $voxel-scaffolding__include-classes: $voxel-components__include-classes !default;
 
+$voxel-scaffolding__box-sizing: border-box !default;
+
 $voxel-scaffolding__spacing--horizontal: () !default;
 $voxel-scaffolding__spacing--horizontal: map-merge((
   // Perfect Fourth scale (1.333)
