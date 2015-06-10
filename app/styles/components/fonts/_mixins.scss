@@ -1,6 +1,7 @@
 @mixin voxel-fonts__body() {
   color: $voxel-fonts__color--base;
   font-family: $voxel-fonts__font-family--base;
+  font-size: $voxel-fonts__font-size--base;
   line-height: map-get($voxel-fonts__line-height, "600");
 }
 
@@ -23,28 +24,28 @@
 }
 
 @mixin voxel-fonts__headings--h1() {
-  font-size: map-get($voxel-fonts__font-size--heading, "h1");
+  font-size: map-get($voxel-fonts__font-size--headings, "h1");
   margin-top: 0;
 }
 
 @mixin voxel__fonts__headings--h2() {
-  font-size: map-get($voxel-fonts__font-size--heading, "h2");
+  font-size: map-get($voxel-fonts__font-size--headings, "h2");
 }
 
 @mixin voxel__fonts__headings--h3() {
-  font-size: map-get($voxel-fonts__font-size--heading, "h3");
+  font-size: map-get($voxel-fonts__font-size--headings, "h3");
 }
 
 @mixin voxel__fonts__headings--h4() {
-  font-size: map-get($voxel-fonts__font-size--heading, "h4");
+  font-size: map-get($voxel-fonts__font-size--headings, "h4");
 }
 
 @mixin voxel__fonts__headings--h5() {
-  font-size: map-get($voxel-fonts__font-size--heading, "h5");
+  font-size: map-get($voxel-fonts__font-size--headings, "h5");
 }
 
 @mixin voxel__fonts__headings--h6() {
-  font-size: map-get($voxel-fonts__font-size--heading, "h6");
+  font-size: map-get($voxel-fonts__font-size--headings, "h6");
 }
 
 @mixin voxel__fonts__small() {

@@ -9,13 +9,13 @@ $voxel-drawer__border--right--style: solid !default;
 $voxel-drawer__box-shadow--radius: map-get($voxel-scaffolding__spacing--horizontal, "900") !default;
 $voxel-drawer__box-shadow--color: map-get($voxel-colors__brand--primary, "50") !default;
 $voxel-drawer__title__color: map-get($voxel-colors__brand--primary, "800") !default;
-$voxel-drawer__title__font-size: map-get($voxel-fonts__font-size--heading, "h3") !default;
+$voxel-drawer__title__font-size: map-get($voxel-fonts__font-size--headings, "h3") !default;
 $voxel-drawer__transition--duration: $voxel-scaffolding__transition--duration !default;
 
 $voxel-drawer__toggle__color: map-get($voxel-colors__brand--primary, "800") !default;
 $voxel-drawer__toggle__color--active: map-get($voxel-colors__brand--primary, "300") !default;
 $voxel-drawer__toggle__transition--duration: $voxel-scaffolding__transition--duration !default;
-$voxel-drawer__toggle__font-size: map-get($voxel-fonts__font-size--heading, "h3") !default;
+$voxel-drawer__toggle__font-size: map-get($voxel-fonts__font-size--headings, "h3") !default;
 $voxel-drawer__toggle__padding--top: map-get($voxel-scaffolding__spacing--vertical, "300") !default;
 $voxel-drawer__toggle__padding--bottom: map-get($voxel-scaffolding__spacing--vertical, "300") !default;
 $voxel-drawer__toggle__padding--left: map-get($voxel-scaffolding__spacing--horizontal, "600") !default;
