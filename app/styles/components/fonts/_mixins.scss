@@ -25,7 +25,6 @@
 
 @mixin voxel-fonts__headings--h1() {
   font-size: map-get($voxel-fonts__font-size--headings, "h1");
-  margin-top: 0;
 }
 
 @mixin voxel__fonts__headings--h2() {
