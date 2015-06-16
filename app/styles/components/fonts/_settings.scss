@@ -7,8 +7,8 @@ $voxel-fonts__line-height: map-merge((
   "900": 1.5
 ), $voxel-fonts__line-height);
 
-$voxel-fonts__font-family--sans-serif: "PT Sans", sans-serif !default;
-$voxel-fonts__font-family--serif: "PT Serif", serif !default;
+$voxel-fonts__font-family--sans-serif: "Raleway", sans-serif !default;
+$voxel-fonts__font-family--serif: serif !default;
 $voxel-fonts__font-family--monospace: monospace !default;
 $voxel-fonts__font-family--base: $voxel-fonts__font-family--serif !default;
 $voxel-fonts__font-family--headings: $voxel-fonts__font-family--sans-serif !default;
