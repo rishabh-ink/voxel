@@ -2,6 +2,7 @@
   color: $voxel-fonts__color--base;
   font-family: $voxel-fonts__font-family--base;
   font-size: $voxel-fonts__font-size--base;
+  font-weight: $voxel-fonts__font-weight--base;
   line-height: map-get($voxel-fonts__line-height, "600");
 }
 
@@ -12,7 +13,7 @@
 @mixin voxel-fonts__headings--h123456() {
   color: $voxel-fonts__color--headings;
   font-family: $voxel-fonts__font-family--headings;
-  font-weight: normal;
+  font-weight: $voxel-fonts__font-weight--headings;
 }
 
 @mixin voxel-fonts__headings--h1234() {

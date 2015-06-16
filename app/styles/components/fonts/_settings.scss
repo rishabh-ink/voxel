@@ -10,11 +10,14 @@ $voxel-fonts__line-height: map-merge((
 $voxel-fonts__font-family--sans-serif: "Raleway", sans-serif !default;
 $voxel-fonts__font-family--serif: serif !default;
 $voxel-fonts__font-family--monospace: monospace !default;
-$voxel-fonts__font-family--base: $voxel-fonts__font-family--serif !default;
+$voxel-fonts__font-family--base: $voxel-fonts__font-family--sans-serif !default;
 $voxel-fonts__font-family--headings: $voxel-fonts__font-family--sans-serif !default;
 
 $voxel-fonts__color--base: map-get($voxel-colors__gray, "800") !default;
 $voxel-fonts__color--headings: map-get($voxel-colors__brand--primary, "800") !default;
+
+$voxel-fonts__font-weight--base: 400 !default;
+$voxel-fonts__font-weight--headings: 300 !default;
 
 $voxel-fonts__font-size--base: 16px !default;
 $voxel-fonts__font-size--headings: () !default;
