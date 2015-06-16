@@ -11,7 +11,7 @@ $voxel-header__margin--bottom: map-get($voxel-scaffolding__spacing--vertical, "a
 $voxel-header__padding--bottom: map-get($voxel-scaffolding__spacing--vertical, "300") !default;
 $voxel-header__padding--top: map-get($voxel-scaffolding__spacing--vertical, "300") !default;
 
-$voxel-header__box-shadow--color: map-get($voxel-colors__brand--primary, "200") !default;
+$voxel-header__box-shadow--color: map-get($voxel-colors__brand--primary, "300") !default;
 $voxel-header__box-shadow--radius: map-get($voxel-scaffolding__spacing--vertical, "a100") !default;
 $voxel-header__box-shadow--height: map-get($voxel-scaffolding__spacing--vertical, "a100") !default;
 $voxel-header__box-shadow--width: 80% !default;
@@ -21,4 +21,4 @@ $voxel-header__title__font-family: $voxel-fonts__font-family--headings !default;
 $voxel-header__title__font-size: map-get($voxel-fonts__font-size--headings, "h3") !default;
 $voxel-header__subtitle__font-size: map-get($voxel-fonts__font-size--headings, "h4") !default;
 $voxel-header__subtitle__margin--left: map-get($voxel-scaffolding__spacing--horizontal, "600") !default;
-$voxel-header__subtitle__color: map-get($voxel-colors__brand--primary, "300") !default;
+$voxel-header__subtitle__color: map-get($voxel-colors__brand--primary, "400") !default;

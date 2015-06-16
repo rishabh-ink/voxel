@@ -28,7 +28,7 @@ $voxel-drawer__header__padding--bottom: map-get($voxel-scaffolding__spacing--ver
 $voxel-drawer__header__padding--top: map-get($voxel-scaffolding__spacing--vertical, "300") !default;
 $voxel-drawer__header__text-align: center !default;
 
-$voxel-drawer__header__box-shadow--color: map-get($voxel-colors__brand--primary, "200") !default;
+$voxel-drawer__header__box-shadow--color: map-get($voxel-colors__brand--primary, "400") !default;
 $voxel-drawer__header__box-shadow--radius: map-get($voxel-scaffolding__spacing--vertical, "a100") !default;
 $voxel-drawer__header__box-shadow--height: map-get($voxel-scaffolding__spacing--vertical, "a100") !default;
 $voxel-drawer__header__box-shadow--width: 80% !default;
