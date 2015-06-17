@@ -1,15 +1,24 @@
 @mixin voxel-code-snippet() {
-  padding: $voxel-code-snippet__padding;
+  padding-top: $voxel-code-snippet__padding--top;
+  padding-right: $voxel-code-snippet__padding--right;
+  padding-bottom: $voxel-code-snippet__padding--bottom;
+  padding-left: $voxel-code-snippet__padding--left;
+  margin-top: $voxel-code-snippet__margin--top;
+  margin-right: $voxel-code-snippet__margin--right;
+  margin-bottom: $voxel-code-snippet__margin--bottom;
+  margin-left: $voxel-code-snippet__margin--left;
 }
 
 @mixin voxel-code-snippet__pre() {
   background-color: inherit;
+  border-radius: initial;
   border: 0;
   color: inherit;
-  margin: inherit;
-  padding: inherit;
   font-size: inherit;
   line-height: inherit;
-  border-radius: initial;
+  margin: 0;
+  overflow: auto;
+  padding: inherit;
   word-break: break-all;
+  word-wrap: normal;
 }
