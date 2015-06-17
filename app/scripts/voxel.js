@@ -1,5 +1,5 @@
-define(["jquery", "hljs", "components/drawer"],
-function($,        HLJS,   Drawer) {
+define(["jquery", "components/drawer"],
+function($,        Drawer) {
   "use strict";
 
   var Voxel = {
@@ -7,12 +7,9 @@ function($,        HLJS,   Drawer) {
       name: "Voxel",
 
       elements: {
-        highlight: "[data-js~='highlight']"
       },
 
-      classnames: {},
-
-      useHighlight: false
+      classnames: {}
     },
 
     elements: {},
@@ -41,8 +38,6 @@ function($,        HLJS,   Drawer) {
     fetch: function() {
       console.log(this.options.name, "fetch()", "Fetching elements");
 
-      this.elements.highlight = $(this.options.elements.highlight);
-
       console.log(this.options.name, "fetch()", "Fetched", {
         elements: this.elements
       });
@@ -63,10 +58,6 @@ function($,        HLJS,   Drawer) {
         name: "Voxel.Drawer",
         closeOnPageTouch: false
       });
-
-      if(this.options.useHighlight) {
-        HLJS.initHighlightingOnLoad();
-      }
 
       console.log(this.options.name, "setup()", "Set up components", { components: this.components });
 

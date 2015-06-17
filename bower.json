@@ -18,7 +18,6 @@
     "jquery": "https://github.com/jquery/jquery.git#1.10.2",
     "requirejs": "https://github.com/jrburke/requirejs-bower.git#2.1.17",
     "webfontloader": "https://github.com/typekit/webfontloader.git#1.5.18",
-    "highlightjs": "https://github.com/components/highlightjs.git#8.5.0",
     "base16-pygments": "https://github.com/idleberg/base16-pygments.git"
   },
   "devDependencies": {
