@@ -1,12 +1,35 @@
 @mixin voxel-code-snippet() {
-  padding-top: $voxel-code-snippet__padding--top;
-  padding-right: $voxel-code-snippet__padding--right;
-  padding-bottom: $voxel-code-snippet__padding--bottom;
-  padding-left: $voxel-code-snippet__padding--left;
-  margin-top: $voxel-code-snippet__margin--top;
-  margin-right: $voxel-code-snippet__margin--right;
   margin-bottom: $voxel-code-snippet__margin--bottom;
   margin-left: $voxel-code-snippet__margin--left;
+  margin-right: $voxel-code-snippet__margin--right;
+  margin-top: $voxel-code-snippet__margin--top;
+  padding-bottom: $voxel-code-snippet__padding--bottom;
+  padding-left: $voxel-code-snippet__padding--left;
+  padding-right: $voxel-code-snippet__padding--right;
+  padding-top: $voxel-code-snippet__padding--top;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: block;
+    height: $voxel-code-snippet__icon__height;
+    position: absolute;
+    right: $voxel-code-snippet__icon__right;
+    top: $voxel-code-snippet__icon__top;
+    width: $voxel-code-snippet__icon__width;
+  }
+}
+
+@mixin voxel-code-snippet--html() {
+  &:before {
+    background-image: $voxel-code-snippet__icon__background-image--html;
+  }
+}
+
+@mixin voxel-code-snippet--js() {
+  &:before {
+    background-image: $voxel-code-snippet__icon__background-image--js;
+  }
 }
 
 @mixin voxel-code-snippet__pre() {

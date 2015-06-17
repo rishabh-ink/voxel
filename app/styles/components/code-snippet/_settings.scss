@@ -9,3 +9,11 @@ $voxel-code-snippet__margin--top: map-get($voxel-scaffolding__spacing--vertical,
 $voxel-code-snippet__margin--right: 0 !default;
 $voxel-code-snippet__margin--bottom: map-get($voxel-scaffolding__spacing--vertical, "600") !default;
 $voxel-code-snippet__margin--left: 0 !default;
+
+$voxel-code-snippet__icon__width: 64px !default;
+$voxel-code-snippet__icon__height: 64px !default;
+$voxel-code-snippet__icon__top: 5px !default;
+$voxel-code-snippet__icon__right: 5px !default;
+
+$voxel-code-snippet__icon__background-image--html: url("../images/html.png") !default;
+$voxel-code-snippet__icon__background-image--js: url("../images/js.png") !default;
