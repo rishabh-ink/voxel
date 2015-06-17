@@ -1,1 +1,1 @@
-require.config({paths:{jquery:"../../libraries/jquery/jquery",hljs:"../../libraries/highlightjs/highlight.pack"},shim:{}}),require(["jquery","voxel"],function(i,e){e.create({useHighlight:!0})});
+require.config({paths:{jquery:"../../libraries/jquery/jquery"},shim:{}}),require(["jquery","voxel"],function(e,r){r.create()});
