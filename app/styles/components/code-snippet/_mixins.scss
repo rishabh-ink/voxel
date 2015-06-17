@@ -1,0 +1,15 @@
+@mixin code-snippet() {
+  padding: $voxel-code-snippet__padding;
+}
+
+@mixin code-snippet__pre() {
+  background-color: inherit;
+  border: 0;
+  color: inherit;
+  margin: inherit;
+  padding: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border-radius: initial;
+  word-break: break-all;
+}
