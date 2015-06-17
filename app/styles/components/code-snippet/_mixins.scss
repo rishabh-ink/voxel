@@ -1,8 +1,8 @@
-@mixin code-snippet() {
+@mixin voxel-code-snippet() {
   padding: $voxel-code-snippet__padding;
 }
 
-@mixin code-snippet__pre() {
+@mixin voxel-code-snippet__pre() {
   background-color: inherit;
   border: 0;
   color: inherit;

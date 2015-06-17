@@ -3,11 +3,11 @@
 @import "documentation";
 
 @if($voxel-code-snippet__include-classes) {
-  .code-snippet {
-    @include code-snippet();
+  .voxel-code-snippet {
+    @include voxel-code-snippet();
   }
 
-  .code-snippet pre {
-    @include code-snippet__pre();
+  .voxel-code-snippet pre {
+    @include voxel-code-snippet__pre();
   }
 }
