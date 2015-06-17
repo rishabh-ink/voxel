@@ -17,7 +17,6 @@ require.config({
   paths: {
     // Libraries
     "jquery": "libraries/jquery/jquery",
-    "hljs": "libraries/highlightjs/highlight.pack",
     // /Libraries
 
     // Application
