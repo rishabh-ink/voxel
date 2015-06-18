@@ -3,10 +3,7 @@
   margin-left: $voxel-code-snippet__margin--left;
   margin-right: $voxel-code-snippet__margin--right;
   margin-top: $voxel-code-snippet__margin--top;
-  padding-bottom: $voxel-code-snippet__padding--bottom;
-  padding-left: $voxel-code-snippet__padding--left;
-  padding-right: $voxel-code-snippet__padding--right;
-  padding-top: $voxel-code-snippet__padding--top;
+  padding: $voxel-code-snippet__padding;
   position: relative;
 
   &:before {

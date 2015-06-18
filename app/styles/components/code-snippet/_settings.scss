@@ -1,19 +1,16 @@
 $voxel-code-snippet__include-classes: $voxel-components__include-classes !default;
 
-$voxel-code-snippet__padding--top: map-get($voxel-scaffolding__spacing--vertical, "a400") !default;
-$voxel-code-snippet__padding--right: map-get($voxel-scaffolding__spacing--horizontal, "600") !default;
-$voxel-code-snippet__padding--bottom: map-get($voxel-scaffolding__spacing--vertical, "600") !default;
-$voxel-code-snippet__padding--left: map-get($voxel-scaffolding__spacing--horizontal, "600") !default;
+$voxel-code-snippet__padding: map-get($voxel-scaffolding__spacing--horizontal, "600") !default;
 
-$voxel-code-snippet__margin--top: map-get($voxel-scaffolding__spacing--vertical, "600") !default;
+$voxel-code-snippet__margin--top: map-get($voxel-scaffolding__spacing--vertical, "a100") !default;
 $voxel-code-snippet__margin--right: 0 !default;
-$voxel-code-snippet__margin--bottom: map-get($voxel-scaffolding__spacing--vertical, "600") !default;
+$voxel-code-snippet__margin--bottom: map-get($voxel-scaffolding__spacing--vertical, "a400") !default;
 $voxel-code-snippet__margin--left: 0 !default;
 
 $voxel-code-snippet__icon__width: 64px !default;
 $voxel-code-snippet__icon__height: 64px !default;
-$voxel-code-snippet__icon__top: 5px !default;
-$voxel-code-snippet__icon__right: 5px !default;
+$voxel-code-snippet__icon__top: -($voxel-code-snippet__icon__height / 2) !default;
+$voxel-code-snippet__icon__right: -($voxel-code-snippet__icon__width / 2) !default;
 
 $voxel-code-snippet__icon__background-image--html: url("../images/html.png") !default;
 $voxel-code-snippet__icon__background-image--js: url("../images/js.png") !default;
