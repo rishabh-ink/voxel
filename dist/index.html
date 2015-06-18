@@ -22,10 +22,6 @@
   -->
 </head>
 <body>
-  <!--[if lt IE 10]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
-
   <main>
     <aside data-js="voxelDrawer" class="voxel-drawer">
       <header class="voxel-drawer__header">
@@ -66,6 +62,10 @@
 
     <div class="voxel-layouts__page" data-js="voxelDrawerPage">
       <div class="voxel-layouts__content">
+        <!--[if lt IE 9]>
+          <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
         <h1>Examples</h1>
 
         <blockquote cite="http://demo.getpoole.com/page2">
@@ -264,8 +264,7 @@
     WebFont.load({
       google: {
         families: [
-          "Raleway:300:latin",
-          "Raleway:400:latin"
+          "Carrois+Gothic::latin"
         ]
       }
     });
