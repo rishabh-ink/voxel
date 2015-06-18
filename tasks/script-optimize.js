@@ -21,7 +21,9 @@ gulp.task("script:optimize", ["script:test"], function (callback) {
       CFG.FILE.config.appModule
     ],
     exclude: [
-      "jquery"
+      "jquery",
+      "es5-shim",
+      "es5-sham"
       // Add additional libraries to exclude.
     ],
     out: path.join(CFG.DIR.dist, CFG.DIR.script, CFG.FILE.config.appMain)

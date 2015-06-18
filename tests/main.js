@@ -17,6 +17,8 @@ require.config({
   paths: {
     // Libraries
     "jquery": "libraries/jquery/jquery",
+    "es5-shim": "libraries/es5-shim/es5-shim.min",
+    "es5-sham": "libraries/es5-shim/es5-sham.min",
     // /Libraries
 
     // Application
