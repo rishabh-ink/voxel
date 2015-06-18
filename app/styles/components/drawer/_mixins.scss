@@ -13,6 +13,7 @@
   position: fixed;
   top: 0;
   width: $voxel-drawer__width;
+  z-index: $voxel-drawer__z-index;
 }
 
 @mixin voxel-drawer--active() {
@@ -34,6 +35,7 @@
   position: fixed;
   text-decoration: none;
   top: 0;
+  z-index: $voxel-drawer__toggle__z-index;
 }
 
 @mixin voxel-drawer__toggle--active() {
