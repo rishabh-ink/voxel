@@ -1,13 +1,13 @@
 @mixin voxel-layouts__content() {
   margin-left: auto;
   margin-right: auto;
-  max-width: $voxel-layouts__content__max-width;
-  padding-left: $voxel-layouts__content__padding--horizontal;
-  padding-right: $voxel-layouts__content__padding--horizontal;
+  max-width: rem-calc($voxel-layouts__content__max-width);
+  padding-left: rem-calc($voxel-layouts__content__padding--horizontal);
+  padding-right: rem-calc($voxel-layouts__content__padding--horizontal);
 }
 
 @mixin voxel-layouts__image() {
   display: block;
-  margin-bottom: $voxel-layouts__image__margin--vertical;
+  margin-bottom: rem-calc($voxel-layouts__image__margin--vertical);
   max-width: 100%;
 }

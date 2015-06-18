@@ -1,10 +1,10 @@
 @mixin voxel-header() {
   background: $voxel-header__background-color;
   border-bottom: $voxel-header__border--bottom--width $voxel-header__border--bottom--style $voxel-header__border--bottom--color;
-  margin-bottom: $voxel-header__margin--bottom;
-  min-height: $voxel-header__height--min;
-  padding-bottom: $voxel-header__padding--bottom;
-  padding-top: $voxel-header__padding--top;
+  margin-bottom: rem-calc($voxel-header__margin--bottom);
+  min-height: rem-calc($voxel-header__height--min);
+  padding-bottom: rem-calc($voxel-header__padding--bottom);
+  padding-top: rem-calc($voxel-header__padding--top);
   position: relative;
   text-align: center;
 
@@ -23,11 +23,11 @@
     border-radius: 50%;
     bottom: 0;
     content: "";
-    height: $voxel-header__box-shadow--height;
+    height: rem-calc($voxel-header__box-shadow--height);
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
-    width: $voxel-header__box-shadow--width;
+    width: rem-calc($voxel-header__box-shadow--width);
     z-index: -1;
   }
 }
@@ -35,15 +35,15 @@
 @mixin voxel-header__title() {
   color: $voxel-header__title__color;
   font-family: $voxel-header__title__font-family;
-  font-size: $voxel-header__title__font-size;
+  font-size: rem-calc($voxel-header__title__font-size);
   text-decoration: none;
 }
 
 @mixin voxel-header__subtitle() {
   color: $voxel-header__subtitle__color;
   display: none;
-  font-size: $voxel-header__subtitle__font-size;
-  margin-left: $voxel-header__subtitle__margin--left;
+  font-size: rem-calc($voxel-header__subtitle__font-size);
+  margin-left: rem-calc($voxel-header__subtitle__margin--left);
 
   @media (min-width: $voxel-scaffolding__screen--s--min) {
     display: initial;

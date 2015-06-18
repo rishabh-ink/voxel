@@ -1,5 +1,5 @@
 @mixin voxel-drawer() {
-  @include box-shadow(0 0 $voxel-drawer__box-shadow--radius 0 $voxel-drawer__box-shadow--color);
+  @include box-shadow(0 0 rem-calc($voxel-drawer__box-shadow--radius) 0 $voxel-drawer__box-shadow--color);
   @include transition-duration($voxel-drawer__transition--duration);
   @include transition-property(left);
   background-color: $voxel-drawer__background-color;
@@ -8,11 +8,11 @@
   border-right-width: $voxel-drawer__border--right--width;
   font-family: $voxel-drawer__font-family;
   height: 100%;
-  left: -($voxel-drawer__width);
+  left: rem-calc(-($voxel-drawer__width));
   overflow-y: auto;
   position: fixed;
   top: 0;
-  width: $voxel-drawer__width;
+  width: rem-calc($voxel-drawer__width);
   z-index: $voxel-drawer__z-index;
 }
 
@@ -28,10 +28,10 @@
   font-size: $voxel-drawer__toggle__font-size;
   font-weight: bold;
   left: 0;
-  padding-bottom: $voxel-drawer__toggle__padding--bottom;
-  padding-left: $voxel-drawer__toggle__padding--left;
-  padding-right: $voxel-drawer__toggle__padding--right;
-  padding-top: $voxel-drawer__toggle__padding--top;
+  padding-bottom: rem-calc($voxel-drawer__toggle__padding--bottom);
+  padding-left: rem-calc($voxel-drawer__toggle__padding--left);
+  padding-right: rem-calc($voxel-drawer__toggle__padding--right);
+  padding-top: rem-calc($voxel-drawer__toggle__padding--top);
   position: fixed;
   text-decoration: none;
   top: 0;
@@ -45,16 +45,16 @@
 
 @mixin voxel-drawer__title() {
   color: $voxel-drawer__title__color;
-  font-size: $voxel-drawer__title__font-size;
+  font-size: rem-calc($voxel-drawer__title__font-size);
   text-decoration: none;
 }
 
 @mixin voxel-drawer__header() {
   background-color: $voxel-drawer__header__background-color;
-  margin-bottom: $voxel-drawer__header__margin--bottom;
-  min-height: $voxel-drawer__header__height--min;
-  padding-bottom: $voxel-drawer__header__padding--bottom;
-  padding-top: $voxel-drawer__header__padding--top;
+  margin-bottom: rem-calc($voxel-drawer__header__margin--bottom);
+  min-height: rem-calc($voxel-drawer__header__height--min);
+  padding-bottom: rem-calc($voxel-drawer__header__padding--bottom);
+  padding-top: rem-calc($voxel-drawer__header__padding--top);
   position: relative;
   text-align: $voxel-drawer__header__text-align;
 
@@ -69,11 +69,11 @@
     border-radius: 50%;
     bottom: 0;
     content: "";
-    height: $voxel-drawer__header__box-shadow--height;
+    height: rem-calc($voxel-drawer__header__box-shadow--height);
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
-    width: $voxel-drawer__header__box-shadow--width;
+    width: rem-calc($voxel-drawer__header__box-shadow--width);
     z-index: -1;
   }
 }
