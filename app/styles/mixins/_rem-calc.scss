@@ -1,0 +1,25 @@
+// Courtesy davidwalsh.name/rem-px-browser-function-sass
+$voxel-rem-calc__base: 16;
+
+@function strip-unit($n) {
+  @return $n / ($n * 0 + 1);
+}
+
+@function rem-calc($values) {
+  $list: ();
+
+  @each $value in $values {
+    @if (type-of($value) == "number") and ($value != 0) {
+      $unit: unit($value);
+      $valueInt: strip-unit($value);
+
+      @if ($unit == "rem") {
+        $list: append($list, ($valueInt * $voxel-rem-calc__base) + px);
+      } @else {
+        $list: append($list, $value);
+      }
+    }
+  }
+
+  @return $list();
+}
