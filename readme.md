@@ -108,3 +108,5 @@ bundle exec travis encrypt $(heroku auth:token) --add deploy.api_key
 ## :scroll: License
 
 See [license.md](license.md).
+
+[HexIcons](www.iconfinder.com/iconsets/hex-ico) courtesy [ExpanseLook](www.iconfinder.com/brucen.wayne.58).
