@@ -21,8 +21,6 @@
   &:before {
     background-image: $voxel-code-snippet__icon__background-image--html;
   }
-
-  margin-top: 0;
 }
 
 @mixin voxel-code-snippet--js() {
