@@ -1,5 +1,7 @@
 $voxel-colors__include-classes: $voxel-components__include-classes !default;
 
+$voxel-colors__transparent: rgba(0, 0, 0, 0) !default;
+
 $voxel-colors__gray: () !default;
 $voxel-colors__gray: map-merge((
   "50": #fafafa,
