@@ -30,13 +30,11 @@
   @include transform(translate3d(0, 0, 0));
 }
 
-@mixin voxel-drawer--active_siblings() {
+@mixin voxel-drawer--active_siblings--with-filters() {
   @include filter(blur($voxel-drawer__layouts__page__blur));
 }
 
 @mixin voxel-drawer__toggle() {
-  @include transition-duration($voxel-drawer__toggle__transition--duration);
-  @include transition-property(color, transform);
   color: $voxel-drawer__toggle__color;
   font-family: sans-serif;
   font-size: $voxel-drawer__toggle__font-size;
@@ -52,9 +50,17 @@
   z-index: $voxel-drawer__toggle__z-index;
 }
 
+@mixin voxel-drawer__toggle--with-transitions() {
+  @include transition-duration($voxel-drawer__toggle__transition--duration);
+  @include transition-property(color, transform);
+}
+
 @mixin voxel-drawer__toggle--active() {
-  @include transform(rotateZ(180deg));
   color: $voxel-drawer__toggle__color--active;
+}
+
+@mixin voxel-drawer__toggle--active--with-transforms() {
+  @include transform(rotateZ(180deg));
 }
 
 @mixin voxel-drawer__title() {
