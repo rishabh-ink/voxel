@@ -2,6 +2,8 @@ $voxel-layouts__include-classes: $voxel-components__include-classes !default;
 
 $voxel-layouts__page__transition-duration: $voxel-scaffolding__transition--duration !default;
 
+$voxel-layouts__page__blur: 5px !default;
+
 $voxel-layouts__content__max-width: 48rem !default;
 
 $voxel-layouts__content__padding--horizontal: map-get($voxel-scaffolding__spacing--horizontal, "400") !default;

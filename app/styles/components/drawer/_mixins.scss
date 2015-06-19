@@ -33,10 +33,6 @@
   @include transform(translate3d(0, 0, 0));
 }
 
-@mixin voxel-drawer--active_siblings--with-filters() {
-  @include filter(blur($voxel-drawer__layouts__page__blur));
-}
-
 @mixin voxel-drawer__toggle() {
   color: $voxel-drawer__toggle__color;
   font-family: sans-serif;

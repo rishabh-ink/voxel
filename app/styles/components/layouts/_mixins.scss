@@ -4,6 +4,10 @@
   @include transition-timing-function(ease-in);
 }
 
+@mixin voxel-layouts__page--inactive--with-filters() {
+  @include filter(blur($voxel-layouts__page__blur));
+}
+
 @mixin voxel-layouts__content() {
   margin-left: auto;
   margin-right: auto;

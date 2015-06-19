@@ -19,10 +19,6 @@
     @include voxel-drawer--active--with-transforms();
   }
 
-  /*html*/.voxel-cssfilters .voxel-drawer--active ~ .voxel-layouts__page {
-    @include voxel-drawer--active_siblings--with-filters();
-  }
-
   .voxel-drawer__toggle {
     @include voxel-drawer__toggle();
   }

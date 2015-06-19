@@ -14,7 +14,8 @@ function($) {
 
       classnames: {
         drawerActive: "voxel-drawer--active",
-        drawerToggleActive: "voxel-drawer__toggle--active"
+        drawerToggleActive: "voxel-drawer__toggle--active",
+        pageInactive: "voxel-layouts__page--inactive"
       },
 
       closeOnPageTouch: true
@@ -120,11 +121,13 @@ function($) {
     setDrawerState: function(state) {
       var drawer = this.elements.drawer;
       var drawerToggle = this.elements.drawerToggle;
+      var page = this.elements.page;
 
       switch(state) {
         case this.constants.states.TOGGLE: {
           drawer.toggleClass(this.options.classnames.drawerActive);
           drawerToggle.toggleClass(this.options.classnames.drawerToggleActive);
+          page.toggleClass(this.options.classnames.pageInactive);
 
           break;
         }
@@ -132,6 +135,7 @@ function($) {
         case this.constants.states.CLOSE: {
           drawer.removeClass(this.options.classnames.drawerActive);
           drawerToggle.removeClass(this.options.classnames.drawerToggleActive);
+          page.removeClass(this.options.classnames.pageInactive);
 
           break;
         }
@@ -139,6 +143,7 @@ function($) {
         case this.constants.states.OPEN: {
           drawer.addClass(this.options.classnames.drawerActive);
           drawerToggle.addClass(this.options.classnames.drawerToggleActive);
+          page.addClass(this.options.classnames.pageInactive);
 
           break;
         }
@@ -146,7 +151,8 @@ function($) {
 
       console.log(this.options.name, "setDrawerState()", "Set drawer state", state, {
         drawer: this.elements.drawer.attr("class"),
-        drawerToggle: this.elements.drawerToggle.attr("class")
+        drawerToggle: this.elements.drawerToggle.attr("class"),
+        page: this.elements.page.attr("class")
       });
     }
   };

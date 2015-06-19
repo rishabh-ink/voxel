@@ -7,6 +7,10 @@
     @include voxel-layouts__page();
   }
 
+  /*html*/.voxel-cssfilters .voxel-layouts__page--inactive {
+    @include voxel-layouts__page--inactive--with-filters();
+  }
+
   .voxel-layouts__content {
     @include voxel-layouts__content();
   }
