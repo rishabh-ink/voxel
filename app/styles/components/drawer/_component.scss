@@ -11,6 +11,10 @@
     @include voxel-drawer--active();
   }
 
+  /*html*/.voxel-cssfilters .voxel-drawer--active ~ .voxel-layouts__page {
+    @include voxel-drawer--active_siblings();
+  }
+
   .voxel-drawer__toggle {
     @include voxel-drawer__toggle();
   }

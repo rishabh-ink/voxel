@@ -1,3 +1,9 @@
+@mixin voxel-layouts__page() {
+  @include transition-duration($voxel-layouts__page__transition-duration);
+  @include transition-property(-webkit-filter, filter);
+  @include transition-timing-function(ease-in);
+}
+
 @mixin voxel-layouts__content() {
   margin-left: auto;
   margin-right: auto;

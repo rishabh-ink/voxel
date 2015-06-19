@@ -2,6 +2,7 @@
   @include box-shadow(0 0 rem-calc($voxel-drawer__box-shadow--radius) 0 $voxel-drawer__box-shadow--color);
   @include transition-duration($voxel-drawer__transition--duration);
   @include transition-property(left);
+  @include transition-timing-function(ease-in);
   background-color: $voxel-drawer__background-color;
   border-right-color: $voxel-drawer__border--right--color;
   border-right-style: $voxel-drawer__border--right--style;
@@ -18,6 +19,10 @@
 
 @mixin voxel-drawer--active() {
   left: 0;
+}
+
+@mixin voxel-drawer--active_siblings() {
+  @include filter(blur($voxel-drawer__layouts__page__blur));
 }
 
 @mixin voxel-drawer__toggle() {

@@ -3,6 +3,10 @@
 @import "documentation";
 
 @if($voxel-layouts__include-classes) {
+  /*html*/.voxel-csstransitions .voxel-layouts__page {
+    @include voxel-layouts__page();
+  }
+
   .voxel-layouts__content {
     @include voxel-layouts__content();
   }
