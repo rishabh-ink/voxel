@@ -3,7 +3,10 @@
   @include transition-duration($voxel-drawer__transition--duration);
   @include transition-property(-webkit-transform, -moz-transform, -o-transform, transform);
   @include transition-timing-function(ease-in);
+  // scss-lint:disable DuplicateProperty
   background-color: $voxel-drawer__background-color;
+  background-color: rgba($voxel-drawer__background-color, $voxel-drawer__background-alpha);
+  // scss-lint:enable DuplicateProperty
   border-right-color: $voxel-drawer__border--right--color;
   border-right-style: $voxel-drawer__border--right--style;
   border-right-width: $voxel-drawer__border--right--width;
