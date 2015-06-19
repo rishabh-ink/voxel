@@ -1,5 +1,4 @@
 @mixin voxel-drawer() {
-  @include box-shadow(0 0 rem-calc($voxel-drawer__box-shadow--radius) 0 $voxel-drawer__box-shadow--color);
   @include transition-duration($voxel-drawer__transition--duration);
   @include transition-property(-webkit-transform, -moz-transform, -o-transform, transform);
   @include transition-timing-function(ease-in);
@@ -26,6 +25,7 @@
 }
 
 @mixin voxel-drawer--active() {
+  @include box-shadow(0 0 rem-calc($voxel-drawer__box-shadow--radius) 0 $voxel-drawer__box-shadow--color);
   left: 0;
 }
 
