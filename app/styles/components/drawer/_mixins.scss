@@ -115,3 +115,11 @@
     margin-right: $voxel-drawer__index__item__counter__margin--right;
   }
 }
+
+@mixin voxel-drawer__index__item__link() {
+  text-decoration: none;
+}
+
+@mixin voxel-drawer__index__item--active() {
+  @include background-with-css2-fallback($voxel-drawer__index__item--active__background-gradient);
+}

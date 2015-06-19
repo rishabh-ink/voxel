@@ -45,3 +45,6 @@ $voxel-drawer__index__padding--left: map-get($voxel-scaffolding__spacing--horizo
 $voxel-drawer__index__item__padding--bottom: map-get($voxel-scaffolding__spacing--vertical, "50") !default;
 $voxel-drawer__index__item__padding--top: map-get($voxel-scaffolding__spacing--vertical, "50") !default;
 $voxel-drawer__index__item__counter__margin--right: map-get($voxel-scaffolding__spacing--horizontal, "400") !default;
+
+$voxel-drawer__index__item--active__background-color: map-get($voxel-colors__brand--primary, "200") !default;
+$voxel-drawer__index__item--active__background-gradient: linear-gradient(to right, $voxel-colors__transparent, $voxel-drawer__index__item--active__background-color) !default;

@@ -50,4 +50,12 @@
   .voxel-drawer__index__item {
     @include voxel-drawer__index__item();
   }
+
+  .voxel-drawer__index__item__link {
+    @include voxel-drawer__index__item__link();
+  }
+
+  .voxel-drawer__index__item--active {
+    @include voxel-drawer__index__item--active();
+  }
 }
