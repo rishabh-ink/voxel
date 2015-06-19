@@ -13,7 +13,7 @@ $voxel-drawer__border--right--width: 1px !default;
 $voxel-drawer__border--right--style: solid !default;
 
 $voxel-drawer__box-shadow--radius: map-get($voxel-scaffolding__spacing--horizontal, "900") !default;
-$voxel-drawer__box-shadow--color: map-get($voxel-colors__brand--primary, "50") !default;
+$voxel-drawer__box-shadow--color: map-get($voxel-colors__brand--primary, "400") !default;
 
 $voxel-drawer__title__color: map-get($voxel-colors__brand--primary, "800") !default;
 $voxel-drawer__title__font-size: map-get($voxel-fonts__font-size--headings, "h3") !default;
