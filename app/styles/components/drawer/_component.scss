@@ -7,8 +7,16 @@
     @include voxel-drawer();
   }
 
+  /*html*/.voxel-csstransforms .voxel-drawer {
+    @include voxel-drawer--with-transforms();
+  }
+
   .voxel-drawer--active {
     @include voxel-drawer--active();
+  }
+
+  /*html*/.voxel-csstransforms .voxel-drawer--active {
+    @include voxel-drawer--active--with-transforms();
   }
 
   /*html*/.voxel-cssfilters .voxel-drawer--active ~ .voxel-layouts__page {

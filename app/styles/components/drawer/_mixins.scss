@@ -1,7 +1,7 @@
 @mixin voxel-drawer() {
   @include box-shadow(0 0 rem-calc($voxel-drawer__box-shadow--radius) 0 $voxel-drawer__box-shadow--color);
   @include transition-duration($voxel-drawer__transition--duration);
-  @include transition-property(left);
+  @include transition-property(-webkit-transform, -moz-transform, -o-transform, transform);
   @include transition-timing-function(ease-in);
   background-color: $voxel-drawer__background-color;
   border-right-color: $voxel-drawer__border--right--color;
@@ -17,8 +17,17 @@
   z-index: $voxel-drawer__z-index;
 }
 
+@mixin voxel-drawer--with-transforms() {
+  @include transform(translate3d(rem-calc(-($voxel-drawer__width)), 0, 0));
+  left: 0;
+}
+
 @mixin voxel-drawer--active() {
   left: 0;
+}
+
+@mixin voxel-drawer--active--with-transforms() {
+  @include transform(translate3d(0, 0, 0));
 }
 
 @mixin voxel-drawer--active_siblings() {
