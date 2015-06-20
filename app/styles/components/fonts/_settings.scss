@@ -51,3 +51,18 @@ $voxel-fonts__code__padding--bottom: 0 !default;
 $voxel-fonts__code__border--color: $voxel-scaffolding__body__background-color !default;
 $voxel-fonts__code__border--width: 1px !default;
 $voxel-fonts__code__border--style: dashed !default;
+
+$voxel-fonts__blockquote__border--left--color: map-get($voxel-colors__brand--primary, "100") !default;
+$voxel-fonts__blockquote__border--left--width: 5px !default;
+$voxel-fonts__blockquote__border--left--style: solid !default;
+$voxel-fonts__blockquote__font-size: map-get($voxel-fonts__font-size--headings, "h4") !default;
+
+$voxel-fonts__blockquote__padding--left: map-get($voxel-scaffolding__spacing--horizontal, "800") !default;
+$voxel-fonts__blockquote__padding--right: map-get($voxel-scaffolding__spacing--horizontal, "800") !default;
+$voxel-fonts__blockquote__padding--top: map-get($voxel-scaffolding__spacing--vertical, "200") !default;
+$voxel-fonts__blockquote__padding--bottom: map-get($voxel-scaffolding__spacing--vertical, "200") !default;
+
+$voxel-fonts__blockquote__margin--left: map-get($voxel-scaffolding__spacing--horizontal, "800") !default;
+$voxel-fonts__blockquote__margin--right: map-get($voxel-scaffolding__spacing--horizontal, "800") !default;
+$voxel-fonts__blockquote__margin--top: map-get($voxel-scaffolding__spacing--vertical, "200") !default;
+$voxel-fonts__blockquote__margin--bottom: map-get($voxel-scaffolding__spacing--vertical, "200") !default;

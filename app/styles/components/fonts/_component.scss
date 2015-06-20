@@ -66,4 +66,8 @@
   pre code {
     @include voxel-fonts__pre__code();
   }
+
+  blockquote {
+    @include voxel-fonts__blockquote();
+  }
 }
