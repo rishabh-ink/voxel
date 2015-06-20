@@ -4,7 +4,7 @@
 
 @if($voxel-layouts__include-classes) {
   /*html*/.voxel-csstransitions .voxel-layouts__page {
-    @include voxel-layouts__page();
+    @include voxel-layouts__page--with-transitions();
   }
 
   /*html*/.voxel-cssfilters .voxel-layouts__page--inactive {

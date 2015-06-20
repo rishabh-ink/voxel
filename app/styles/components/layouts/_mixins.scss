@@ -1,4 +1,4 @@
-@mixin voxel-layouts__page() {
+@mixin voxel-layouts__page--with-transitions() {
   @include transition-duration($voxel-layouts__page__transition-duration);
   @include transition-property(-webkit-filter, filter);
   @include transition-timing-function(ease-in);
