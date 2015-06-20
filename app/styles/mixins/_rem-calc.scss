@@ -1,5 +1,5 @@
 // Courtesy davidwalsh.name/rem-px-browser-function-sass
-$voxel-rem-calc__base: 16;
+$voxel-rem-calc__base: 18;
 
 @function strip-unit($n) {
   @return $n / ($n * 0 + 1);

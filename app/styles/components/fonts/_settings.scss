@@ -19,7 +19,7 @@ $voxel-fonts__color--headings: map-get($voxel-colors__brand--primary, "800") !de
 $voxel-fonts__font-weight--base: 400 !default;
 $voxel-fonts__font-weight--headings: 300 !default;
 
-$voxel-fonts__font-size--base: 16px !default;
+$voxel-fonts__font-size--base: 18px !default;
 $voxel-fonts__font-size--headings: () !default;
 $voxel-fonts__font-size--headings: map-merge((
   // Perfect Fourth scale (1.333)
