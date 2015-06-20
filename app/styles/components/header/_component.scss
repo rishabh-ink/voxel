@@ -11,6 +11,14 @@
     @include voxel-header__title();
   }
 
+  /*html*/.voxel-csstransitions .voxel-header__title {
+    @include voxel-header__title--with-transitions();
+  }
+
+  /*html*/.voxel-cssfilters .voxel-header__title--inactive {
+    @include voxel-header__title--inactive--with-filters();
+  }
+
   .voxel-header__subtitle {
     @include voxel-header__subtitle();
   }

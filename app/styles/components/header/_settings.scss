@@ -16,6 +16,7 @@ $voxel-header__box-shadow--radius: map-get($voxel-scaffolding__spacing--vertical
 $voxel-header__box-shadow--height: map-get($voxel-scaffolding__spacing--vertical, "a100") !default;
 $voxel-header__box-shadow--width: 80% !default;
 
+$voxel-header__title__transition-duration: $voxel-scaffolding__transition--duration !default;
 $voxel-header__title__color: map-get($voxel-colors__brand--primary, "800") !default;
 $voxel-header__title__font-family: $voxel-fonts__font-family--headings !default;
 $voxel-header__title__font-size: map-get($voxel-fonts__font-size--headings, "h3") !default;

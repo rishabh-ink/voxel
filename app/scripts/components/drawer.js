@@ -9,13 +9,15 @@ function($) {
       elements: {
         drawerToggle: "[data-js~='voxelDrawerToggle']",
         drawer: "[data-js~='voxelDrawer']",
-        page: "[data-js~='voxelDrawerPage']"
+        page: "[data-js~='voxelDrawerPage']",
+        headerTitle: "[data-js~='voxelDrawerHeaderTitle']"
       },
 
       classnames: {
         drawerActive: "voxel-drawer--active",
         drawerToggleActive: "voxel-drawer__toggle--active",
-        pageInactive: "voxel-layouts__page--inactive"
+        pageInactive: "voxel-layouts__page--inactive",
+        headerTitleInactive: "voxel-header__title--inactive"
       },
 
       closeOnPageTouch: true
@@ -55,6 +57,7 @@ function($) {
       this.elements.drawerToggle = $(this.options.elements.drawerToggle);
       this.elements.drawer = $(this.options.elements.drawer);
       this.elements.page = $(this.options.elements.page);
+      this.elements.headerTitle = $(this.options.elements.headerTitle);
 
       console.log(this.options.name, "fetch()", "Fetched", {
         elements: this.elements
@@ -122,12 +125,14 @@ function($) {
       var drawer = this.elements.drawer;
       var drawerToggle = this.elements.drawerToggle;
       var page = this.elements.page;
+      var headerTitle = this.elements.headerTitle;
 
       switch(state) {
         case this.constants.states.TOGGLE: {
           drawer.toggleClass(this.options.classnames.drawerActive);
           drawerToggle.toggleClass(this.options.classnames.drawerToggleActive);
           page.toggleClass(this.options.classnames.pageInactive);
+          headerTitle.toggleClass(this.options.classnames.headerTitleInactive);
 
           break;
         }
@@ -136,6 +141,7 @@ function($) {
           drawer.removeClass(this.options.classnames.drawerActive);
           drawerToggle.removeClass(this.options.classnames.drawerToggleActive);
           page.removeClass(this.options.classnames.pageInactive);
+          headerTitle.removeClass(this.options.classnames.headerTitleInactive);
 
           break;
         }
@@ -144,6 +150,7 @@ function($) {
           drawer.addClass(this.options.classnames.drawerActive);
           drawerToggle.addClass(this.options.classnames.drawerToggleActive);
           page.addClass(this.options.classnames.pageInactive);
+          headerTitle.addClass(this.options.classnames.headerTitleInactive);
 
           break;
         }
@@ -152,7 +159,8 @@ function($) {
       console.log(this.options.name, "setDrawerState()", "Set drawer state", state, {
         drawer: this.elements.drawer.attr("class"),
         drawerToggle: this.elements.drawerToggle.attr("class"),
-        page: this.elements.page.attr("class")
+        page: this.elements.page.attr("class"),
+        headerTitle: this.elements.headerTitle.attr("class")
       });
     }
   };

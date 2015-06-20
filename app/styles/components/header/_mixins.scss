@@ -39,6 +39,16 @@
   text-decoration: none;
 }
 
+@mixin voxel-header__title--with-transitions() {
+  @include transition-duration($voxel-header__title__transition-duration);
+  @include transition-property(-webkit-filter, -moz-filter, -o-filter, filter);
+  @include transition-timing-function(ease-in);
+}
+
+@mixin voxel-header__title--inactive--with-filters() {
+  @include filter(blur($voxel-layouts__page__blur));
+}
+
 @mixin voxel-header__subtitle() {
   color: $voxel-header__subtitle__color;
   display: none;
