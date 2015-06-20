@@ -54,6 +54,11 @@
   .voxel-drawer__index__item__link {
     @include voxel-drawer__index__item__link();
 
+    &:hover {
+      @include voxel-drawer__index__item--hover();
+    }
+  }
+
   .voxel-drawer__index__item__text {
     @include voxel-drawer__index__item__text();
   }

@@ -134,3 +134,7 @@
 @mixin voxel-drawer__index__item--active() {
   @include background-with-css2-fallback($voxel-drawer__index__item--active__background-gradient);
 }
+
+@mixin voxel-drawer__index__item--hover() {
+  @include background-with-css2-fallback($voxel-drawer__index__item--hover__background-gradient);
+}
