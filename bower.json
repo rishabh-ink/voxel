@@ -17,7 +17,6 @@
   "dependencies": {
     "jquery": "https://github.com/jquery/jquery.git#~1.10",
     "requirejs": "https://github.com/jrburke/requirejs-bower.git#~2.1",
-    "webfontloader": "https://github.com/typekit/webfontloader.git#~1.5",
     "es5-shim": "https://github.com/es-shims/es5-shim.git#~4.1",
     "base16-pygments": "https://github.com/idleberg/base16-pygments.git"
   },
