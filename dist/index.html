@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Carrois+Gothic">
   <link rel="stylesheet" href="../dist/styles/main.css">
 
   <script src="scripts/libraries/modernizr.custom.js"></script>
@@ -30,7 +31,7 @@
       <div class="voxel-layouts__content">
         <ol class="voxel-drawer__index  voxel-drawer__index--ordered">
           <li class="voxel-drawer__index__item">
-            One
+            <p class="voxel-drawer__index__item__text">One</p>
             <ol class="voxel-drawer__index  voxel-drawer__index--ordered">
               <li class="voxel-drawer__index__item">
                 <a href="javascript:;" class="voxel-drawer__index__item__link">One.One</a>
@@ -44,13 +45,13 @@
             </ol>
           </li>
           <li class="voxel-drawer__index__item">
-            Two
+            <a href="javascript:;" class="voxel-drawer__index__item__link">Two</a>
           </li>
           <li class="voxel-drawer__index__item">
             <a href="javascript:;" class="voxel-drawer__index__item__link">Three</a>
           </li>
           <li class="voxel-drawer__index__item">
-            Four
+            <p class="voxel-drawer__index__item__text">Four</p>
             <ol class="voxel-drawer__index  voxel-drawer__index--ordered">
               <li class="voxel-drawer__index__item">
                 <a href="javascript:;" class="voxel-drawer__index__item__link">Four.One</a>
@@ -79,7 +80,7 @@
     <header class="voxel-header">
       <a href="javascript:;" data-js="voxelDrawerToggle" class="voxel-drawer__toggle">&#8942;</a>
       <div class="voxel-layouts__content">
-        <a href="#" class="voxel-header__title">Voxel</a> <span class="voxel-header__subtitle">A minimal theme.</span>
+        <a href="#" class="voxel-header__title" data-js="voxelDrawerHeaderTitle">Voxel <span class="voxel-header__title__sub">A minimal theme.</span></a>
       </div> <!-- /.voxel-layouts__content -->
     </header> <!-- /.voxel-header -->
 
@@ -282,16 +283,6 @@
     </div> <!-- /.voxel-layouts__page -->
   </main> <!-- /#voxel -->
 
-  <script src="../libraries/webfontloader/webfontloader.js"></script>
-  <script>
-    WebFont.load({
-      google: {
-        families: [
-          "Carrois+Gothic::latin"
-        ]
-      }
-    });
-  </script>
   <script src="../libraries/requirejs/require.js" data-main="scripts/main.js"></script>
 </body>
 </html>
