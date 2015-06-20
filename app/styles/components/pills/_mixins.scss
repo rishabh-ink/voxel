@@ -1,0 +1,39 @@
+@mixin voxel-pills() {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+@mixin voxel-pills__item() {
+  display: inline-block;
+}
+
+@mixin voxel-pill() {
+  border-color: $voxel-pill__border--color;
+  border-style: $voxel-pill__border--style;
+  border-width: $voxel-pill__border--width;
+  display: inline-block;
+  margin-bottom: rem-calc($voxel-pill__margin--bottom);
+  margin-left: rem-calc($voxel-pill__margin--left);
+  margin-right: rem-calc($voxel-pill__margin--right);
+  margin-top: rem-calc($voxel-pill__margin--top);
+  padding-bottom: rem-calc($voxel-pill__padding--bottom);
+  padding-left: rem-calc($voxel-pill__padding--left);
+  padding-right: rem-calc($voxel-pill__padding--right);
+  padding-top: rem-calc($voxel-pill__padding--top);
+  text-decoration: none;
+
+  &:hover {
+    background-color: $voxel-pill__background-color--hover;
+  }
+
+  &:active {
+    background-color: $voxel-pill__background-color--active;
+  }
+}
+
+@mixin voxel-pill--with-transitions() {
+  @include transition-duration($voxel-pill__transition-duration);
+  @include transition-property(background-color);
+  @include transition-timing-function(ease-in);
+}

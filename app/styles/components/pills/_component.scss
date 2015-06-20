@@ -1,0 +1,21 @@
+@import "settings";
+@import "mixins";
+@import "documentation";
+
+@if($voxel-pills__include-classes) {
+  .voxel-pills {
+    @include voxel-pills();
+  }
+
+  .voxel-pills__item {
+    @include voxel-pills__item();
+  }
+
+  /*a*/.voxel-pill {
+    @include voxel-pill();
+  }
+
+  /*html*/.voxel-csstransitions .voxel-pill {
+    @include voxel-pill--with-transitions();
+  }
+}
