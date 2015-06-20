@@ -1,5 +1,4 @@
-// `@import`s all libraries.
-@import "CSS:normalize-css/normalize";
-@import "compass";
-@import "CSS:base16-pygments/css/base16-tomorrow.dark";
+@import "compass-style";
+@import "normalize";
+@import "base16-pygments";
 @import "vegur";
