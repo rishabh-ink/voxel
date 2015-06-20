@@ -100,19 +100,19 @@
 @mixin voxel-drawer__index() {
   counter-reset: voxel-drawer__index__counter;
   list-style-type: none;
-  padding-left: $voxel-drawer__index__padding--left;
+  padding-left: rem-calc($voxel-drawer__index__padding--left);
 }
 
 @mixin voxel-drawer__index__item() {
   counter-increment: voxel-drawer__index__counter;
-  padding-bottom: $voxel-drawer__index__item__padding--bottom;
-  padding-top: $voxel-drawer__index__item__padding--top;
+  padding-bottom: rem-calc($voxel-drawer__index__item__padding--bottom);
+  padding-top: rem-calc($voxel-drawer__index__item__padding--top);
 
   &:before {
     content: counters(voxel-drawer__index__counter, ".") ".";
     display: inline-block;
     font-weight: bold;
-    margin-right: $voxel-drawer__index__item__counter__margin--right;
+    margin-right: rem-calc($voxel-drawer__index__item__counter__margin--right);
   }
 }
 
