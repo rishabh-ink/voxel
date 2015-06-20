@@ -7,6 +7,7 @@ module.exports = {
     script: "scripts",
     style: "styles",
     image: "images",
+    font: "fonts",
     test: "tests",
     template: "templates",
     fixture: "fixtures",
