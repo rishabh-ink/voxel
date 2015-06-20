@@ -105,18 +105,29 @@
 
 @mixin voxel-drawer__index__item() {
   counter-increment: voxel-drawer__index__counter;
-  padding-bottom: rem-calc($voxel-drawer__index__item__padding--bottom);
-  padding-top: rem-calc($voxel-drawer__index__item__padding--top);
 
   &:before {
     content: counters(voxel-drawer__index__counter, ".") ".";
-    display: inline-block;
+    display: block;
+    float: left;
     font-weight: bold;
     margin-right: rem-calc($voxel-drawer__index__item__counter__margin--right);
+    padding-bottom: $voxel-drawer__index__item__before__padding--bottom;
+    padding-top: $voxel-drawer__index__item__before__padding--top;
   }
 }
 
+@mixin voxel-drawer__index__item__text() {
+  font-weight: bold;
+  margin-bottom: 0;
+  padding-bottom: rem-calc($voxel-drawer__index__item__text__padding--bottom);
+  padding-top: rem-calc($voxel-drawer__index__item__text__padding--top);
+}
+
 @mixin voxel-drawer__index__item__link() {
+  display: block;
+  padding-bottom: rem-calc($voxel-drawer__index__item__link__padding--bottom);
+  padding-top: rem-calc($voxel-drawer__index__item__link__padding--top);
   text-decoration: none;
 }
 
