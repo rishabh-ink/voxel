@@ -49,11 +49,11 @@
   @include filter(blur($voxel-layouts__page__blur));
 }
 
-@mixin voxel-header__subtitle() {
-  color: $voxel-header__subtitle__color;
+@mixin voxel-header__title__sub() {
+  color: $voxel-header__title__sub__color;
   display: none;
-  font-size: rem-calc($voxel-header__subtitle__font-size);
-  margin-left: rem-calc($voxel-header__subtitle__margin--left);
+  font-size: rem-calc($voxel-header__title__sub__font-size);
+  margin-left: rem-calc($voxel-header__title__sub__margin--left);
 
   @media (min-width: $voxel-scaffolding__screen--s--min) {
     display: initial;

@@ -21,7 +21,8 @@ $voxel-header__title__color: map-get($voxel-colors__brand--primary, "800") !defa
 $voxel-header__title__font-family: $voxel-fonts__font-family--headings !default;
 $voxel-header__title__font-size: map-get($voxel-fonts__font-size--headings, "h3") !default;
 $voxel-header__title__font-weight: $voxel-fonts__font-weight--headings !default;
-$voxel-header__subtitle__font-size: map-get($voxel-fonts__font-size--headings, "h4") !default;
-$voxel-header__subtitle__font-weight: $voxel-fonts__font-weight--base !default;
-$voxel-header__subtitle__margin--left: map-get($voxel-scaffolding__spacing--horizontal, "600") !default;
-$voxel-header__subtitle__color: map-get($voxel-colors__brand--primary, "400") !default;
+
+$voxel-header__title__sub__font-size: map-get($voxel-fonts__font-size--headings, "h4") !default;
+$voxel-header__title__sub__font-weight: $voxel-fonts__font-weight--base !default;
+$voxel-header__title__sub__margin--left: map-get($voxel-scaffolding__spacing--horizontal, "600") !default;
+$voxel-header__title__sub__color: map-get($voxel-colors__brand--primary, "400") !default;

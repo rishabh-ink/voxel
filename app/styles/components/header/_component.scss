@@ -19,7 +19,7 @@
     @include voxel-header__title--inactive--with-filters();
   }
 
-  .voxel-header__subtitle {
-    @include voxel-header__subtitle();
+  .voxel-header__title__sub {
+    @include voxel-header__title__sub();
   }
 }
