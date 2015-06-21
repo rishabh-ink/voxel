@@ -32,11 +32,29 @@
   }
 }
 
+@mixin voxel-header__themes($theme) {
+  border-bottom: $voxel-header__border--bottom--width $voxel-header__border--bottom--style map-get(map-get($voxel-colors__themes, $theme), $voxel-header__border--bottom--color__shade);
+
+  &:before {
+    @include box-shadow(
+      map-get(map-get($voxel-colors__themes, $theme), $voxel-header__box-shadow--color__shade)
+      0
+      0
+      $voxel-header__box-shadow--radius
+      0
+    );
+  }
+}
+
 @mixin voxel-header__title() {
   color: $voxel-header__title__color;
   font-family: $voxel-header__title__font-family;
   font-size: rem-calc($voxel-header__title__font-size);
   text-decoration: none;
+}
+
+@mixin voxel-header__title__themes($theme) {
+  color: map-get(map-get($voxel-colors__themes, $theme), $voxel-header__title__color__shade);
 }
 
 @mixin voxel-header__title--with-transitions() {
@@ -58,4 +76,8 @@
   @media (min-width: $voxel-scaffolding__screen--s--min) {
     display: initial;
   }
+}
+
+@mixin voxel-header__title__sub__themes($theme) {
+  color: map-get(map-get($voxel-colors__themes, $theme), $voxel-header__title__sub__color__shade);
 }
