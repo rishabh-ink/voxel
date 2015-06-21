@@ -52,17 +52,17 @@ $voxel-drawer__header__box-shadow--width: 80% !default;
 $voxel-drawer__index__padding--left: map-get($voxel-scaffolding__spacing--horizontal, "600") !default;
 $voxel-drawer__index__item__counter__margin--right: map-get($voxel-scaffolding__spacing--horizontal, "400") !default;
 
-$voxel-drawer__index__item--active__background-color__shade: "200" !default;
-$voxel-drawer__index__item--active__background-color: map-get($voxel-colors__brand--primary, $voxel-drawer__index__item--active__background-color__shade) !default;
-$voxel-drawer__index__item--active__background-gradient__color--start: $voxel-colors__transparent !default;
-$voxel-drawer__index__item--active__background-gradient__color--end__shade: "200" !default;
-$voxel-drawer__index__item--active__background-gradient__color--end: map-get($voxel-colors__brand--primary, $voxel-drawer__index__item--active__background-color__shade) !default;
+$voxel-drawer__index__item__link--active__background-color__shade: "200" !default;
+$voxel-drawer__index__item__link--active__background-color: map-get($voxel-colors__brand--primary, $voxel-drawer__index__item__link--active__background-color__shade) !default;
+$voxel-drawer__index__item__link--active__background-gradient__color--start: $voxel-colors__transparent !default;
+$voxel-drawer__index__item__link--active__background-gradient__color--end__shade: "200" !default;
+$voxel-drawer__index__item__link--active__background-gradient__color--end: map-get($voxel-colors__brand--primary, $voxel-drawer__index__item__link--active__background-color__shade) !default;
 
-$voxel-drawer__index__item--hover__background-color__shade: "100" !default;
-$voxel-drawer__index__item--hover__background-color: map-get($voxel-colors__brand--primary, $voxel-drawer__index__item--hover__background-color__shade) !default;
-$voxel-drawer__index__item--hover__background-gradient__color--start: $voxel-colors__transparent !default;
-$voxel-drawer__index__item--hover__background-gradient__color--end__shade: "100" !default;
-$voxel-drawer__index__item--hover__background-gradient__color--end: map-get($voxel-colors__brand--primary, $voxel-drawer__index__item--hover__background-color__shade) !default;
+$voxel-drawer__index__item__link--hover__background-color__shade: "100" !default;
+$voxel-drawer__index__item__link--hover__background-color: map-get($voxel-colors__brand--primary, $voxel-drawer__index__item__link--hover__background-color__shade) !default;
+$voxel-drawer__index__item__link--hover__background-gradient__color--start: $voxel-colors__transparent !default;
+$voxel-drawer__index__item__link--hover__background-gradient__color--end__shade: "100" !default;
+$voxel-drawer__index__item__link--hover__background-gradient__color--end: map-get($voxel-colors__brand--primary, $voxel-drawer__index__item__link--hover__background-color__shade) !default;
 
 $voxel-drawer__index__item__link__padding--bottom: map-get($voxel-scaffolding__spacing--vertical, "50") !default;
 $voxel-drawer__index__item__link__padding--top: map-get($voxel-scaffolding__spacing--vertical, "50") !default;

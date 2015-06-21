@@ -95,13 +95,13 @@
     @include voxel-drawer__index__item__text();
   }
 
-  .voxel-drawer__index__item--active {
-    @include voxel-drawer__index__item--active();
+  .voxel-drawer__index__item__link--active {
+    @include voxel-drawer__index__item__link--active();
   }
 
   @each $theme in $voxel-colors__themes--supported {
-    .voxel-theme--#{$theme} .voxel-drawer__index__item--active {
-      @include voxel-drawer__index__item--active__themes($theme);
+    .voxel-theme--#{$theme} .voxel-drawer__index__item__link--active {
+      @include voxel-drawer__index__item__link--active__themes($theme);
     }
   }
 }

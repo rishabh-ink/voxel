@@ -168,8 +168,8 @@
     @include background-with-css2-fallback(
       linear-gradient(
         to right,
-        $voxel-drawer__index__item--hover__background-gradient__color--start,
-        $voxel-drawer__index__item--hover__background-gradient__color--end
+        $voxel-drawer__index__item__link--hover__background-gradient__color--start,
+        $voxel-drawer__index__item__link--hover__background-gradient__color--end
       )
     );
   }
@@ -180,13 +180,13 @@
     @include background-with-css2-fallback(
       linear-gradient(
         to right,
-        $voxel-drawer__index__item--hover__background-gradient__color--start,
+        $voxel-drawer__index__item__link--hover__background-gradient__color--start,
         map-get(
           map-get(
             $voxel-colors__themes,
             $theme
           ),
-          $voxel-drawer__index__item--hover__background-gradient__color--end__shade
+          $voxel-drawer__index__item__link--hover__background-gradient__color--end__shade
         )
       )
     );
@@ -194,27 +194,27 @@
 }
 
 
-@mixin voxel-drawer__index__item--active() {
+@mixin voxel-drawer__index__item__link--active() {
   @include background-with-css2-fallback(
     linear-gradient(
       to right,
-      $voxel-drawer__index__item--active__background-gradient__color--start,
-      $voxel-drawer__index__item--active__background-gradient__color--end
+      $voxel-drawer__index__item__link--active__background-gradient__color--start,
+      $voxel-drawer__index__item__link--active__background-gradient__color--end
     )
   );
 }
 
-@mixin voxel-drawer__index__item--active__themes($theme) {
+@mixin voxel-drawer__index__item__link--active__themes($theme) {
   @include background-with-css2-fallback(
     linear-gradient(
       to right,
-      $voxel-drawer__index__item--active__background-gradient__color--start,
+      $voxel-drawer__index__item__link--active__background-gradient__color--start,
       map-get(
         map-get(
           $voxel-colors__themes,
           $theme
         ),
-        $voxel-drawer__index__item--active__background-gradient__color--end__shade
+        $voxel-drawer__index__item__link--active__background-gradient__color--end__shade
       )
     )
   );
