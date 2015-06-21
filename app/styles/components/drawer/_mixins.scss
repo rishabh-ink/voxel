@@ -19,6 +19,14 @@
   z-index: $voxel-drawer__z-index;
 }
 
+@mixin voxel-drawer__themes($theme) {
+  // scss-lint:disable DuplicateProperty
+  background-color: map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__background-color__shade);
+  background-color: rgba(map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__background-color__shade), $voxel-drawer__background-alpha);
+  // scss-lint:enable DuplicateProperty
+  border-right-color: map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__border--right--color__shade);
+}
+
 @mixin voxel-drawer--with-transforms() {
   @include transform(translate3d(rem-calc(-($voxel-drawer__width)), 0, 0));
   left: 0;
@@ -49,6 +57,10 @@
   z-index: $voxel-drawer__toggle__z-index;
 }
 
+@mixin voxel-drawer__toggle__themes($theme) {
+  color: map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__toggle__color__shade);
+}
+
 @mixin voxel-drawer__toggle--with-transitions() {
   @include transition-duration($voxel-drawer__toggle__transition--duration);
   @include transition-property(color, transform);
@@ -56,6 +68,10 @@
 
 @mixin voxel-drawer__toggle--active() {
   color: $voxel-drawer__toggle__color--active;
+}
+
+@mixin voxel-drawer__toggle--active__themes($theme) {
+  color: map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__toggle__color--active__shade);
 }
 
 @mixin voxel-drawer__toggle--active--with-transforms() {
@@ -66,6 +82,10 @@
   color: $voxel-drawer__title__color;
   font-size: rem-calc($voxel-drawer__title__font-size);
   text-decoration: none;
+}
+
+@mixin voxel-drawer__title__themes($theme) {
+  color: map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__title__color__shade);
 }
 
 @mixin voxel-drawer__header() {
@@ -94,6 +114,20 @@
     transform: translateX(-50%);
     width: rem-calc($voxel-drawer__header__box-shadow--width);
     z-index: -1;
+  }
+}
+
+@mixin voxel-drawer__header__themes($theme) {
+  background-color: map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__header__background-color__shade);
+
+  &:before {
+    @include box-shadow(
+      map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__header__box-shadow--color__shade)
+      0
+      0
+      $voxel-drawer__header__box-shadow--radius
+      0
+    );
   }
 }
 
