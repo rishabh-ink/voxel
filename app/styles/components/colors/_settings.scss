@@ -81,6 +81,6 @@ $voxel-colors__themes: (
   )
 );
 
-$voxel-colors__themes--primary: ("gray", "indigo", "amber", "orange", "blue-gray");
+$voxel-colors__themes--supported: ("gray", "indigo", "amber", "orange", "blue-gray");
 
 $voxel-colors__brand--primary: map-get($voxel-colors__themes, "blue-gray") !default;
