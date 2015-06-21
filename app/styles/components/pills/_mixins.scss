@@ -27,6 +27,7 @@
     background-color: $voxel-pill__background-color--hover;
   }
 
+  &:focus,
   &:active {
     background-color: $voxel-pill__background-color--active;
   }
@@ -39,6 +40,7 @@
     background-color: map-get(map-get($voxel-colors__themes, $theme), $voxel-pill__background-color--hover__shade);
   }
 
+  &:focus,
   &:active {
     background-color: map-get(map-get($voxel-colors__themes, $theme), $voxel-pill__background-color--active__shade);
   }
