@@ -2,10 +2,16 @@
   @include transition-duration($voxel-drawer__transition--duration);
   @include transition-property(-webkit-transform, -moz-transform, -o-transform, transform);
   @include transition-timing-function(ease-in);
-  // scss-lint:disable DuplicateProperty
-  background-color: $voxel-drawer__background-color;
-  background-color: rgba($voxel-drawer__background-color, $voxel-drawer__background-alpha);
-  // scss-lint:enable DuplicateProperty
+  @include background-image(
+    $voxel-drawer__background-image,
+    radial-gradient(
+      top center,
+      100%,
+      rgba($voxel-drawer__background-gradient__color--start, $voxel-drawer__background-alpha),
+      rgba($voxel-drawer__background-gradient__color--end, $voxel-drawer__background-alpha)
+    )
+  );
+  background-size: auto;
   border-right-color: $voxel-drawer__border--right--color;
   border-right-style: $voxel-drawer__border--right--style;
   border-right-width: $voxel-drawer__border--right--width;
@@ -20,10 +26,34 @@
 }
 
 @mixin voxel-drawer__themes($theme) {
-  // scss-lint:disable DuplicateProperty
-  background-color: map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__background-color__shade);
-  background-color: rgba(map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__background-color__shade), $voxel-drawer__background-alpha);
-  // scss-lint:enable DuplicateProperty
+  @include background-image(
+    $voxel-drawer__background-image,
+    radial-gradient(
+      top center,
+      100%,
+      rgba(
+        map-get(
+          map-get(
+            $voxel-colors__themes,
+            $theme
+          ),
+          $voxel-drawer__background-gradient__color--start__shade
+        ),
+        $voxel-drawer__background-alpha
+      ),
+      rgba(
+        map-get(
+          map-get(
+            $voxel-colors__themes,
+            $theme
+          ),
+          $voxel-drawer__background-gradient__color--end__shade
+        ),
+        $voxel-drawer__background-alpha
+      )
+    )
+  );
+  background-size: auto;
   border-right-color: map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__border--right--color__shade);
 }
 

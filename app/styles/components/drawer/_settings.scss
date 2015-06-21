@@ -5,9 +5,13 @@ $voxel-drawer__width: 20rem !default;
 $voxel-drawer__z-index: 10 !default;
 
 $voxel-drawer__font-family: $voxel-fonts__font-family--headings !default;
-$voxel-drawer__background-color__shade: "50" !default;
-$voxel-drawer__background-color: map-get($voxel-colors__brand--primary, $voxel-drawer__background-color__shade) !default;
+$voxel-drawer__background-gradient__color--start__shade: "50" !default;
+$voxel-drawer__background-gradient__color--start: map-get($voxel-colors__brand--primary, $voxel-drawer__background-gradient__color--start__shade) !default;
+$voxel-drawer__background-gradient__color--end__shade: "100" !default;
+$voxel-drawer__background-gradient__color--end: map-get($voxel-colors__brand--primary, $voxel-drawer__background-gradient__color--end__shade) !default;
 $voxel-drawer__background-alpha: .95 !default;
+$voxel-drawer__background-image: url("../images/noise.png") !default;
+
 
 $voxel-drawer__border--right--color__shade: "100" !default;
 $voxel-drawer__border--right--color: map-get($voxel-colors__brand--primary, $voxel-drawer__border--right--color__shade) !default;
