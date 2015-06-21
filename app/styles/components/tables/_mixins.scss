@@ -4,8 +4,8 @@
   width: 100%;
 
   th {
-    background-color: map-get($voxel-colors__brand--primary, "50");
-    color: map-get($voxel-colors__brand--primary, "700");
+    background-color: $voxel-tables__th__background-color;
+    color: $voxel-tables__th__color;
     text-align: left;
   }
 
