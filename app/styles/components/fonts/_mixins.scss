@@ -60,6 +60,10 @@
   color: $voxel-fonts__link__color--normal;
 }
 
+@mixin voxel-fonts__a__themes($theme) {
+  color: map-get(map-get($voxel-colors__themes, $theme), $voxel-fonts__link__color--normal__shade);
+}
+
 @mixin voxel-fonts__code() {
   background-color: $voxel-fonts__code__background-color;
   border-color: $voxel-fonts__code__border--color;
