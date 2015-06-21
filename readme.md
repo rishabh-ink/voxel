@@ -110,3 +110,5 @@ bundle exec travis encrypt $(heroku auth:token) --add deploy.api_key
 See [license.md](license.md).
 
 [HexIcons](www.iconfinder.com/iconsets/hex-ico) courtesy [ExpanseLook](www.iconfinder.com/brucen.wayne.58).
+
+Color theme palette courtesy [Google Material Design Colors](http://www.google.co.in/design/spec/style/color.html#color-color-palette).
