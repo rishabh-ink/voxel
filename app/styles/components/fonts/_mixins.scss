@@ -28,35 +28,35 @@
   font-size: rem-calc(map-get($voxel-fonts__font-size--headings, "h1"));
 }
 
-@mixin voxel__fonts__headings--h2() {
+@mixin voxel-fonts__headings--h2() {
   font-size: rem-calc(map-get($voxel-fonts__font-size--headings, "h2"));
 }
 
-@mixin voxel__fonts__headings--h3() {
+@mixin voxel-fonts__headings--h3() {
   font-size: rem-calc(map-get($voxel-fonts__font-size--headings, "h3"));
 }
 
-@mixin voxel__fonts__headings--h4() {
+@mixin voxel-fonts__headings--h4() {
   font-size: rem-calc(map-get($voxel-fonts__font-size--headings, "h4"));
 }
 
-@mixin voxel__fonts__headings--h5() {
+@mixin voxel-fonts__headings--h5() {
   font-size: rem-calc(map-get($voxel-fonts__font-size--headings, "h5"));
 }
 
-@mixin voxel__fonts__headings--h6() {
+@mixin voxel-fonts__headings--h6() {
   font-size: rem-calc(map-get($voxel-fonts__font-size--headings, "h6"));
 }
 
-@mixin voxel__fonts__small() {
+@mixin voxel-fonts__small() {
   font-size: rem-calc($voxel-fonts__font-size--small);
 }
 
-@mixin voxel__fonts__a() {
+@mixin voxel-fonts__a() {
   color: $voxel-fonts__link__color--normal;
 }
 
-@mixin voxel__fonts__code() {
+@mixin voxel-fonts__code() {
   background-color: $voxel-fonts__code__background-color;
   border-color: $voxel-fonts__code__border--color;
   border-style: $voxel-fonts__code__border--style;

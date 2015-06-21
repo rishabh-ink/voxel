@@ -32,35 +32,35 @@
   }
 
   h2 {
-    @include voxel__fonts__headings--h2();
+    @include voxel-fonts__headings--h2();
   }
 
   h3 {
-    @include voxel__fonts__headings--h3();
+    @include voxel-fonts__headings--h3();
   }
 
   h4 {
-    @include voxel__fonts__headings--h4();
+    @include voxel-fonts__headings--h4();
   }
 
   h5 {
-    @include voxel__fonts__headings--h5();
+    @include voxel-fonts__headings--h5();
   }
 
   h6 {
-    @include voxel__fonts__headings--h6();
+    @include voxel-fonts__headings--h6();
   }
 
   small {
-    @include voxel__fonts__small();
+    @include voxel-fonts__small();
   }
 
   a {
-    @include voxel__fonts__a();
+    @include voxel-fonts__a();
   }
 
   code {
-    @include voxel__fonts__code();
+    @include voxel-fonts__code();
   }
 
   pre code {
