@@ -20,6 +20,17 @@
     @include voxel-fonts__headings--h123456();
   }
 
+  @each $theme in $voxel-colors__themes--supported {
+    .voxel-theme--#{$theme} h1,
+    .voxel-theme--#{$theme} h2,
+    .voxel-theme--#{$theme} h3,
+    .voxel-theme--#{$theme} h4,
+    .voxel-theme--#{$theme} h5,
+    .voxel-theme--#{$theme} h6 {
+      @include voxel-fonts__headings--h123456__themes($theme);
+    }
+  }
+
   h1,
   h2,
   h3,
@@ -63,11 +74,23 @@
     @include voxel-fonts__code();
   }
 
+  @each $theme in $voxel-colors__themes--supported {
+    .voxel-theme--#{$theme} code {
+      @include voxel-fonts__code__themes($theme);
+    }
+  }
+
   pre code {
     @include voxel-fonts__pre__code();
   }
 
   blockquote {
     @include voxel-fonts__blockquote();
+  }
+
+  @each $theme in $voxel-colors__themes--supported {
+    .voxel-theme--#{$theme} blockquote {
+      @include voxel-fonts__blockquote__themes($theme);
+    }
   }
 }

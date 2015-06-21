@@ -14,7 +14,8 @@ $voxel-fonts__font-family--base: $voxel-fonts__font-family--sans-serif !default;
 $voxel-fonts__font-family--headings: $voxel-fonts__font-family--sans-serif !default;
 
 $voxel-fonts__color--base: map-get(map-get($voxel-colors__themes, "gray"), "800") !default;
-$voxel-fonts__color--headings: map-get($voxel-colors__brand--primary, "800") !default;
+$voxel-fonts__color--headings__shade: "800" !default;
+$voxel-fonts__color--headings: map-get($voxel-colors__brand--primary, $voxel-fonts__color--headings__shade) !default;
 
 $voxel-fonts__font-weight--base: 400 !default;
 $voxel-fonts__font-weight--headings: 300 !default;
@@ -38,10 +39,13 @@ $voxel-fonts__paragraph__margin--bottom: map-get($voxel-scaffolding__spacing--ve
 $voxel-fonts__heading__margin--top: map-get($voxel-scaffolding__spacing--vertical, "a400") !default;
 $voxel-fonts__heading__margin--bottom: map-get($voxel-scaffolding__spacing--vertical, "300") !default;
 
-$voxel-fonts__link__color--normal: map-get($voxel-colors__brand--primary, "500") !default;
+$voxel-fonts__link__color--normal__shade: "500" !default;
+$voxel-fonts__link__color--normal: map-get($voxel-colors__brand--primary, $voxel-fonts__link__color--normal__shade) !default;
 
-$voxel-fonts__code__color: map-get($voxel-colors__brand--primary, "600") !default;
-$voxel-fonts__code__background-color: map-get($voxel-colors__brand--primary, "50") !default;
+$voxel-fonts__code__color__shade: "600" !default;
+$voxel-fonts__code__color: map-get($voxel-colors__brand--primary, $voxel-fonts__code__color__shade) !default;
+$voxel-fonts__code__background-color__shade: "50" !default;
+$voxel-fonts__code__background-color: map-get($voxel-colors__brand--primary, $voxel-fonts__code__background-color__shade) !default;
 $voxel-fonts__code__margin--left: map-get($voxel-scaffolding__spacing--horizontal, "100") !default;
 $voxel-fonts__code__margin--right: map-get($voxel-scaffolding__spacing--horizontal, "100") !default;
 $voxel-fonts__code__padding--left: map-get($voxel-scaffolding__spacing--horizontal, "300") !default;
@@ -52,7 +56,8 @@ $voxel-fonts__code__border--color: $voxel-scaffolding__body__background-color !d
 $voxel-fonts__code__border--width: 1px !default;
 $voxel-fonts__code__border--style: dashed !default;
 
-$voxel-fonts__blockquote__border--left--color: map-get($voxel-colors__brand--primary, "100") !default;
+$voxel-fonts__blockquote__border--left--color__shade: "100" !default;
+$voxel-fonts__blockquote__border--left--color: map-get($voxel-colors__brand--primary, $voxel-fonts__blockquote__border--left--color__shade) !default;
 $voxel-fonts__blockquote__border--left--width: 5px !default;
 $voxel-fonts__blockquote__border--left--style: solid !default;
 $voxel-fonts__blockquote__font-size: map-get($voxel-fonts__font-size--headings, "h4") !default;

@@ -16,6 +16,10 @@
   font-weight: $voxel-fonts__font-weight--headings;
 }
 
+@mixin voxel-fonts__headings--h123456__themes($theme) {
+  color: map-get(map-get($voxel-colors__themes, $theme), $voxel-fonts__color--headings__shade);
+}
+
 @mixin voxel-fonts__headings--h1234() {
   line-height: map-get($voxel-fonts__line-height, "300");
   margin-bottom: rem-calc($voxel-fonts__heading__margin--bottom);
@@ -70,6 +74,11 @@
   padding-top: rem-calc($voxel-fonts__code__padding--top);
 }
 
+@mixin voxel-fonts__code__themes($theme) {
+  background-color: map-get(map-get($voxel-colors__themes, $theme), $voxel-fonts__code__background-color__shade);
+  color: map-get(map-get($voxel-colors__themes, $theme), $voxel-fonts__code__color__shade);
+}
+
 @mixin voxel-fonts__pre__code() {
   background-color: initial;
   border-color: none;
@@ -91,4 +100,8 @@
   padding-left: rem-calc($voxel-fonts__blockquote__padding--left);
   padding-right: rem-calc($voxel-fonts__blockquote__padding--right);
   padding-top: rem-calc($voxel-fonts__blockquote__padding--top);
+}
+
+@mixin voxel-fonts__blockquote__themes($theme) {
+  border-left-color: map-get(map-get($voxel-colors__themes, $theme), $voxel-fonts__blockquote__border--left--color__shade);
 }
