@@ -39,7 +39,7 @@ $voxel-fonts__paragraph__margin--bottom: map-get($voxel-scaffolding__spacing--ve
 $voxel-fonts__heading__margin--top: map-get($voxel-scaffolding__spacing--vertical, "a400") !default;
 $voxel-fonts__heading__margin--bottom: map-get($voxel-scaffolding__spacing--vertical, "300") !default;
 
-$voxel-fonts__link__color--normal__shade: "500" !default;
+$voxel-fonts__link__color--normal__shade: "800" !default;
 $voxel-fonts__link__color--normal: map-get($voxel-colors__brand--primary, $voxel-fonts__link__color--normal__shade) !default;
 
 $voxel-fonts__code__color__shade: "600" !default;
