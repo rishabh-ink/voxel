@@ -17,7 +17,7 @@
 
   @each $theme in $voxel-colors__themes--supported {
     .voxel-theme--#{$theme} /*a*/.voxel-pill {
-      @include voxel-pill--themes($theme);
+      @include voxel-pill__themes($theme);
     }
   }
 

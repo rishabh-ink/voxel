@@ -32,7 +32,7 @@
   }
 }
 
-@mixin voxel-pill--themes($theme) {
+@mixin voxel-pill__themes($theme) {
   border-color: map-get(map-get($voxel-colors__themes, $theme), $voxel-pill__border--color__shade);
 
   &:hover {
