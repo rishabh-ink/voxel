@@ -1,6 +1,7 @@
 @mixin voxel-drawer() {
+  @include box-shadow(0 0 rem-calc($voxel-drawer__box-shadow--radius) 0 $voxel-drawer__box-shadow--color);
   @include transition-duration($voxel-drawer__transition--duration);
-  @include transition-property(-webkit-transform, -moz-transform, -o-transform, transform);
+  @include transition-property(-webkit-transform, -moz-transform, -o-transform, transform, opacity);
   @include transition-timing-function(ease-in);
   @include background-image(
     $voxel-drawer__background-image,
@@ -18,6 +19,7 @@
   font-family: $voxel-drawer__font-family;
   height: 100%;
   left: rem-calc(-($voxel-drawer__width));
+  opacity: 0;
   overflow-y: auto;
   position: fixed;
   top: 0;
@@ -63,8 +65,8 @@
 }
 
 @mixin voxel-drawer--active() {
-  @include box-shadow(0 0 rem-calc($voxel-drawer__box-shadow--radius) 0 $voxel-drawer__box-shadow--color);
   left: 0;
+  opacity: 1;
 }
 
 @mixin voxel-drawer--active--with-transforms() {
