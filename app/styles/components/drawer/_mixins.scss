@@ -28,6 +28,7 @@
 }
 
 @mixin voxel-drawer__themes($theme) {
+  @include box-shadow(0 0 rem-calc($voxel-drawer__box-shadow--radius) 0 map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__box-shadow--color__shade));
   @include background-image(
     $voxel-drawer__background-image,
     radial-gradient(
