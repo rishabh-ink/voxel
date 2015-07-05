@@ -13,6 +13,10 @@
     }
   }
 
+  /*html*/.voxel-csstransitions .voxel-drawer {
+    @include voxel-drawer--with-transitions();
+  }
+
   /*html*/.voxel-csstransforms .voxel-drawer {
     @include voxel-drawer--with-transforms();
   }

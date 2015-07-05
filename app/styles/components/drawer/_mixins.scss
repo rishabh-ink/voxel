@@ -1,8 +1,5 @@
 @mixin voxel-drawer() {
   @include box-shadow(0 0 rem-calc($voxel-drawer__box-shadow--radius) 0 $voxel-drawer__box-shadow--color);
-  @include transition-duration($voxel-drawer__transition--duration);
-  @include transition-property(-webkit-transform, -moz-transform, -o-transform, transform, opacity);
-  @include transition-timing-function(ease-in);
   @include background-image(
     $voxel-drawer__background-image,
     radial-gradient(
@@ -62,6 +59,12 @@
   );
   background-size: auto;
   border-right-color: map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__border--right--color__shade);
+}
+
+@mixin voxel-drawer--with-transitions() {
+  @include transition-duration($voxel-drawer__transition--duration);
+  @include transition-property(-webkit-transform, -moz-transform, -o-transform, transform, opacity);
+  @include transition-timing-function(ease-in);
 }
 
 @mixin voxel-drawer--with-transforms() {
