@@ -1,0 +1,18 @@
+@mixin voxel-circle-shadow($shadow--color, $shadow--radius, $shadow--height, $shadow--width) {
+  @include box-shadow(
+    $shadow--color
+    0
+    0
+    $shadow--radius
+    0
+  );
+  @include transform(translateX(-50%));
+  border-radius: 50%;
+  bottom: 0;
+  content: "";
+  height: rem-calc($shadow--height);
+  left: 50%;
+  position: absolute;
+  width: rem-calc($shadow--width);
+  z-index: -1;
+}

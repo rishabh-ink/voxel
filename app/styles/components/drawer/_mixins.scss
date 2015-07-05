@@ -135,22 +135,12 @@
   text-align: $voxel-drawer__header__text-align;
 
   &:before {
-    @include box-shadow(
-      $voxel-drawer__header__box-shadow--color
-      0
-      0
-      $voxel-drawer__header__box-shadow--radius
-      0
+    @include voxel-circle-shadow(
+      $voxel-drawer__header__box-shadow--color,
+      $voxel-drawer__header__box-shadow--radius,
+      $voxel-drawer__header__box-shadow--height,
+      $voxel-drawer__header__box-shadow--width
     );
-    @include transform(translateX(-50%));
-    border-radius: 50%;
-    bottom: 0;
-    content: "";
-    height: rem-calc($voxel-drawer__header__box-shadow--height);
-    left: 50%;
-    position: absolute;
-    width: rem-calc($voxel-drawer__header__box-shadow--width);
-    z-index: -1;
   }
 }
 
