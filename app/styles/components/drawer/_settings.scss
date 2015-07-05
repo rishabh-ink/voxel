@@ -19,7 +19,7 @@ $voxel-drawer__border--right--width: 1px !default;
 $voxel-drawer__border--right--style: solid !default;
 
 $voxel-drawer__box-shadow--radius: map-get($voxel-scaffolding__spacing--horizontal, "900") !default;
-$voxel-drawer__box-shadow--color__shade: "400" !default;
+$voxel-drawer__box-shadow--color__shade: "900" !default;
 $voxel-drawer__box-shadow--color: map-get($voxel-colors__brand--primary, $voxel-drawer__box-shadow--color__shade) !default;
 
 $voxel-drawer__title__color__shade: "800" !default;
