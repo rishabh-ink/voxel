@@ -1,5 +1,5 @@
 @mixin voxel-drawer() {
-  @include box-shadow(0 0 rem-calc($voxel-drawer__box-shadow--radius) 0 $voxel-drawer__box-shadow--color);
+  box-shadow: 0 0 $voxel-drawer__box-shadow--radius 0 $voxel-drawer__box-shadow--color;
   @include background-image(
     $voxel-drawer__background-image,
     radial-gradient(
@@ -29,7 +29,7 @@
 }
 
 @mixin voxel-drawer__themes($theme) {
-  @include box-shadow(0 0 rem-calc($voxel-drawer__box-shadow--radius) 0 map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__box-shadow--color__shade));
+  box-shadow: 0 0 $voxel-drawer__box-shadow--radius 0 map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__box-shadow--color__shade);
   @include background-image(
     $voxel-drawer__background-image,
     radial-gradient(
@@ -153,13 +153,7 @@
   background-color: map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__header__background-color__shade);
 
   &:before {
-    @include box-shadow(
-      map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__header__box-shadow--color__shade)
-      0
-      0
-      $voxel-drawer__header__box-shadow--radius
-      0
-    );
+    box-shadow: map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__header__box-shadow--color__shade) 0 0 $voxel-drawer__header__box-shadow--radius 0;
   }
 }
 

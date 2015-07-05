@@ -1,11 +1,5 @@
 @mixin voxel-circle-shadow($shadow--color, $shadow--radius, $shadow--height, $shadow--width) {
-  @include box-shadow(
-    $shadow--color
-    0
-    0
-    $shadow--radius
-    0
-  );
+  box-shadow: $shadow--color 0 0 $shadow--radius 0;
   @include transform(translateX(-50%));
   border-radius: 50%;
   bottom: 0;

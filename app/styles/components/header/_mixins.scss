@@ -28,13 +28,7 @@
   border-bottom: $voxel-header__border--bottom--width $voxel-header__border--bottom--style map-get(map-get($voxel-colors__themes, $theme), $voxel-header__border--bottom--color__shade);
 
   &:before {
-    @include box-shadow(
-      map-get(map-get($voxel-colors__themes, $theme), $voxel-header__box-shadow--color__shade)
-      0
-      0
-      $voxel-header__box-shadow--radius
-      0
-    );
+    box-shadow: map-get(map-get($voxel-colors__themes, $theme), $voxel-header__box-shadow--color__shade) 0 0 $voxel-header__box-shadow--radius 0;
   }
 }
 
