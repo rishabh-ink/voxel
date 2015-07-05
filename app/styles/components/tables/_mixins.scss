@@ -1,6 +1,6 @@
 @mixin voxel-table() {
   border-collapse: collapse;
-  margin-bottom: 1rem;
+  margin-bottom: $voxel-tables__margin-bottom;
   width: 100%;
 
   th {
@@ -18,7 +18,10 @@
     border-color: $voxel-tables__border--color;
     border-style: $voxel-tables__border--style;
     border-width: $voxel-tables__border--width;
-    padding: .25rem .5rem;
+    padding-bottom: $voxel-tables__cell__padding-bottom;
+    padding-left: $voxel-tables__cell__padding-left;
+    padding-right: $voxel-tables__cell__padding-right;
+    padding-top: $voxel-tables__cell__padding-top;
   }
 }
 
