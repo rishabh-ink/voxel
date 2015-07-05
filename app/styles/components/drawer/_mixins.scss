@@ -19,12 +19,12 @@
   border-right-width: $voxel-drawer__border--right--width;
   font-family: $voxel-drawer__font-family;
   height: 100%;
-  left: rem-calc(-($voxel-drawer__width));
+  left: -($voxel-drawer__width);
   opacity: 0;
   overflow-y: auto;
   position: fixed;
   top: 0;
-  width: rem-calc($voxel-drawer__width);
+  width: $voxel-drawer__width;
   z-index: $voxel-drawer__z-index;
 }
 
@@ -68,7 +68,7 @@
 }
 
 @mixin voxel-drawer--with-transforms() {
-  @include transform(translate3d(rem-calc(-($voxel-drawer__width)), 0, 0));
+  @include transform(translate3d(-($voxel-drawer__width), 0, 0));
   left: 0;
 }
 
@@ -87,10 +87,10 @@
   font-size: $voxel-drawer__toggle__font-size;
   font-weight: bold;
   left: 0;
-  padding-bottom: rem-calc($voxel-drawer__toggle__padding--bottom);
-  padding-left: rem-calc($voxel-drawer__toggle__padding--left);
-  padding-right: rem-calc($voxel-drawer__toggle__padding--right);
-  padding-top: rem-calc($voxel-drawer__toggle__padding--top);
+  padding-bottom: $voxel-drawer__toggle__padding--bottom;
+  padding-left: $voxel-drawer__toggle__padding--left;
+  padding-right: $voxel-drawer__toggle__padding--right;
+  padding-top: $voxel-drawer__toggle__padding--top;
   position: fixed;
   text-decoration: none;
   top: 0;
@@ -120,7 +120,7 @@
 
 @mixin voxel-drawer__title() {
   color: $voxel-drawer__title__color;
-  font-size: rem-calc($voxel-drawer__title__font-size);
+  font-size: $voxel-drawer__title__font-size;
   text-decoration: none;
 }
 
@@ -130,10 +130,10 @@
 
 @mixin voxel-drawer__header() {
   background-color: $voxel-drawer__header__background-color;
-  margin-bottom: rem-calc($voxel-drawer__header__margin--bottom);
-  min-height: rem-calc($voxel-drawer__header__height--min);
-  padding-bottom: rem-calc($voxel-drawer__header__padding--bottom);
-  padding-top: rem-calc($voxel-drawer__header__padding--top);
+  margin-bottom: $voxel-drawer__header__margin--bottom;
+  min-height: $voxel-drawer__header__height--min;
+  padding-bottom: $voxel-drawer__header__padding--bottom;
+  padding-top: $voxel-drawer__header__padding--top;
   position: relative;
   text-align: $voxel-drawer__header__text-align;
 }
@@ -160,7 +160,7 @@
 @mixin voxel-drawer__index() {
   counter-reset: voxel-drawer__index__counter;
   list-style-type: none;
-  padding-left: rem-calc($voxel-drawer__index__padding--left);
+  padding-left: $voxel-drawer__index__padding--left;
 }
 
 @mixin voxel-drawer__index__item() {
@@ -171,7 +171,7 @@
     display: block;
     float: left;
     font-weight: bold;
-    margin-right: rem-calc($voxel-drawer__index__item__counter__margin--right);
+    margin-right: $voxel-drawer__index__item__counter__margin--right;
     padding-bottom: $voxel-drawer__index__item__before__padding--bottom;
     padding-top: $voxel-drawer__index__item__before__padding--top;
   }
@@ -180,14 +180,14 @@
 @mixin voxel-drawer__index__item__text() {
   font-weight: bold;
   margin-bottom: 0;
-  padding-bottom: rem-calc($voxel-drawer__index__item__text__padding--bottom);
-  padding-top: rem-calc($voxel-drawer__index__item__text__padding--top);
+  padding-bottom: $voxel-drawer__index__item__text__padding--bottom;
+  padding-top: $voxel-drawer__index__item__text__padding--top;
 }
 
 @mixin voxel-drawer__index__item__link() {
   display: block;
-  padding-bottom: rem-calc($voxel-drawer__index__item__link__padding--bottom);
-  padding-top: rem-calc($voxel-drawer__index__item__link__padding--top);
+  padding-bottom: $voxel-drawer__index__item__link__padding--bottom;
+  padding-top: $voxel-drawer__index__item__link__padding--top;
   text-decoration: none;
 
   &:hover {

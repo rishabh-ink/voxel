@@ -1,10 +1,10 @@
 @mixin voxel-header() {
   background: $voxel-header__background-color;
   border-bottom: $voxel-header__border--bottom--width $voxel-header__border--bottom--style $voxel-header__border--bottom--color;
-  margin-bottom: rem-calc($voxel-header__margin--bottom);
-  min-height: rem-calc($voxel-header__height--min);
-  padding-bottom: rem-calc($voxel-header__padding--bottom);
-  padding-top: rem-calc($voxel-header__padding--top);
+  margin-bottom: $voxel-header__margin--bottom;
+  min-height: $voxel-header__height--min;
+  padding-bottom: $voxel-header__padding--bottom;
+  padding-top: $voxel-header__padding--top;
   position: relative;
   text-align: center;
 
@@ -35,7 +35,7 @@
 @mixin voxel-header__title() {
   color: $voxel-header__title__color;
   font-family: $voxel-header__title__font-family;
-  font-size: rem-calc($voxel-header__title__font-size);
+  font-size: $voxel-header__title__font-size;
   text-decoration: none;
 }
 
@@ -56,8 +56,8 @@
 @mixin voxel-header__title__sub() {
   color: $voxel-header__title__sub__color;
   display: none;
-  font-size: rem-calc($voxel-header__title__sub__font-size);
-  margin-left: rem-calc($voxel-header__title__sub__margin--left);
+  font-size: $voxel-header__title__sub__font-size;
+  margin-left: $voxel-header__title__sub__margin--left;
 
   @media (min-width: $voxel-scaffolding__screen--s--min) {
     display: initial;

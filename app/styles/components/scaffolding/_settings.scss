@@ -6,37 +6,37 @@ $voxel-scaffolding__spacing--horizontal: () !default;
 $voxel-scaffolding__spacing--horizontal: map-merge((
   // Perfect Fourth scale (1.333)
   // See type-scale.com/?size=16&scale=1.333&text=A%20Visual%20Type%20Scale&webfont=Open%2BSans&font-family=%27Open%20Sans%27%2C%20serif&font-weight=400&font-family-headers=&font-weight-headers=inherit&background-color=white&font-color=%23333
-  "50": .178rem,
-  "100": .238rem,
-  "200": .317rem,
-  "300": .422rem,
-  "400": .563rem,
-  "500": .75rem,
-  "600": 1rem,
-  "700": 1.333rem,
-  "800": 1.777rem,
-  "900": 2.369rem,
-  "a100": 3.157rem,
-  "a200": 4.21rem
+  "50": rem-calc(.178rem),
+  "100": rem-calc(.238rem),
+  "200": rem-calc(.317rem),
+  "300": rem-calc(.422rem),
+  "400": rem-calc(.563rem),
+  "500": rem-calc(.75rem),
+  "600": rem-calc(1rem),
+  "700": rem-calc(1.333rem),
+  "800": rem-calc(1.777rem),
+  "900": rem-calc(2.369rem),
+  "a100": rem-calc(3.157rem),
+  "a200": rem-calc(4.21rem)
 ), $voxel-scaffolding__spacing--horizontal);
 
 $voxel-scaffolding__spacing--vertical: () !default;
 $voxel-scaffolding__spacing--vertical: map-merge((
   // Minor Third scale (1.200)
   // http://type-scale.com/?size=16&scale=1.200&text=A%20Visual%20Type%20Scale&webfont=Open%2BSans&font-family=%27Open%20Sans%27%2C%20serif&font-weight=400&font-family-headers=&font-weight-headers=inherit&background-color=white&font-color=%23333
-  "50": .335rem,
-  "100": .402rem,
-  "200": .483rem,
-  "300": .579rem,
-  "400": .694rem,
-  "500": .833rem,
-  "600": 1rem,
-  "700": 1.2rem,
-  "800": 1.44rem,
-  "900": 1.728rem,
-  "a100": 2.074rem,
-  "a200": 2.4888rem,
-  "a400": 2.987rem
+  "50": rem-calc(.335rem),
+  "100": rem-calc(.402rem),
+  "200": rem-calc(.483rem),
+  "300": rem-calc(.579rem),
+  "400": rem-calc(.694rem),
+  "500": rem-calc(.833rem),
+  "600": rem-calc(1rem),
+  "700": rem-calc(1.2rem),
+  "800": rem-calc(1.44rem),
+  "900": rem-calc(1.728rem),
+  "a100": rem-calc(2.074rem),
+  "a200": rem-calc(2.4888rem),
+  "a400": rem-calc(2.987rem)
 ), $voxel-scaffolding__spacing--vertical);
 
 $voxel-scaffolding__border-radius: () !default;

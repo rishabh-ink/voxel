@@ -4,9 +4,9 @@
   border-radius: 50%;
   bottom: 0;
   content: "";
-  height: rem-calc($shadow--height);
+  height: $shadow--height;
   left: 50%;
   position: absolute;
-  width: rem-calc($shadow--width);
+  width: $shadow--width;
   z-index: -1;
 }

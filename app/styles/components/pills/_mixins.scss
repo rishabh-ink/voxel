@@ -13,14 +13,14 @@
   border-style: $voxel-pill__border--style;
   border-width: $voxel-pill__border--width;
   display: inline-block;
-  margin-bottom: rem-calc($voxel-pill__margin--bottom);
-  margin-left: rem-calc($voxel-pill__margin--left);
-  margin-right: rem-calc($voxel-pill__margin--right);
-  margin-top: rem-calc($voxel-pill__margin--top);
-  padding-bottom: rem-calc($voxel-pill__padding--bottom);
-  padding-left: rem-calc($voxel-pill__padding--left);
-  padding-right: rem-calc($voxel-pill__padding--right);
-  padding-top: rem-calc($voxel-pill__padding--top);
+  margin-bottom: $voxel-pill__margin--bottom;
+  margin-left: $voxel-pill__margin--left;
+  margin-right: $voxel-pill__margin--right;
+  margin-top: $voxel-pill__margin--top;
+  padding-bottom: $voxel-pill__padding--bottom;
+  padding-left: $voxel-pill__padding--left;
+  padding-right: $voxel-pill__padding--right;
+  padding-top: $voxel-pill__padding--top;
   text-decoration: none;
 
   &:hover {
