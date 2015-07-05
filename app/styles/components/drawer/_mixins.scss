@@ -227,7 +227,7 @@
 
 
 @mixin voxel-drawer__index__item__link--active() {
-  @include background-with-css2-fallback(
+  @include background-image(
     linear-gradient(
       to right,
       $voxel-drawer__index__item__link--active__background-gradient__color--start,
@@ -237,7 +237,7 @@
 }
 
 @mixin voxel-drawer__index__item__link--active__themes($theme) {
-  @include background-with-css2-fallback(
+  @include background-image(
     linear-gradient(
       to right,
       $voxel-drawer__index__item__link--active__background-gradient__color--start,
