@@ -12,6 +12,10 @@
       rgba($voxel-drawer__background-gradient__color--end, $voxel-drawer__background-alpha)
     )
   );
+  // scss-lint:disable DuplicateProperty ColorVariable
+  background-color: #fff; // Set fallback color for unsupported browsers.
+  background-color: rgba(#fff, 0); // Remove fallback color so that the gradient transparency takes effect.
+  // scss-lint:enable DuplicateProperty ColorVariable
   background-size: auto;
   border-right-color: $voxel-drawer__border--right--color;
   border-right-style: $voxel-drawer__border--right--style;
