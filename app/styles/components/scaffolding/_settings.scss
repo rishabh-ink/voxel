@@ -47,13 +47,13 @@ $voxel-scaffolding__border-radius: map-merge((
 ), $voxel-scaffolding__border-radius);
 
 /* Small devices (tablets, 768px and up) */
-$voxel-scaffolding__screen--s--min: 48em !default;
+$voxel-scaffolding__screen--s--min: 48rem !default;
 
 /* Medium devices (desktops, 992px and up) */
-$voxel-scaffolding__screen--m--min: 62em !default;
+$voxel-scaffolding__screen--m--min: 62rem !default;
 
 /* Large devices (large desktops, 1200px and up) */
-$voxel-scaffolding__screen--l--min: 75em !default;
+$voxel-scaffolding__screen--l--min: 75rem !default;
 
 $voxel-scaffolding__transition--duration: .3s !default;
 
