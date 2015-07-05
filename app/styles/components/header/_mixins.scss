@@ -20,13 +20,13 @@
       $voxel-header__box-shadow--radius
       0
     );
+    @include transform(translateX(-50%));
     border-radius: 50%;
     bottom: 0;
     content: "";
     height: rem-calc($voxel-header__box-shadow--height);
     left: 50%;
     position: absolute;
-    transform: translateX(-50%);
     width: rem-calc($voxel-header__box-shadow--width);
     z-index: -1;
   }
