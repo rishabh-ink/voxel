@@ -11,7 +11,9 @@
   @media (min-width: $voxel-scaffolding__screen--s--min) {
     text-align: initial;
   }
+}
 
+@mixin voxel-header--with-transforms() {
   &:before {
     @include voxel-circle-shadow(
       $voxel-header__box-shadow--color,

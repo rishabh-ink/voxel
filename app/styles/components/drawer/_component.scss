@@ -67,6 +67,10 @@
     @include voxel-drawer__header();
   }
 
+  /*html*/.voxel-csstransforms .voxel-drawer__header {
+    @include voxel-drawer__header--with-transforms();
+  }
+
   @each $theme in $voxel-colors__themes--supported {
     .voxel-theme--#{$theme} .voxel-drawer__header {
       @include voxel-drawer__header__themes($theme);

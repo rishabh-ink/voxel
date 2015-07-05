@@ -133,7 +133,9 @@
   padding-top: rem-calc($voxel-drawer__header__padding--top);
   position: relative;
   text-align: $voxel-drawer__header__text-align;
+}
 
+@mixin voxel-drawer__header--with-transforms() {
   &:before {
     @include voxel-circle-shadow(
       $voxel-drawer__header__box-shadow--color,

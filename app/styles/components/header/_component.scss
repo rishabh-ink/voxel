@@ -7,6 +7,10 @@
     @include voxel-header();
   }
 
+  /*html*/.voxel-csstransforms .voxel-header {
+    @include voxel-header--with-transforms();
+  }
+
   @each $theme in $voxel-colors__themes--supported {
     .voxel-theme--#{$theme} .voxel-header {
       @include voxel-header__themes($theme);
