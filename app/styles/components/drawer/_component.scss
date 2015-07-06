@@ -7,7 +7,7 @@
     @include voxel-drawer();
   }
 
-  @each $theme in $voxel-colors__themes--supported {
+  @each $theme in $voxel-color__themes--supported {
     .voxel-theme--#{$theme} .voxel-drawer {
       @include voxel-drawer__themes($theme);
     }
@@ -33,7 +33,7 @@
     @include voxel-drawer__toggle();
   }
 
-  @each $theme in $voxel-colors__themes--supported {
+  @each $theme in $voxel-color__themes--supported {
     .voxel-theme--#{$theme} .voxel-drawer__toggle {
       @include voxel-drawer__toggle__themes($theme);
     }
@@ -43,7 +43,7 @@
     @include voxel-drawer__toggle--active();
   }
 
-  @each $theme in $voxel-colors__themes--supported {
+  @each $theme in $voxel-color__themes--supported {
     .voxel-theme--#{$theme} .voxel-drawer__toggle--active {
       @include voxel-drawer__toggle--active__themes($theme);
     }
@@ -61,7 +61,7 @@
     @include voxel-drawer__title();
   }
 
-  @each $theme in $voxel-colors__themes--supported {
+  @each $theme in $voxel-color__themes--supported {
     .voxel-theme--#{$theme} .voxel-drawer__title {
       @include voxel-drawer__title__themes($theme);
     }
@@ -75,7 +75,7 @@
     @include voxel-drawer__header--with-transforms();
   }
 
-  @each $theme in $voxel-colors__themes--supported {
+  @each $theme in $voxel-color__themes--supported {
     .voxel-theme--#{$theme} .voxel-drawer__header {
       @include voxel-drawer__header__themes($theme);
     }
@@ -93,7 +93,7 @@
     @include voxel-drawer__index__item__link();
   }
 
-  @each $theme in $voxel-colors__themes--supported {
+  @each $theme in $voxel-color__themes--supported {
     .voxel-theme--#{$theme} .voxel-drawer__index__item__link {
       @include voxel-drawer__index__item__link__themes($theme);
     }
@@ -107,7 +107,7 @@
     @include voxel-drawer__index__item__link--active();
   }
 
-  @each $theme in $voxel-colors__themes--supported {
+  @each $theme in $voxel-color__themes--supported {
     .voxel-theme--#{$theme} .voxel-drawer__index__item__link--active {
       @include voxel-drawer__index__item__link--active__themes($theme);
     }

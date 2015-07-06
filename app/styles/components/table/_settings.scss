@@ -1,0 +1,17 @@
+$voxel-table__include-classes: $voxel-components__include-classes !default;
+
+$voxel-table__margin-bottom: map-get($voxel-scaffolding__spacing--vertical, "600") !default;
+
+$voxel-table__border--color: map-get(map-get($voxel-color__themes, "gray"), "200") !default;
+$voxel-table__border--width: 1px !default;
+$voxel-table__border--style: solid !default;
+
+$voxel-table__th__background-color__shade: "50" !default;
+$voxel-table__th__background-color: map-get($voxel-color__brand--primary, $voxel-table__th__background-color__shade) !default;
+$voxel-table__th__color__shade: "700" !default;
+$voxel-table__th__color: map-get($voxel-color__brand--primary, $voxel-table__th__color__shade) !default;
+
+$voxel-table__cell__padding-top: map-get($voxel-scaffolding__spacing--vertical, "50") !default;
+$voxel-table__cell__padding-bottom: map-get($voxel-scaffolding__spacing--vertical, "50") !default;
+$voxel-table__cell__padding-left: map-get($voxel-scaffolding__spacing--horizontal, "300") !default;
+$voxel-table__cell__padding-right: map-get($voxel-scaffolding__spacing--horizontal, "300") !default;

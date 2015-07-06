@@ -1,0 +1,21 @@
+@import "settings";
+@import "mixins";
+@import "documentation";
+
+@if($voxel-layout__include-classes) {
+  /*html*/.voxel-csstransitions .voxel-layout__page {
+    @include voxel-layout__page--with-transitions();
+  }
+
+  /*html*/.voxel-cssfilters .voxel-layout__page--inactive {
+    @include voxel-layout__page--inactive--with-filters();
+  }
+
+  .voxel-layout__content {
+    @include voxel-layout__content();
+  }
+
+  .voxel-layout__image {
+    @include voxel-layout__image();
+  }
+}

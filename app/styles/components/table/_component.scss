@@ -2,12 +2,12 @@
 @import "mixins";
 @import "documentation";
 
-@if($voxel-tables__include-classes) {
+@if($voxel-table__include-classes) {
   .voxel-table {
     @include voxel-table();
   }
 
-  @each $theme in $voxel-colors__themes--supported {
+  @each $theme in $voxel-color__themes--supported {
     .voxel-theme--#{$theme} .voxel-table {
       @include voxel-table__themes($theme);
     }

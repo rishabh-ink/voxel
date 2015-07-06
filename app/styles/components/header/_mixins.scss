@@ -25,10 +25,10 @@
 }
 
 @mixin voxel-header__themes($theme) {
-  border-bottom: $voxel-header__border--bottom--width $voxel-header__border--bottom--style map-get(map-get($voxel-colors__themes, $theme), $voxel-header__border--bottom--color__shade);
+  border-bottom: $voxel-header__border--bottom--width $voxel-header__border--bottom--style map-get(map-get($voxel-color__themes, $theme), $voxel-header__border--bottom--color__shade);
 
   &:before {
-    box-shadow: map-get(map-get($voxel-colors__themes, $theme), $voxel-header__box-shadow--color__shade) 0 0 $voxel-header__box-shadow--radius 0;
+    box-shadow: map-get(map-get($voxel-color__themes, $theme), $voxel-header__box-shadow--color__shade) 0 0 $voxel-header__box-shadow--radius 0;
   }
 }
 
@@ -40,7 +40,7 @@
 }
 
 @mixin voxel-header__title__themes($theme) {
-  color: map-get(map-get($voxel-colors__themes, $theme), $voxel-header__title__color__shade);
+  color: map-get(map-get($voxel-color__themes, $theme), $voxel-header__title__color__shade);
 }
 
 @mixin voxel-header__title--with-transitions() {
@@ -50,7 +50,7 @@
 }
 
 @mixin voxel-header__title--inactive--with-filters() {
-  @include filter(blur($voxel-layouts__page__blur));
+  @include filter(blur($voxel-layout__page__blur));
 }
 
 @mixin voxel-header__title__sub() {
@@ -65,5 +65,5 @@
 }
 
 @mixin voxel-header__title__sub__themes($theme) {
-  color: map-get(map-get($voxel-colors__themes, $theme), $voxel-header__title__sub__color__shade);
+  color: map-get(map-get($voxel-color__themes, $theme), $voxel-header__title__sub__color__shade);
 }

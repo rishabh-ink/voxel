@@ -4,51 +4,51 @@ $voxel-drawer__width: rem-calc(20rem) !default;
 
 $voxel-drawer__z-index: 10 !default;
 
-$voxel-drawer__font-family: $voxel-fonts__font-family--headings !default;
+$voxel-drawer__font-family: $voxel-font__font-family--headings !default;
 $voxel-drawer__background-gradient__color--start__shade: "50" !default;
-$voxel-drawer__background-gradient__color--start: map-get($voxel-colors__brand--primary, $voxel-drawer__background-gradient__color--start__shade) !default;
+$voxel-drawer__background-gradient__color--start: map-get($voxel-color__brand--primary, $voxel-drawer__background-gradient__color--start__shade) !default;
 $voxel-drawer__background-gradient__color--end__shade: "100" !default;
-$voxel-drawer__background-gradient__color--end: map-get($voxel-colors__brand--primary, $voxel-drawer__background-gradient__color--end__shade) !default;
+$voxel-drawer__background-gradient__color--end: map-get($voxel-color__brand--primary, $voxel-drawer__background-gradient__color--end__shade) !default;
 $voxel-drawer__background-alpha: .95 !default;
 $voxel-drawer__background-image: url("../images/noise.png") !default;
 
 
 $voxel-drawer__border--right--color__shade: "100" !default;
-$voxel-drawer__border--right--color: map-get($voxel-colors__brand--primary, $voxel-drawer__border--right--color__shade) !default;
+$voxel-drawer__border--right--color: map-get($voxel-color__brand--primary, $voxel-drawer__border--right--color__shade) !default;
 $voxel-drawer__border--right--width: 1px !default;
 $voxel-drawer__border--right--style: solid !default;
 
 $voxel-drawer__box-shadow--radius: map-get($voxel-scaffolding__spacing--horizontal, "900") !default;
 $voxel-drawer__box-shadow--color__shade: "900" !default;
-$voxel-drawer__box-shadow--color: map-get($voxel-colors__brand--primary, $voxel-drawer__box-shadow--color__shade) !default;
+$voxel-drawer__box-shadow--color: map-get($voxel-color__brand--primary, $voxel-drawer__box-shadow--color__shade) !default;
 
 $voxel-drawer__title__color__shade: "800" !default;
-$voxel-drawer__title__color: map-get($voxel-colors__brand--primary, $voxel-drawer__title__color__shade) !default;
-$voxel-drawer__title__font-size: map-get($voxel-fonts__font-size--headings, "h3") !default;
+$voxel-drawer__title__color: map-get($voxel-color__brand--primary, $voxel-drawer__title__color__shade) !default;
+$voxel-drawer__title__font-size: map-get($voxel-font__font-size--headings, "h3") !default;
 
 $voxel-drawer__transition--duration: $voxel-scaffolding__transition--duration !default;
 
 $voxel-drawer__toggle__z-index: 20 !default;
 $voxel-drawer__toggle__color__shade: "800" !default;
-$voxel-drawer__toggle__color: map-get($voxel-colors__brand--primary, $voxel-drawer__toggle__color__shade) !default;
+$voxel-drawer__toggle__color: map-get($voxel-color__brand--primary, $voxel-drawer__toggle__color__shade) !default;
 $voxel-drawer__toggle__color--active__shade: "300" !default;
-$voxel-drawer__toggle__color--active: map-get($voxel-colors__brand--primary, $voxel-drawer__toggle__color--active__shade) !default;
+$voxel-drawer__toggle__color--active: map-get($voxel-color__brand--primary, $voxel-drawer__toggle__color--active__shade) !default;
 $voxel-drawer__toggle__transition--duration: $voxel-scaffolding__transition--duration !default;
-$voxel-drawer__toggle__font-size: map-get($voxel-fonts__font-size--headings, "h3") !default;
+$voxel-drawer__toggle__font-size: map-get($voxel-font__font-size--headings, "h3") !default;
 $voxel-drawer__toggle__padding--top: map-get($voxel-scaffolding__spacing--vertical, "300") !default;
 $voxel-drawer__toggle__padding--bottom: map-get($voxel-scaffolding__spacing--vertical, "300") !default;
 $voxel-drawer__toggle__padding--left: map-get($voxel-scaffolding__spacing--horizontal, "600") !default;
 $voxel-drawer__toggle__padding--right: map-get($voxel-scaffolding__spacing--horizontal, "600") !default;
 
 $voxel-drawer__header__background-color__shade: "50" !default;
-$voxel-drawer__header__background-color: map-get($voxel-colors__brand--primary, $voxel-drawer__header__background-color__shade) !default;
+$voxel-drawer__header__background-color: map-get($voxel-color__brand--primary, $voxel-drawer__header__background-color__shade) !default;
 $voxel-drawer__header__height--min: map-get($voxel-scaffolding__spacing--vertical, "a400") !default;
 $voxel-drawer__header__margin--bottom: map-get($voxel-scaffolding__spacing--vertical, "a100") !default;
 $voxel-drawer__header__padding--bottom: map-get($voxel-scaffolding__spacing--vertical, "300") !default;
 $voxel-drawer__header__padding--top: map-get($voxel-scaffolding__spacing--vertical, "300") !default;
 $voxel-drawer__header__text-align: center !default;
 $voxel-drawer__header__box-shadow--color__shade: "400" !default;
-$voxel-drawer__header__box-shadow--color: map-get($voxel-colors__brand--primary, $voxel-drawer__header__box-shadow--color__shade) !default;
+$voxel-drawer__header__box-shadow--color: map-get($voxel-color__brand--primary, $voxel-drawer__header__box-shadow--color__shade) !default;
 $voxel-drawer__header__box-shadow--radius: map-get($voxel-scaffolding__spacing--vertical, "a100") !default;
 $voxel-drawer__header__box-shadow--height: map-get($voxel-scaffolding__spacing--vertical, "a100") !default;
 $voxel-drawer__header__box-shadow--width: 80% !default;
@@ -57,16 +57,16 @@ $voxel-drawer__index__padding--left: map-get($voxel-scaffolding__spacing--horizo
 $voxel-drawer__index__item__counter__margin--right: map-get($voxel-scaffolding__spacing--horizontal, "400") !default;
 
 $voxel-drawer__index__item__link--active__background-color__shade: "400" !default;
-$voxel-drawer__index__item__link--active__background-color: map-get($voxel-colors__brand--primary, $voxel-drawer__index__item__link--active__background-color__shade) !default;
-$voxel-drawer__index__item__link--active__background-gradient__color--start: $voxel-colors__transparent !default;
+$voxel-drawer__index__item__link--active__background-color: map-get($voxel-color__brand--primary, $voxel-drawer__index__item__link--active__background-color__shade) !default;
+$voxel-drawer__index__item__link--active__background-gradient__color--start: $voxel-color__transparent !default;
 $voxel-drawer__index__item__link--active__background-gradient__color--end__shade: $voxel-drawer__index__item__link--active__background-color__shade !default;
-$voxel-drawer__index__item__link--active__background-gradient__color--end: map-get($voxel-colors__brand--primary, $voxel-drawer__index__item__link--active__background-color__shade) !default;
+$voxel-drawer__index__item__link--active__background-gradient__color--end: map-get($voxel-color__brand--primary, $voxel-drawer__index__item__link--active__background-color__shade) !default;
 
 $voxel-drawer__index__item__link--hover__background-color__shade: "300" !default;
-$voxel-drawer__index__item__link--hover__background-color: map-get($voxel-colors__brand--primary, $voxel-drawer__index__item__link--hover__background-color__shade) !default;
-$voxel-drawer__index__item__link--hover__background-gradient__color--start: $voxel-colors__transparent !default;
+$voxel-drawer__index__item__link--hover__background-color: map-get($voxel-color__brand--primary, $voxel-drawer__index__item__link--hover__background-color__shade) !default;
+$voxel-drawer__index__item__link--hover__background-gradient__color--start: $voxel-color__transparent !default;
 $voxel-drawer__index__item__link--hover__background-gradient__color--end__shade: $voxel-drawer__index__item__link--hover__background-color__shade !default;
-$voxel-drawer__index__item__link--hover__background-gradient__color--end: map-get($voxel-colors__brand--primary, $voxel-drawer__index__item__link--hover__background-color__shade) !default;
+$voxel-drawer__index__item__link--hover__background-gradient__color--end: map-get($voxel-color__brand--primary, $voxel-drawer__index__item__link--hover__background-color__shade) !default;
 
 $voxel-drawer__index__item__link__padding--bottom: map-get($voxel-scaffolding__spacing--vertical, "50") !default;
 $voxel-drawer__index__item__link__padding--top: map-get($voxel-scaffolding__spacing--vertical, "50") !default;

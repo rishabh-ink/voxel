@@ -1,0 +1,111 @@
+@mixin voxel-font__body() {
+  color: $voxel-font__color--base;
+  font-family: $voxel-font__font-family--base;
+  font-size: $voxel-font__font-size--base;
+  font-weight: $voxel-font__font-weight--base;
+  line-height: map-get($voxel-font__line-height, "600");
+}
+
+@mixin voxel-font__paragraph() {
+  margin-bottom: $voxel-font__paragraph__margin--bottom;
+}
+
+@mixin voxel-font__headings--h123456() {
+  color: $voxel-font__color--headings;
+  font-family: $voxel-font__font-family--headings;
+  font-weight: $voxel-font__font-weight--headings;
+}
+
+@mixin voxel-font__headings--h123456__themes($theme) {
+  color: map-get(map-get($voxel-color__themes, $theme), $voxel-font__color--headings__shade);
+}
+
+@mixin voxel-font__headings--h1234() {
+  line-height: map-get($voxel-font__line-height, "300");
+  margin-bottom: $voxel-font__heading__margin--bottom;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: $voxel-font__heading__margin--top;
+}
+
+@mixin voxel-font__headings--h1() {
+  font-size: map-get($voxel-font__font-size--headings, "h1");
+}
+
+@mixin voxel-font__headings--h2() {
+  font-size: map-get($voxel-font__font-size--headings, "h2");
+}
+
+@mixin voxel-font__headings--h3() {
+  font-size: map-get($voxel-font__font-size--headings, "h3");
+}
+
+@mixin voxel-font__headings--h4() {
+  font-size: map-get($voxel-font__font-size--headings, "h4");
+}
+
+@mixin voxel-font__headings--h5() {
+  font-size: map-get($voxel-font__font-size--headings, "h5");
+}
+
+@mixin voxel-font__headings--h6() {
+  font-size: map-get($voxel-font__font-size--headings, "h6");
+}
+
+@mixin voxel-font__small() {
+  font-size: $voxel-font__font-size--small;
+}
+
+@mixin voxel-font__a() {
+  color: $voxel-font__link__color--normal;
+}
+
+@mixin voxel-font__a__themes($theme) {
+  color: map-get(map-get($voxel-color__themes, $theme), $voxel-font__link__color--normal__shade);
+}
+
+@mixin voxel-font__code() {
+  background-color: $voxel-font__code__background-color;
+  border-color: $voxel-font__code__border--color;
+  border-style: $voxel-font__code__border--style;
+  border-width: $voxel-font__code__border--width;
+  color: $voxel-font__code__color;
+  margin-left: $voxel-font__code__margin--left;
+  margin-right: $voxel-font__code__margin--left;
+  padding-bottom: $voxel-font__code__padding--bottom;
+  padding-left: $voxel-font__code__padding--left;
+  padding-right: $voxel-font__code__padding--right;
+  padding-top: $voxel-font__code__padding--top;
+}
+
+@mixin voxel-font__code__themes($theme) {
+  background-color: map-get(map-get($voxel-color__themes, $theme), $voxel-font__code__background-color__shade);
+  color: map-get(map-get($voxel-color__themes, $theme), $voxel-font__code__color__shade);
+}
+
+@mixin voxel-font__pre__code() {
+  background-color: initial;
+  border-color: none;
+  border-style: none;
+  border-width: 0;
+  color: inherit;
+}
+
+@mixin voxel-font__blockquote() {
+  border-left-color: $voxel-font__blockquote__border--left--color;
+  border-left-style: $voxel-font__blockquote__border--left--style;
+  border-left-width: $voxel-font__blockquote__border--left--width;
+  font-size: $voxel-font__blockquote__font-size;
+  margin-bottom: $voxel-font__blockquote__margin--bottom;
+  margin-left: $voxel-font__blockquote__margin--left;
+  margin-right: $voxel-font__blockquote__margin--right;
+  margin-top: $voxel-font__blockquote__margin--top;
+  padding-bottom: $voxel-font__blockquote__padding--bottom;
+  padding-left: $voxel-font__blockquote__padding--left;
+  padding-right: $voxel-font__blockquote__padding--right;
+  padding-top: $voxel-font__blockquote__padding--top;
+}
+
+@mixin voxel-font__blockquote__themes($theme) {
+  border-left-color: map-get(map-get($voxel-color__themes, $theme), $voxel-font__blockquote__border--left--color__shade);
+}

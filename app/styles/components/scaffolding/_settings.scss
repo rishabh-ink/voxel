@@ -59,6 +59,6 @@ $voxel-scaffolding__transition--duration: .3s !default;
 
 $voxel-scaffolding__body__background-color: #fff !default;
 
-$voxel-scaffolding__horizontal-rule__color: map-get($voxel-colors__brand--primary, "500") !default;
+$voxel-scaffolding__horizontal-rule__color: map-get($voxel-color__brand--primary, "500") !default;
 $voxel-scaffolding__horizontal-rule__style: solid !default;
 $voxel-scaffolding__horizontal-rule__width: 1px !default;

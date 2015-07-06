@@ -1,8 +1,8 @@
-$voxel-colors__include-classes: $voxel-components__include-classes !default;
+$voxel-color__include-classes: $voxel-components__include-classes !default;
 
-$voxel-colors__transparent: rgba(0, 0, 0, 0) !default;
+$voxel-color__transparent: rgba(0, 0, 0, 0) !default;
 
-$voxel-colors__themes: (
+$voxel-color__themes: (
   "red": (
     "50": #ffebee,
     "100": #ffcdd2,
@@ -329,6 +329,6 @@ $voxel-colors__themes: (
   )
 );
 
-$voxel-colors__themes--supported: ("red", "pink", "purple", "deep-purple", "indigo", "blue", "light-blue", "cyan", "teal", "green", "light-green", "lime", "yellow", "amber", "orange", "deep-orange", "brown", "gray", "blue-gray");
+$voxel-color__themes--supported: ("red", "pink", "purple", "deep-purple", "indigo", "blue", "light-blue", "cyan", "teal", "green", "light-green", "lime", "yellow", "amber", "orange", "deep-orange", "brown", "gray", "blue-gray");
 
-$voxel-colors__brand--primary: map-get($voxel-colors__themes, "blue-gray") !default;
+$voxel-color__brand--primary: map-get($voxel-color__themes, "blue-gray") !default;

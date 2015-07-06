@@ -29,7 +29,7 @@
 }
 
 @mixin voxel-drawer__themes($theme) {
-  box-shadow: 0 0 $voxel-drawer__box-shadow--radius 0 map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__box-shadow--color__shade);
+  box-shadow: 0 0 $voxel-drawer__box-shadow--radius 0 map-get(map-get($voxel-color__themes, $theme), $voxel-drawer__box-shadow--color__shade);
   @include background-image(
     $voxel-drawer__background-image,
     radial-gradient(
@@ -38,7 +38,7 @@
       rgba(
         map-get(
           map-get(
-            $voxel-colors__themes,
+            $voxel-color__themes,
             $theme
           ),
           $voxel-drawer__background-gradient__color--start__shade
@@ -48,7 +48,7 @@
       rgba(
         map-get(
           map-get(
-            $voxel-colors__themes,
+            $voxel-color__themes,
             $theme
           ),
           $voxel-drawer__background-gradient__color--end__shade
@@ -58,7 +58,7 @@
     )
   );
   background-size: auto;
-  border-right-color: map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__border--right--color__shade);
+  border-right-color: map-get(map-get($voxel-color__themes, $theme), $voxel-drawer__border--right--color__shade);
 }
 
 @mixin voxel-drawer--with-transitions() {
@@ -98,7 +98,7 @@
 }
 
 @mixin voxel-drawer__toggle__themes($theme) {
-  color: map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__toggle__color__shade);
+  color: map-get(map-get($voxel-color__themes, $theme), $voxel-drawer__toggle__color__shade);
 }
 
 @mixin voxel-drawer__toggle--with-transitions() {
@@ -111,7 +111,7 @@
 }
 
 @mixin voxel-drawer__toggle--active__themes($theme) {
-  color: map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__toggle__color--active__shade);
+  color: map-get(map-get($voxel-color__themes, $theme), $voxel-drawer__toggle__color--active__shade);
 }
 
 @mixin voxel-drawer__toggle--active--with-transforms() {
@@ -125,7 +125,7 @@
 }
 
 @mixin voxel-drawer__title__themes($theme) {
-  color: map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__title__color__shade);
+  color: map-get(map-get($voxel-color__themes, $theme), $voxel-drawer__title__color__shade);
 }
 
 @mixin voxel-drawer__header() {
@@ -150,10 +150,10 @@
 }
 
 @mixin voxel-drawer__header__themes($theme) {
-  background-color: map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__header__background-color__shade);
+  background-color: map-get(map-get($voxel-color__themes, $theme), $voxel-drawer__header__background-color__shade);
 
   &:before {
-    box-shadow: map-get(map-get($voxel-colors__themes, $theme), $voxel-drawer__header__box-shadow--color__shade) 0 0 $voxel-drawer__header__box-shadow--radius 0;
+    box-shadow: map-get(map-get($voxel-color__themes, $theme), $voxel-drawer__header__box-shadow--color__shade) 0 0 $voxel-drawer__header__box-shadow--radius 0;
   }
 }
 
@@ -210,7 +210,7 @@
         $voxel-drawer__index__item__link--hover__background-gradient__color--start,
         map-get(
           map-get(
-            $voxel-colors__themes,
+            $voxel-color__themes,
             $theme
           ),
           $voxel-drawer__index__item__link--hover__background-gradient__color--end__shade
@@ -238,7 +238,7 @@
       $voxel-drawer__index__item__link--active__background-gradient__color--start,
       map-get(
         map-get(
-          $voxel-colors__themes,
+          $voxel-color__themes,
           $theme
         ),
         $voxel-drawer__index__item__link--active__background-gradient__color--end__shade

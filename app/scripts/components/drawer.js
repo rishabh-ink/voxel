@@ -16,7 +16,7 @@ function($) {
       classnames: {
         drawerActive: "voxel-drawer--active",
         drawerToggleActive: "voxel-drawer__toggle--active",
-        pageInactive: "voxel-layouts__page--inactive",
+        pageInactive: "voxel-layout__page--inactive",
         headerTitleInactive: "voxel-header__title--inactive"
       },
 

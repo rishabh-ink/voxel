@@ -2,7 +2,7 @@
 @import "mixins";
 @import "documentation";
 
-@if($voxel-pills__include-classes) {
+@if($voxel-pill__include-classes) {
   .voxel-pills {
     @include voxel-pills();
   }
@@ -15,7 +15,7 @@
     @include voxel-pill();
   }
 
-  @each $theme in $voxel-colors__themes--supported {
+  @each $theme in $voxel-color__themes--supported {
     .voxel-theme--#{$theme} /*a*/.voxel-pill {
       @include voxel-pill__themes($theme);
     }

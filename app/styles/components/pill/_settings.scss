@@ -1,4 +1,4 @@
-$voxel-pills__include-classes: $voxel-components__include-classes !default;
+$voxel-pill__include-classes: $voxel-components__include-classes !default;
 
 $voxel-pill__padding--top: map-get($voxel-scaffolding__spacing--vertical, "200") !default;
 $voxel-pill__padding--right: map-get($voxel-scaffolding__spacing--horizontal, "800") !default;
@@ -11,13 +11,13 @@ $voxel-pill__margin--bottom: map-get($voxel-scaffolding__spacing--vertical, "50"
 $voxel-pill__margin--left: map-get($voxel-scaffolding__spacing--horizontal, "50") !default;
 
 $voxel-pill__border--color__shade: "50" !default;
-$voxel-pill__border--color: map-get($voxel-colors__brand--primary, $voxel-pill__border--color__shade) !default;
+$voxel-pill__border--color: map-get($voxel-color__brand--primary, $voxel-pill__border--color__shade) !default;
 $voxel-pill__border--width: 1px !default;
 $voxel-pill__border--style: solid !default;
 
 $voxel-pill__background-color--hover__shade: "50" !default;
-$voxel-pill__background-color--hover: map-get($voxel-colors__brand--primary, $voxel-pill__background-color--hover__shade) !default;
+$voxel-pill__background-color--hover: map-get($voxel-color__brand--primary, $voxel-pill__background-color--hover__shade) !default;
 $voxel-pill__background-color--active__shade: "100" !default;
-$voxel-pill__background-color--active: map-get($voxel-colors__brand--primary, $voxel-pill__background-color--active__shade) !default;
+$voxel-pill__background-color--active: map-get($voxel-color__brand--primary, $voxel-pill__background-color--active__shade) !default;
 
 $voxel-pill__transition-duration: $voxel-scaffolding__transition--duration !default;

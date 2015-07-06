@@ -1,0 +1,102 @@
+@import "settings";
+@import "mixins";
+@import "documentation";
+
+@if($voxel-font__include-classes) {
+  body {
+    @include voxel-font__body();
+  }
+
+  p {
+    @include voxel-font__paragraph();
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include voxel-font__headings--h123456();
+  }
+
+  @each $theme in $voxel-color__themes--supported {
+    .voxel-theme--#{$theme} h1,
+    .voxel-theme--#{$theme} h2,
+    .voxel-theme--#{$theme} h3,
+    .voxel-theme--#{$theme} h4,
+    .voxel-theme--#{$theme} h5,
+    .voxel-theme--#{$theme} h6 {
+      @include voxel-font__headings--h123456__themes($theme);
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @include voxel-font__headings--h1234();
+  }
+
+  h1 {
+    @include voxel-font__headings--h1();
+  }
+
+  h2 {
+    @include voxel-font__headings--h2();
+  }
+
+  h3 {
+    @include voxel-font__headings--h3();
+  }
+
+  h4 {
+    @include voxel-font__headings--h4();
+  }
+
+  h5 {
+    @include voxel-font__headings--h5();
+  }
+
+  h6 {
+    @include voxel-font__headings--h6();
+  }
+
+  small {
+    @include voxel-font__small();
+  }
+
+  a {
+    @include voxel-font__a();
+  }
+
+  @each $theme in $voxel-color__themes--supported {
+    .voxel-theme--#{$theme} a {
+      @include voxel-font__a__themes($theme);
+    }
+  }
+
+  code {
+    @include voxel-font__code();
+  }
+
+  @each $theme in $voxel-color__themes--supported {
+    .voxel-theme--#{$theme} code {
+      @include voxel-font__code__themes($theme);
+    }
+  }
+
+  pre code {
+    @include voxel-font__pre__code();
+  }
+
+  blockquote {
+    @include voxel-font__blockquote();
+  }
+
+  @each $theme in $voxel-color__themes--supported {
+    .voxel-theme--#{$theme} blockquote {
+      @include voxel-font__blockquote__themes($theme);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+$voxel-layout__include-classes: $voxel-components__include-classes !default;
+
+$voxel-layout__page__transition-duration: $voxel-scaffolding__transition--duration !default;
+
+$voxel-layout__page__blur: 5px !default;
+
+$voxel-layout__content__max-width: rem-calc(48rem) !default;
+
+$voxel-layout__content__padding--horizontal: map-get($voxel-scaffolding__spacing--horizontal, "400") !default;
+$voxel-layout__content__padding--vertical: map-get($voxel-scaffolding__spacing--vertical, "400") !default;
+
+$voxel-layout__image__margin--vertical: map-get($voxel-scaffolding__spacing--vertical, "100") !default;

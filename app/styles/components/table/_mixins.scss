@@ -1,0 +1,33 @@
+@mixin voxel-table() {
+  border-collapse: collapse;
+  margin-bottom: $voxel-table__margin-bottom;
+  width: 100%;
+
+  th {
+    background-color: $voxel-table__th__background-color;
+    color: $voxel-table__th__color;
+    text-align: left;
+  }
+
+  tfoot {
+    font-weight: bold;
+  }
+
+  td,
+  th {
+    border-color: $voxel-table__border--color;
+    border-style: $voxel-table__border--style;
+    border-width: $voxel-table__border--width;
+    padding-bottom: $voxel-table__cell__padding-bottom;
+    padding-left: $voxel-table__cell__padding-left;
+    padding-right: $voxel-table__cell__padding-right;
+    padding-top: $voxel-table__cell__padding-top;
+  }
+}
+
+@mixin voxel-table__themes($theme) {
+  th {
+    background-color: map-get(map-get($voxel-color__themes, $theme), $voxel-table__th__background-color__shade);
+    color: map-get(map-get($voxel-color__themes, $theme), $voxel-table__th__color__shade);
+  }
+}

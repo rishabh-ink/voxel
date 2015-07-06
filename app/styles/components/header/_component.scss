@@ -11,7 +11,7 @@
     @include voxel-header--with-transforms();
   }
 
-  @each $theme in $voxel-colors__themes--supported {
+  @each $theme in $voxel-color__themes--supported {
     .voxel-theme--#{$theme} .voxel-header {
       @include voxel-header__themes($theme);
     }
@@ -21,7 +21,7 @@
     @include voxel-header__title();
   }
 
-  @each $theme in $voxel-colors__themes--supported {
+  @each $theme in $voxel-color__themes--supported {
     .voxel-theme--#{$theme} .voxel-header__title {
       @include voxel-header__title__themes($theme);
     }
@@ -39,7 +39,7 @@
     @include voxel-header__title__sub();
   }
 
-  @each $theme in $voxel-colors__themes--supported {
+  @each $theme in $voxel-color__themes--supported {
     .voxel-theme--#{$theme} .voxel-header__title__sub {
       @include voxel-header__title__sub__themes($theme);
     }
