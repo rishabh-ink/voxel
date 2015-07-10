@@ -1,10 +1,10 @@
 @mixin voxel-list() {
+  list-style-type: none;
   padding-left: $voxel-list__padding--left;
 }
 
 @mixin voxel-list--ordered() {
   counter-reset: voxel-list__counter;
-  list-style-type: none;
 }
 
 @mixin voxel-list__item() {
