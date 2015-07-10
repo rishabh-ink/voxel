@@ -41,7 +41,7 @@
   text-decoration: none;
 
   &:hover {
-    @include background-with-css2-fallback(
+    @include background-image(
       linear-gradient(
         to right,
         $voxel-list__item__link--hover__background-gradient__color--start,
@@ -53,7 +53,7 @@
 
 @mixin voxel-list__item__link__themes($theme) {
   &:hover {
-    @include background-with-css2-fallback(
+    @include background-image(
       linear-gradient(
         to right,
         $voxel-list__item__link--hover__background-gradient__color--start,
