@@ -7,8 +7,16 @@
     @include voxel-list();
   }
 
+  .voxel-list--ordered {
+    @include voxel-list--ordered();
+  }
+
   .voxel-list__item {
     @include voxel-list__item();
+  }
+
+  .voxel-list--ordered .voxel-list__item {
+    @include voxel-list--ordered__item();
   }
 
   .voxel-list__item__link {

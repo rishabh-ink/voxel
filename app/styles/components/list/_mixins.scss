@@ -1,20 +1,28 @@
 @mixin voxel-list() {
-  counter-reset: voxel-list__counter;
-  list-style-type: none;
   padding-left: $voxel-list__padding--left;
 }
 
+@mixin voxel-list--ordered() {
+  counter-reset: voxel-list__counter;
+  list-style-type: none;
+}
+
 @mixin voxel-list__item() {
+  &:before {
+    display: block;
+    float: left;
+    font-weight: bold;
+    padding-bottom: $voxel-list__item__before__padding--bottom;
+    padding-top: $voxel-list__item__before__padding--top;
+  }
+}
+
+@mixin voxel-list--ordered__item() {
   counter-increment: voxel-list__counter;
 
   &:before {
     content: counters(voxel-list__counter, ".") ".";
-    display: block;
-    float: left;
-    font-weight: bold;
     margin-right: $voxel-list__item__counter__margin--right;
-    padding-bottom: $voxel-list__item__before__padding--bottom;
-    padding-top: $voxel-list__item__before__padding--top;
   }
 }
 
