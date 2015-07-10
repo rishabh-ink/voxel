@@ -81,35 +81,35 @@
     }
   }
 
-  .voxel-drawer__index {
-    @include voxel-drawer__index();
+  .voxel-list {
+    @include voxel-list();
   }
 
-  .voxel-drawer__index__item {
-    @include voxel-drawer__index__item();
+  .voxel-list__item {
+    @include voxel-list__item();
   }
 
-  .voxel-drawer__index__item__link {
-    @include voxel-drawer__index__item__link();
+  .voxel-list__item__link {
+    @include voxel-list__item__link();
   }
 
   @each $theme in $voxel-color__themes--supported {
-    .voxel-theme--#{$theme} .voxel-drawer__index__item__link {
-      @include voxel-drawer__index__item__link__themes($theme);
+    .voxel-theme--#{$theme} .voxel-list__item__link {
+      @include voxel-list__item__link__themes($theme);
     }
   }
 
-  .voxel-drawer__index__item__text {
-    @include voxel-drawer__index__item__text();
+  .voxel-list__item__text {
+    @include voxel-list__item__text();
   }
 
-  .voxel-drawer__index__item__link--active {
-    @include voxel-drawer__index__item__link--active();
+  .voxel-list__item__link--active {
+    @include voxel-list__item__link--active();
   }
 
   @each $theme in $voxel-color__themes--supported {
-    .voxel-theme--#{$theme} .voxel-drawer__index__item__link--active {
-      @include voxel-drawer__index__item__link--active__themes($theme);
+    .voxel-theme--#{$theme} .voxel-list__item__link--active {
+      @include voxel-list__item__link--active__themes($theme);
     }
   }
 }
