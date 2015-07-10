@@ -1,0 +1,37 @@
+@import "settings";
+@import "mixins";
+@import "documentation";
+
+@if($voxel-list__include-classes) {
+  .voxel-list {
+    @include voxel-list();
+  }
+
+  .voxel-list__item {
+    @include voxel-list__item();
+  }
+
+  .voxel-list__item__link {
+    @include voxel-list__item__link();
+  }
+
+  @each $theme in $voxel-color__themes--supported {
+    .voxel-theme--#{$theme} .voxel-list__item__link {
+      @include voxel-list__item__link__themes($theme);
+    }
+  }
+
+  .voxel-list__item__text {
+    @include voxel-list__item__text();
+  }
+
+  .voxel-list__item__link--active {
+    @include voxel-list__item__link--active();
+  }
+
+  @each $theme in $voxel-color__themes--supported {
+    .voxel-theme--#{$theme} .voxel-list__item__link--active {
+      @include voxel-list__item__link--active__themes($theme);
+    }
+  }
+}
