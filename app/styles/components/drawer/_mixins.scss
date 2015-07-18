@@ -63,8 +63,9 @@
 
 @mixin voxel-drawer--with-transitions() {
   @include transition-duration($voxel-drawer__transition--duration);
-  @include transition-property(-webkit-transform, -moz-transform, -o-transform, transform, opacity);
-  @include transition-timing-function(ease-in);
+  @include transition-property($voxel-drawer__transition--property);
+  @include transition-timing-function($voxel-drawer__transition--timing-function);
+  @include transition-delay($voxel-drawer__transition--delay);
 }
 
 @mixin voxel-drawer--with-transforms() {

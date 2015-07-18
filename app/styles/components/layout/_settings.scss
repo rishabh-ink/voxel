@@ -1,6 +1,8 @@
 $voxel-layout__include-classes: $voxel-components__include-classes !default;
 
-$voxel-layout__page__transition-duration: $voxel-scaffolding__transition--duration !default;
+$voxel-layout__page__transition--duration: $voxel-scaffolding__transition--duration !default;
+$voxel-layout__page__transition--property: -webkit-filter, -moz-filter, -o-filter, filter !default;
+$voxel-layout__page__transition--timing-function: linear !default;
 
 $voxel-layout__page__blur: 5px !default;
 

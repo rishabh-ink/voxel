@@ -18,7 +18,9 @@ $voxel-header__box-shadow--radius: map-get($voxel-scaffolding__spacing--vertical
 $voxel-header__box-shadow--height: map-get($voxel-scaffolding__spacing--vertical, "a100") !default;
 $voxel-header__box-shadow--width: 80% !default;
 
-$voxel-header__title__transition-duration: $voxel-scaffolding__transition--duration !default;
+$voxel-header__title__transition--duration: $voxel-scaffolding__transition--duration !default;
+$voxel-header__title__transition--property: -webkit-filter, -moz-filter, -o-filter, filter !default;
+$voxel-header__title__transition--timing-function: linear !default;
 $voxel-header__title__color__shade: "800" !default;
 $voxel-header__title__color: map-get($voxel-color__brand--primary, $voxel-header__title__color__shade) !default;
 $voxel-header__title__font-family: $voxel-font__font-family--headings !default;

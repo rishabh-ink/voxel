@@ -1,7 +1,7 @@
 @mixin voxel-layout__page--with-transitions() {
-  @include transition-duration($voxel-layout__page__transition-duration);
-  @include transition-property(-webkit-filter, -moz-filter, -o-filter, filter);
-  @include transition-timing-function(ease-in);
+  @include transition-duration($voxel-layout__page__transition--duration);
+  @include transition-property($voxel-layout__page__transition--property);
+  @include transition-timing-function($voxel-layout__page__transition--timing-function);
 }
 
 @mixin voxel-layout__page--inactive--with-filters() {

@@ -27,6 +27,9 @@ $voxel-drawer__title__color: map-get($voxel-color__brand--primary, $voxel-drawer
 $voxel-drawer__title__font-size: map-get($voxel-font__font-size--headings, "h3") !default;
 
 $voxel-drawer__transition--duration: $voxel-scaffolding__transition--duration !default;
+$voxel-drawer__transition--property: -webkit-transform, -moz-transform, -o-transform, transform, opacity !default;
+$voxel-drawer__transition--timing-function: ease-in !default;
+$voxel-drawer__transition--delay: .3s !default;
 
 $voxel-drawer__toggle__z-index: 20 !default;
 $voxel-drawer__toggle__color__shade: "800" !default;
