@@ -1,5 +1,5 @@
 @mixin voxel-drawer() {
-  box-shadow: 0 0 $voxel-drawer__box-shadow--radius 0 $voxel-drawer__box-shadow--color;
+  box-shadow: 0 0 $voxel-drawer__box-shadow__radius 0 $voxel-drawer__box-shadow__color;
   @include background-image(
     $voxel-drawer__background-image,
     radial-gradient(
@@ -14,9 +14,9 @@
   background-color: rgba(#fff, 0); // Remove fallback color so that the gradient transparency takes effect.
   // scss-lint:enable DuplicateProperty ColorVariable
   background-size: auto;
-  border-right-color: $voxel-drawer__border--right--color;
-  border-right-style: $voxel-drawer__border--right--style;
-  border-right-width: $voxel-drawer__border--right--width;
+  border-right-color: $voxel-drawer__border-right-color;
+  border-right-style: $voxel-drawer__border-right-style;
+  border-right-width: $voxel-drawer__border-right-width;
   font-family: $voxel-drawer__font-family;
   height: 100%;
   left: -($voxel-drawer__width);
@@ -29,7 +29,7 @@
 }
 
 @mixin voxel-drawer__themes($theme) {
-  box-shadow: 0 0 $voxel-drawer__box-shadow--radius 0 map-get(map-get($voxel-color__themes, $theme), $voxel-drawer__box-shadow--color__shade);
+  box-shadow: 0 0 $voxel-drawer__box-shadow__radius 0 map-get(map-get($voxel-color__themes, $theme), $voxel-drawer__box-shadow__color__shade);
   @include background-image(
     $voxel-drawer__background-image,
     radial-gradient(
@@ -58,14 +58,14 @@
     )
   );
   background-size: auto;
-  border-right-color: map-get(map-get($voxel-color__themes, $theme), $voxel-drawer__border--right--color__shade);
+  border-right-color: map-get(map-get($voxel-color__themes, $theme), $voxel-drawer__border-right-color__shade);
 }
 
 @mixin voxel-drawer--with-transitions() {
-  @include transition-duration($voxel-drawer__transition--duration);
-  @include transition-property($voxel-drawer__transition--property);
-  @include transition-timing-function($voxel-drawer__transition--timing-function);
-  @include transition-delay($voxel-drawer__transition--delay);
+  @include transition-duration($voxel-drawer__transition-duration);
+  @include transition-property($voxel-drawer__transition-property);
+  @include transition-timing-function($voxel-drawer__transition-timing-function);
+  @include transition-delay($voxel-drawer__transition-delay);
 }
 
 @mixin voxel-drawer--with-transforms() {
@@ -88,10 +88,10 @@
   font-size: $voxel-drawer__toggle__font-size;
   font-weight: bold;
   left: 0;
-  padding-bottom: $voxel-drawer__toggle__padding--bottom;
-  padding-left: $voxel-drawer__toggle__padding--left;
-  padding-right: $voxel-drawer__toggle__padding--right;
-  padding-top: $voxel-drawer__toggle__padding--top;
+  padding-bottom: $voxel-drawer__toggle__padding-bottom;
+  padding-left: $voxel-drawer__toggle__padding-left;
+  padding-right: $voxel-drawer__toggle__padding-right;
+  padding-top: $voxel-drawer__toggle__padding-top;
   position: fixed;
   text-decoration: none;
   top: 0;
@@ -103,7 +103,7 @@
 }
 
 @mixin voxel-drawer__toggle--with-transitions() {
-  @include transition-duration($voxel-drawer__toggle__transition--duration);
+  @include transition-duration($voxel-drawer__toggle__transition-duration);
   @include transition-property(color, transform);
 }
 
@@ -131,10 +131,10 @@
 
 @mixin voxel-drawer__header() {
   background-color: $voxel-drawer__header__background-color;
-  margin-bottom: $voxel-drawer__header__margin--bottom;
+  margin-bottom: $voxel-drawer__header__margin-bottom;
   min-height: $voxel-drawer__header__height--min;
-  padding-bottom: $voxel-drawer__header__padding--bottom;
-  padding-top: $voxel-drawer__header__padding--top;
+  padding-bottom: $voxel-drawer__header__padding-bottom;
+  padding-top: $voxel-drawer__header__padding-top;
   position: relative;
   text-align: $voxel-drawer__header__text-align;
 }
@@ -142,10 +142,10 @@
 @mixin voxel-drawer__header--with-transforms() {
   &:before {
     @include voxel-circle-shadow(
-      $voxel-drawer__header__box-shadow--color,
-      $voxel-drawer__header__box-shadow--radius,
-      $voxel-drawer__header__box-shadow--height,
-      $voxel-drawer__header__box-shadow--width
+      $voxel-drawer__header__box-shadow__color,
+      $voxel-drawer__header__box-shadow__radius,
+      $voxel-drawer__header__box-shadow__height,
+      $voxel-drawer__header__box-shadow__width
     );
   }
 }
@@ -154,6 +154,6 @@
   background-color: map-get(map-get($voxel-color__themes, $theme), $voxel-drawer__header__background-color__shade);
 
   &:before {
-    box-shadow: map-get(map-get($voxel-color__themes, $theme), $voxel-drawer__header__box-shadow--color__shade) 0 0 $voxel-drawer__header__box-shadow--radius 0;
+    box-shadow: map-get(map-get($voxel-color__themes, $theme), $voxel-drawer__header__box-shadow__color__shade) 0 0 $voxel-drawer__header__box-shadow__radius 0;
   }
 }

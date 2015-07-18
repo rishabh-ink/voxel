@@ -2,10 +2,10 @@ $voxel-code-snippet__include-classes: $voxel-components__include-classes !defaul
 
 $voxel-code-snippet__padding: map-get($voxel-scaffolding__spacing--horizontal, "600") !default;
 
-$voxel-code-snippet__margin--top: map-get($voxel-scaffolding__spacing--vertical, "a100") !default;
-$voxel-code-snippet__margin--right: 0 !default;
-$voxel-code-snippet__margin--bottom: map-get($voxel-scaffolding__spacing--vertical, "a400") !default;
-$voxel-code-snippet__margin--left: 0 !default;
+$voxel-code-snippet__margin-top: map-get($voxel-scaffolding__spacing--vertical, "a100") !default;
+$voxel-code-snippet__margin-right: 0 !default;
+$voxel-code-snippet__margin-bottom: map-get($voxel-scaffolding__spacing--vertical, "a400") !default;
+$voxel-code-snippet__margin-left: 0 !default;
 
 $voxel-code-snippet__icon__width: 64px !default;
 $voxel-code-snippet__icon__height: 64px !default;

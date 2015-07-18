@@ -1,6 +1,6 @@
 @mixin voxel-list() {
   list-style-type: none;
-  padding-left: $voxel-list__padding--left;
+  padding-left: $voxel-list__padding-left;
 }
 
 @mixin voxel-list--ordered() {
@@ -12,8 +12,8 @@
     display: block;
     float: left;
     font-weight: bold;
-    padding-bottom: $voxel-list__item__before__padding--bottom;
-    padding-top: $voxel-list__item__before__padding--top;
+    padding-bottom: $voxel-list__item__before__padding-bottom;
+    padding-top: $voxel-list__item__before__padding-top;
   }
 }
 
@@ -22,7 +22,7 @@
 
   &:before {
     content: counters(voxel-list__counter, ".") ".";
-    margin-right: $voxel-list__item__counter__margin--right;
+    margin-right: $voxel-list__item__counter__margin-right;
   }
 }
 
@@ -30,14 +30,14 @@
   font-weight: bold;
   margin-bottom: 0;
   margin-top: 0;
-  padding-bottom: $voxel-list__item__text__padding--bottom;
-  padding-top: $voxel-list__item__text__padding--top;
+  padding-bottom: $voxel-list__item__text__padding-bottom;
+  padding-top: $voxel-list__item__text__padding-top;
 }
 
 @mixin voxel-list__item__link() {
   display: block;
-  padding-bottom: $voxel-list__item__link__padding--bottom;
-  padding-top: $voxel-list__item__link__padding--top;
+  padding-bottom: $voxel-list__item__link__padding-bottom;
+  padding-top: $voxel-list__item__link__padding-top;
   text-decoration: none;
 
   &:hover {

@@ -9,18 +9,18 @@
 }
 
 @mixin voxel-pill() {
-  border-color: $voxel-pill__border--color;
-  border-style: $voxel-pill__border--style;
-  border-width: $voxel-pill__border--width;
+  border-color: $voxel-pill__border-color;
+  border-style: $voxel-pill__border-style;
+  border-width: $voxel-pill__border-width;
   display: inline-block;
-  margin-bottom: $voxel-pill__margin--bottom;
-  margin-left: $voxel-pill__margin--left;
-  margin-right: $voxel-pill__margin--right;
-  margin-top: $voxel-pill__margin--top;
-  padding-bottom: $voxel-pill__padding--bottom;
-  padding-left: $voxel-pill__padding--left;
-  padding-right: $voxel-pill__padding--right;
-  padding-top: $voxel-pill__padding--top;
+  margin-bottom: $voxel-pill__margin-bottom;
+  margin-left: $voxel-pill__margin-left;
+  margin-right: $voxel-pill__margin-right;
+  margin-top: $voxel-pill__margin-top;
+  padding-bottom: $voxel-pill__padding-bottom;
+  padding-left: $voxel-pill__padding-left;
+  padding-right: $voxel-pill__padding-right;
+  padding-top: $voxel-pill__padding-top;
   text-decoration: none;
 
   &:hover {
@@ -34,7 +34,7 @@
 }
 
 @mixin voxel-pill__themes($theme) {
-  border-color: map-get(map-get($voxel-color__themes, $theme), $voxel-pill__border--color__shade);
+  border-color: map-get(map-get($voxel-color__themes, $theme), $voxel-pill__border-color__shade);
 
   &:hover {
     background-color: map-get(map-get($voxel-color__themes, $theme), $voxel-pill__background-color--hover__shade);
