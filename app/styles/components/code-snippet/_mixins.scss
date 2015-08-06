@@ -29,6 +29,12 @@
   }
 }
 
+@mixin voxel-code-snippet--css() {
+  &:before {
+    background-image: $voxel-code-snippet__icon__background-image--css;
+  }
+}
+
 @mixin voxel-code-snippet__pre() {
   background-color: $voxel-code-snippet__pre__background-color;
   border-radius: $voxel-code-snippet__pre__border-radius;
