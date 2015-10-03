@@ -35,6 +35,12 @@
   }
 }
 
+@mixin voxel-code-snippet--jsx() {
+  &:before {
+    background-image: $voxel-code-snippet__icon__background-image--jsx;
+  }
+}
+
 @mixin voxel-code-snippet__pre() {
   background-color: $voxel-code-snippet__pre__background-color;
   border-radius: $voxel-code-snippet__pre__border-radius;
