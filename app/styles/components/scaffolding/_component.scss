@@ -4,8 +4,8 @@
 
 @if($voxel-scaffolding__include-classes) {
   *,
-  *:before,
-  *:after {
+  *::before,
+  *::after {
     @include box-sizing($voxel-scaffolding__box-sizing);
   }
 

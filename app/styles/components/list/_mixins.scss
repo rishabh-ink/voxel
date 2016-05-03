@@ -8,7 +8,7 @@
 }
 
 @mixin voxel-list__item() {
-  &:before {
+  &::before {
     display: block;
     float: left;
     font-weight: bold;
@@ -20,7 +20,7 @@
 @mixin voxel-list--ordered__item() {
   counter-increment: voxel-list__counter;
 
-  &:before {
+  &::before {
     content: counters(voxel-list__counter, ".") ".";
     margin-right: $voxel-list__item__counter__margin-right;
   }

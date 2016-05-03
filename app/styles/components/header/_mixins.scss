@@ -14,7 +14,7 @@
 }
 
 @mixin voxel-header--with-transforms() {
-  &:before {
+  &::before {
     @include voxel-circle-shadow(
       $voxel-header__box-shadow__color,
       $voxel-header__box-shadow__radius,
@@ -27,7 +27,7 @@
 @mixin voxel-header__themes($theme) {
   border-bottom: $voxel-header__border-bottom-width $voxel-header__border-bottom-style map-get(map-get($voxel-color__themes, $theme), $voxel-header__border-bottom-color__shade);
 
-  &:before {
+  &::before {
     box-shadow: map-get(map-get($voxel-color__themes, $theme), $voxel-header__box-shadow__color__shade) 0 0 $voxel-header__box-shadow__radius 0;
   }
 }

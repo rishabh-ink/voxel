@@ -140,7 +140,7 @@
 }
 
 @mixin voxel-drawer__header--with-transforms() {
-  &:before {
+  &::before {
     @include voxel-circle-shadow(
       $voxel-drawer__header__box-shadow__color,
       $voxel-drawer__header__box-shadow__radius,
@@ -153,7 +153,7 @@
 @mixin voxel-drawer__header__themes($theme) {
   background-color: map-get(map-get($voxel-color__themes, $theme), $voxel-drawer__header__background-color__shade);
 
-  &:before {
+  &::before {
     box-shadow: map-get(map-get($voxel-color__themes, $theme), $voxel-drawer__header__box-shadow__color__shade) 0 0 $voxel-drawer__header__box-shadow__radius 0;
   }
 }

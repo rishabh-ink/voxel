@@ -6,7 +6,7 @@
   padding: $voxel-code-snippet__padding;
   position: $voxel-code-snippet__position;
 
-  &:before {
+  &::before {
     content: "";
     display: $voxel-code-snippet__icon__display;
     height: $voxel-code-snippet__icon__height;
@@ -18,25 +18,25 @@
 }
 
 @mixin voxel-code-snippet--html() {
-  &:before {
+  &::before {
     background-image: $voxel-code-snippet__icon__background-image--html;
   }
 }
 
 @mixin voxel-code-snippet--js() {
-  &:before {
+  &::before {
     background-image: $voxel-code-snippet__icon__background-image--js;
   }
 }
 
 @mixin voxel-code-snippet--css() {
-  &:before {
+  &::before {
     background-image: $voxel-code-snippet__icon__background-image--css;
   }
 }
 
 @mixin voxel-code-snippet--jsx() {
-  &:before {
+  &::before {
     background-image: $voxel-code-snippet__icon__background-image--jsx;
   }
 }
