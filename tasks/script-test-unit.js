@@ -3,7 +3,7 @@ var CFG = require("./utils/config.js");
 var $ = require("gulp-load-plugins")();
 var path = require("path");
 var pkg = require(path.join("..", CFG.FILE.config.pkg));
-var karma = require("karma").server;
+var karma = require("karma");
 var notify = require("./utils/notify-script-test-unit");
 
 /**
@@ -12,11 +12,13 @@ var notify = require("./utils/notify-script-test-unit");
  * @see karma-runner.github.io
  */
 gulp.task("script:test:unit", ["script:lint"], function (callback) {
-  karma.start({
+  var karmaServer = new karma.Server({
     configFile: __dirname + "/../" + CFG.FILE.config.karma,
     singleRun: true
   }, function(exitCode) {
     notify(exitCode);
     callback(exitCode);
   });
+
+  karmaServer.start();
 });
