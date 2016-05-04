@@ -25,10 +25,6 @@ require.config({
     "voxel": "src/scripts/voxel",
     "components/drawer": "src/scripts/components/drawer",
     // /Application
-
-    // Fixtures
-    "voxel-fixture": "tests/fixtures/voxel-fixture"
-    // /Fixtures
   },
 
   shim: {

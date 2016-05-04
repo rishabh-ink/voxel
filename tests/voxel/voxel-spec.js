@@ -1,5 +1,5 @@
-define(["voxel-fixture", "voxel"],
-function(VoxelFixture,    Voxel) {
+define(["./voxel-fixture", "voxel"],
+function(VoxelFixture,      Voxel) {
   describe("Voxel", function() {
     it("Should greet", function() {
       var voxel = Voxel.create();
