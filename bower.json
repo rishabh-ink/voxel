@@ -42,7 +42,7 @@
   ],
   "main": [
     "dist",
-    "app",
+    "src",
     "bower.json",
     "readme.md",
     "license.md"

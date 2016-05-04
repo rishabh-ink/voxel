@@ -22,8 +22,8 @@ require.config({
     // /Libraries
 
     // Application
-    "voxel": "app/scripts/voxel",
-    "components/drawer": "app/scripts/components/drawer",
+    "voxel": "src/scripts/voxel",
+    "components/drawer": "src/scripts/components/drawer",
     // /Application
 
     // Fixtures
