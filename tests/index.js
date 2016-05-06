@@ -16,6 +16,8 @@ require.config({
 
   paths: {
     // Libraries
+    "jasmine-jquery": "libraries/jasmine-jquery/lib/jasmine-jquery",
+    "jasmine-ajax": "libraries/jasmine-ajax/lib/mock-ajax",
     "jquery": "libraries/jquery/jquery",
     "es5-shim": "libraries/es5-shim/es5-shim.min",
     "es5-sham": "libraries/es5-shim/es5-sham.min",
@@ -25,6 +27,10 @@ require.config({
     "voxel": "src/scripts/voxel",
     "components/drawer": "src/scripts/components/drawer",
     // /Application
+
+    // Fixtures
+    "voxel-fixture": "tests/fixtures/voxel-fixture"
+    // /Fixtures
   },
 
   shim: {
