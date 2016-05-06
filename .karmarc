@@ -30,8 +30,8 @@ module.exports = function(config) {
       { pattern: path.join(CFG.DIR.test, CFG.FILE.config.testMain) },
       // /RequireJS main config
 
-      // Test scripts and fixtures
-      { pattern: path.join(CFG.DIR.test, "**", "*." + CFG.FILE.extension.script.js), included: false }
+      // Test scripts and fixtures, RequireJS main config
+      { pattern: path.join(CFG.DIR.test, "**", "*"), included: false }
       // /Test scripts and fixtures
     ],
 
