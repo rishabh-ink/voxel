@@ -7,6 +7,6 @@ var pkg = require(path.join("..", CFG.FILE.config.pkg));
 /**
  * script:test
  */
-gulp.task("script:test", ["script:test:unit" /*, "script:test:integration" */], function (callback) {
+gulp.task("script:test", [/* "script:test:unit" , "script:test:integration" */], function (callback) {
   callback();
 });
