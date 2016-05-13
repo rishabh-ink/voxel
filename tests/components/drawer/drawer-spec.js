@@ -18,14 +18,12 @@ define(function(require) {
     });
 
     it("loadFixtures() should load fixtures", function() {
-
       var voxelDrawer = jQ("[data-js~='voxelDrawer']");
 
       expect(voxelDrawer[0]).toBeInDOM();
     });
 
     it("openDrawer() should open the Drawer", function() {
-
        var voxelDrawer = jQ("[data-js~='voxelDrawer']");
        var voxelDrawerToggle = jQ("[data-js~='voxelDrawerToggle']");
 
@@ -33,11 +31,9 @@ define(function(require) {
 
        expect(voxelDrawer[0]).toHaveClass("voxel-drawer--active");
        expect(voxelDrawerToggle[0]).toHaveClass("voxel-drawer__toggle--active");
-
     });
 
     it("closeDrawer() should close the Drawer", function() {
-
        var voxelDrawer = jQ("[data-js~='voxelDrawer']");
        var voxelDrawerToggle = jQ("[data-js~='voxelDrawerToggle']");
 
@@ -45,8 +41,6 @@ define(function(require) {
 
        expect(voxelDrawer[0]).not.toHaveClass("voxel-drawer--active");
        expect(voxelDrawerToggle[0]).not.toHaveClass("voxel-drawer__toggle--active");
-
     });
   });
 });
-
