@@ -57,6 +57,7 @@
     "phantomjs-prebuilt": "",
     "require-dir": "~0.3",
     "requirejs": "~2.2",
+    "webpack": "~1.13",
     "yargs": "~4.6"
   },
   "scripts": {
